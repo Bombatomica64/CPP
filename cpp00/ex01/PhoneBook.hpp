@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 16:06:12 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/02 17:06:01 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/02 18:09:00 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,12 @@ class PhoneBook
 		~PhoneBook();
 	void	add_contact();
 	void	search_contact();
-	
-	private:
-		Contact	contacts[8];
-		int		nb_contacts;
+	void	displayContacts();
+
+private:
+	Contact contacts[8];
+	int nb_contacts;
+	int oldest;
 };
 
 #endif
