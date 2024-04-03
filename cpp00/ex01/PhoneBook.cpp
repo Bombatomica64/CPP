@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 16:05:40 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/03 12:47:07 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/03 18:34:12 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,23 +104,19 @@ void	PhoneBook::search_contact()
 	}
 	displayContacts();
 
+	while (true)
+	{
 	
 	std::cout << "Enter index: ";
 	std::cin >> input;
 	std::istringstream ss(input);
 	ss >> index;
-	// std::cout << index << std::endl;
-	if (index == 0 && input[0] != '0')
-	{
-		std::cout << "Invalid index" << std::endl;
-		PhoneBook::search_contact();
-	}
 
-	if (index < 0 || index > this->nb_contacts)
-	{
+	if (!(index < 1 || index > this->nb_contacts))
+		break;
 		std::cout << "Invalid index" << std::endl;
-		PhoneBook::search_contact();
 	}
+	index--;
 	
 	std::cout << "First name: " << this->contacts[index].get_first_name() << std::endl;
 	std::cout << "Last name: " << this->contacts[index].get_last_name() << std::endl;
@@ -135,7 +131,7 @@ void PhoneBook::displayContacts()
 	std::cout << "-------------------------------------------------" << std::endl;
 	for (int i = 0; i < this->nb_contacts; i++)
 	{
-		std::cout << std::setw(10) << i << " | ";
+		std::cout << std::setw(10) << i + 1 << " | ";
 		std::string first_name = this->contacts[i].get_first_name();
 		std::string last_name = this->contacts[i].get_last_name();
 		std::string nickname = this->contacts[i].get_nickname();
