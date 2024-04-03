@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 16:05:40 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/03 11:25:50 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/03 12:47:07 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -132,6 +132,7 @@ void	PhoneBook::search_contact()
 void PhoneBook::displayContacts()
 {
 	std::cout << "     Index | First name | Last name  | Nickname " << std::endl;
+	std::cout << "-------------------------------------------------" << std::endl;
 	for (int i = 0; i < this->nb_contacts; i++)
 	{
 		std::cout << std::setw(10) << i << " | ";
