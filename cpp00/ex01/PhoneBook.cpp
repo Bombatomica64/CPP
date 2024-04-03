@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 16:05:40 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/02 18:43:28 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/03 11:25:50 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,22 +37,47 @@ void	PhoneBook::add_contact()
 {
 	std::string	input;
 	Contact		contact;
-	std::cout << "Enter first name: ";
-	std::getline(std::cin, input);
-	contact.set_first_name(input);
-	std::cout << "Enter last name: ";
-	std::getline(std::cin, input);
-	contact.set_last_name(input);
-	std::cout << "Enter nickname: ";
-	std::getline(std::cin, input);
-	contact.set_nickname(input);
-	std::cout << "Enter phone number: ";
-	std::getline(std::cin, input);
-	contact.set_phone_number(input);
-	std::cout << "Enter darkest secret: ";
-	std::getline(std::cin, input);
-	contact.set_darkest_secret(input);
-
+	
+	do
+	{
+		std::cout << "Enter first name: ";
+		std::getline(std::cin, input);
+		contact.set_first_name(input);
+	}
+	while (input.empty());
+	
+	do
+	{
+		std::cout << "Enter last name: ";
+		std::getline(std::cin, input);
+		contact.set_last_name(input);
+	}
+	while (input.empty());
+	
+	do
+	{
+		std::cout << "Enter nickname: ";
+		std::getline(std::cin, input);
+		contact.set_nickname(input);
+	}
+	while (input.empty());
+	
+	do
+	{
+		std::cout << "Enter phone number: ";
+		std::getline(std::cin, input);
+		contact.set_phone_number(input);
+	}
+	while (input.empty());
+	
+	do
+	{
+		std::cout << "Enter darkest secret: ";
+		std::getline(std::cin, input);
+		contact.set_darkest_secret(input);
+	}
+	while (input.empty());
+	
 	if (this->nb_contacts < 8)
 	{
 		this->contacts[this->nb_contacts] = contact;
