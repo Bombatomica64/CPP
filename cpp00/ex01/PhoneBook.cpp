@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 16:05:40 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/03 18:34:12 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/03 18:40:40 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ void	PhoneBook::add_contact()
 	std::string	input;
 	Contact		contact;
 	
+	std::cin.ignore();
 	do
 	{
 		std::cout << "Enter first name: ";
@@ -114,7 +115,7 @@ void	PhoneBook::search_contact()
 
 	if (!(index < 1 || index > this->nb_contacts))
 		break;
-		std::cout << "Invalid index" << std::endl;
+	std::cout << "Invalid index" << std::endl;
 	}
 	index--;
 	
