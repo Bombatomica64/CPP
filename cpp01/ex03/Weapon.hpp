@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 13:00:09 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/04 15:15:12 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/04 15:53:39 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 #define WEAPON_HPP
 
 #include <iostream>
-#include "HumanA.hpp"
-#include "HumanB.hpp"
+#pragma once
 
 class Weapon
 {

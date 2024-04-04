@@ -6,13 +6,15 @@
 #    By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/04 12:53:09 by lmicheli          #+#    #+#              #
-#    Updated: 2024/04/04 12:54:02 by lmicheli         ###   ########.fr        #
+#    Updated: 2024/04/04 15:35:01 by lmicheli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = test_ref
 
 SRCS = main.cpp
+
+OBJS = $(SRCS:.cpp=.o)
 
 CC = c++ -Wall -Wextra -Werror -std=c++98 -g
 
