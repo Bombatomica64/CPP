@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 15:55:46 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/04 15:18:14 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/04 15:22:44 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,6 @@ int main(int ac, char **av)
 		{
 			for (int j = 0; av[i][j]; j++)
 				std::cout << (char)toupper(av[i][j]);
-			if (i + 1 < ac)
-				std::cout << " ";
 		}
 		std::cout << std::endl;
 	}
