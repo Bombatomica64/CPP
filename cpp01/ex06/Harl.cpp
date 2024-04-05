@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/05 10:39:10 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/05 11:07:33 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/05 11:18:26 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,18 +53,15 @@ void	Harl::complain( std::string level)
 	{
 	case 359:
 		this->debug();
-		break;
 	case 300:
 		this->info();
-		break;
 	case 534:
 		this->warning();
-		break;
 	case 394:
 		this->error();
 		break;
 	default:
-		std::cerr << "Invalid level" << std::endl;
+		std::cerr << "Probably complaining about insignificant problem" << std::endl;
 		break;
 	}
 }
