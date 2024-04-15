@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 16:05:40 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/05 12:44:27 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/15 18:19:58 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,14 +108,14 @@ void	PhoneBook::search_contact()
 	while (true)
 	{
 	
-	std::cout << "Enter index: ";
-	std::cin >> input;
-	std::istringstream ss(input);
-	ss >> index;
-
-	if (!(index < 1 || index > this->nb_contacts))
-		break;
-	std::cout << "Invalid index" << std::endl;
+		std::cout << "Enter index: ";
+		std::cin >> input;
+		std::istringstream ss(input);
+		ss >> index;
+	
+		if (!(index < 1 || index > this->nb_contacts))
+			break;
+		std::cout << "Invalid index" << std::endl;
 	}
 	index--;
 	
