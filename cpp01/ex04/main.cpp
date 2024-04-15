@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 17:14:48 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/04 17:44:04 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/15 17:08:32 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,26 @@ int main (int ac, char **av)
 	}
 	
 	std::string filename = av[1];
+	if (filename.empty())
+	{
+		std::cerr << "Error: empty filename" << std::endl;
+		return (1);
+	}
+	
 	std::string to_replace = av[2];
+	if (to_replace.empty())
+	{
+		std::cerr << "Error: empty string to replace" << std::endl;
+		return (1);
+	}
+	
 	std::string replace_with = av[3];
+	if (replace_with.empty())
+	{
+		std::cerr << "Error: empty string to replace with" << std::endl;
+		return (1);
+	}
+	
 	std::string output_filename = filename + ".replace";
 	
 	std::ifstream infile(filename.c_str());
