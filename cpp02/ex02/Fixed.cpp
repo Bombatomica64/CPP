@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 10:01:18 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/19 15:47:42 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/19 18:06:07 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -173,14 +173,42 @@ Fixed Fixed::operator-(const Fixed& other) const
 	Fixed tmp;
 
 	firstInt = (int)(this->getRawBits() >> bits);	
+	secondInt = (int)(other.getRawBits() >> bits);
+	firstDec = (int)(this->getRawBits() & 255);
+	secondDec = (int)(other.getRawBits() & 255);
 
+	tmp = Fixed(firstInt - secondInt);
+	tmp = tmp.getRawBits() >> bits;
+	
+	int64_t decPart = firstDec - secondDec;
+	int64_t res = tmp.getRawBits() + decPart;
+	Fixed tmp2;
+	tmp2.setRawBits(res);
+	return ((tmp2));
 }
 
-Fixed Fixed::operator/(const Fixed& other) const
+Fixed Fixed::operator/(const Fixed& other) const 
 {
-	return Fixed((int)(long long)this->value / other.value / (1 << bits));
-}
+	if (other.getRawBits() == 0) {
+		std::cerr << "Error: Division by zero." << std::endl;
+		return Fixed();
+	}
+	printBits(this->getRawBits());
+	printBits(other.getRawBits());
+	long long normalizer = 1 << bits;
+	// Convert to a larger fixed-point format to increase precision
+	long long normalized_div = (long long)this->getRawBits() * normalizer;
 
+	// Perform the division
+	long long result = normalized_div / other.getRawBits();
+
+	Fixed tmp;
+	tmp.setRawBits(result);
+	printBits(tmp.getRawBits());
+	// Return the result as a new Fixed object
+	printBits(result);
+	return Fixed(tmp);
+}
 
 Fixed Fixed::operator*(const Fixed& other) const 
 {
@@ -191,7 +219,6 @@ Fixed Fixed::operator*(const Fixed& other) const
 	Fixed tmp;
 	// (fistInt + firstDec) * (secondInt + secondDec) = 
 	//firstInt * secondInt + firstInt * secondDec + firstDec * secondInt + firstDec * secondDec
-	printBits((Fixed(10.1f)).getRawBits());
 	firstInt = (int)(this->getRawBits() >> bits);
 	secondInt = (int)(other.getRawBits() >> bits);
 	firstDec = (int)(this->getRawBits() & 255);
@@ -201,11 +228,8 @@ Fixed Fixed::operator*(const Fixed& other) const
 	
 	int64_t decPart = firstInt * secondDec + firstDec * secondInt + firstDec * secondDec;
 	int64_t res = tmp.getRawBits() + decPart;
-	printBits(decPart);
-	std::cout << "res: " << Fixed((int)res) << std::endl;
 	Fixed tmp2;
 	tmp2.setRawBits(res);
-	printBits(tmp2.getRawBits());
 	return ((tmp2));
 	/* tmp = tmp + Fixed((firstInt * secondDec));
 	
