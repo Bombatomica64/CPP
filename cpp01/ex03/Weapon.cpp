@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 15:23:32 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/04 15:24:57 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/24 10:50:23 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ Weapon::~Weapon()
 	std::cout << "Weapon destroyed" << std::endl;
 }
 
-std::string Weapon::getType()
+std::string& Weapon::getType()
 {
 	return (this->type);
 }

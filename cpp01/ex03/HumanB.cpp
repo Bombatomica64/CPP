@@ -6,15 +6,13 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 15:36:08 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/04 16:14:11 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/24 10:43:23 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
 
-HumanB::HumanB(std::string name) : name(name), weapon(weapon)
-{
-	this->name = name;
+HumanB::HumanB(std::string name) : name(name), weapon(weapon) {
 }
 
 HumanB::HumanB(const HumanB &other) : name(other.name), weapon(other.weapon)
