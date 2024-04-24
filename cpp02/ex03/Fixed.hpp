@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 18:34:37 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/19 12:00:53 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/24 11:42:59 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <iostream>
 # include <ostream>
 # include <cmath>
+# include <sstream>
 
 class Fixed
 {
@@ -24,6 +25,7 @@ class Fixed
 		Fixed( const int value );
 		Fixed( const float value );
 		Fixed( const Fixed& other );
+		Fixed( std::string value );
 		~Fixed();
 		Fixed& operator=( const Fixed& other );
 		Fixed operator+( const Fixed& other ) const;

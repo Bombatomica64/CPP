@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 10:01:18 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/24 10:21:35 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/24 12:07:09 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -227,15 +227,6 @@ Fixed Fixed::operator*(const Fixed& other) const
 	Fixed tmp2;
 	tmp2.setRawBits(res);
 	return ((tmp2));
-	/* tmp = tmp + Fixed((firstInt * secondDec));
-	
-	printBits((firstInt * secondDec));
-	tmp = tmp + Fixed((firstDec * secondInt));
-	printBits((firstDec * secondInt));
-	tmp = tmp + Fixed((firstDec * secondDec));
-	printBits((firstDec * secondDec));
-	 */
-	//printBits(tmp.getRawBits());
 }
 
 Fixed& Fixed::min(Fixed& a, Fixed& b)
@@ -256,4 +247,19 @@ Fixed& Fixed::max(Fixed& a, Fixed& b)
 const Fixed& Fixed::max(const Fixed& a, const Fixed& b)
 {
 	return (a > b) ? a : b;
+}
+
+Fixed::Fixed( std::string value )
+{
+	// std::cout << "String constructor called" << std::endl;
+	std::stringstream iss(value);
+	float tmp;
+	iss >> tmp;
+	if (iss.fail())
+	{
+		std::cerr << "Error: Invalid input." << std::endl;
+		return ;
+	}
+	this->value = Fixed(tmp).getRawBits();
+
 }
