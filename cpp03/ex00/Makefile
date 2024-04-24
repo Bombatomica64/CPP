@@ -6,13 +6,13 @@
 #    By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/24 17:37:37 by lmicheli          #+#    #+#              #
-#    Updated: 2024/04/24 17:37:44 by lmicheli         ###   ########.fr        #
+#    Updated: 2024/04/24 18:11:40 by lmicheli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = BSP
+NAME = ClapTrap_stories
 
-SRCS = main.cpp Fixed.cpp Point.cpp bsp.cpp
+SRCS = main.cpp ClapTrap.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
