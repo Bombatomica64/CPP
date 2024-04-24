@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 10:01:18 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/19 18:06:07 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/24 10:21:35 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,27 +84,27 @@ int Fixed::toInt( void ) const
 
 Fixed& Fixed::operator++()
 {
-	this->value = this->getRawBits() + 1;
+	this->value = this->getRawBits() + pow(2, bits);
 	return *this;
 }
 
 Fixed Fixed::operator++(int)
 {
 	Fixed tmp(*this);
-	this->value = this->getRawBits() + 1;
+	this->value = this->getRawBits() + pow(2, bits);
 	return tmp;
 }
 
 Fixed& Fixed::operator--( void )
 {
-	value = value - 1;
+	value = value - pow(2, bits);
 	return *this;
 }
 
 Fixed Fixed::operator--( int )
 {
 	Fixed tmp(*this);
-	value = value - 1;
+	value = value - pow(2, bits);
 	return tmp;
 }
 
@@ -193,8 +193,6 @@ Fixed Fixed::operator/(const Fixed& other) const
 		std::cerr << "Error: Division by zero." << std::endl;
 		return Fixed();
 	}
-	printBits(this->getRawBits());
-	printBits(other.getRawBits());
 	long long normalizer = 1 << bits;
 	// Convert to a larger fixed-point format to increase precision
 	long long normalized_div = (long long)this->getRawBits() * normalizer;
@@ -204,9 +202,7 @@ Fixed Fixed::operator/(const Fixed& other) const
 
 	Fixed tmp;
 	tmp.setRawBits(result);
-	printBits(tmp.getRawBits());
 	// Return the result as a new Fixed object
-	printBits(result);
 	return Fixed(tmp);
 }
 
