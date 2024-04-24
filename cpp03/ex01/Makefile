@@ -6,13 +6,13 @@
 #    By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/24 17:37:37 by lmicheli          #+#    #+#              #
-#    Updated: 2024/04/24 18:11:40 by lmicheli         ###   ########.fr        #
+#    Updated: 2024/04/26 10:38:02 by lmicheli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ClapTrap_stories
+NAME = ClapTrap_2_the_revenge
 
-SRCS = main.cpp ClapTrap.cpp
+SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
