@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/26 16:20:49 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/26 18:26:36 by lmicheli         ###   ########.fr       */
+/*   Created: 2024/04/26 17:46:43 by lmicheli          #+#    #+#             */
+/*   Updated: 2024/04/26 18:18:36 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
-#include "Cat.hpp"
-#include "WrongCat.hpp"
+#ifndef BRAIN_HPP
+# define BRAIN_HPP
 
-int main ( void )
+# include <iostream>
+# include <string>
+
+class Brain
 {
-	Animal *animals[6];
+	public:
+		Brain();
+		~Brain();
+		Brain(const Brain &obj);
+		Brain &operator=(const Brain &obj);
+		std::string identify() const;
 
-	for (int i = 0; i < 3; i++) {
-		animals[i] = new Dog();	}
+	private:
+		std::string ideas[100];
+};
 
-	for (int i = 3; i < 6; i++) {
-		animals[i] = new Cat();  }
-
-	for (int i = 0; i < 6; i++) {
-		delete animals[i];       }
-
-	return 0;
-}
+#endif

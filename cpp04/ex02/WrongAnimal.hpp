@@ -1,31 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/26 16:20:49 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/26 18:26:36 by lmicheli         ###   ########.fr       */
+/*   Created: 2024/04/26 16:56:32 by lmicheli          #+#    #+#             */
+/*   Updated: 2024/04/26 16:57:01 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
-#include "Cat.hpp"
-#include "WrongCat.hpp"
+#ifndef WRONGANIMAL_HPP
+# define WRONGANIMAL_HPP
 
-int main ( void )
+#include <iostream>
+
+class WrongAnimal
 {
-	Animal *animals[6];
+	protected:
+		std::string type;
+	public:
+		WrongAnimal();
+		WrongAnimal(std::string type);
+		virtual ~WrongAnimal();
+		WrongAnimal(const WrongAnimal &obj);
+		WrongAnimal &operator=(const WrongAnimal &obj);
 
-	for (int i = 0; i < 3; i++) {
-		animals[i] = new Dog();	}
+		std::string getType() const;
+		void		SetType(std::string type);
+		void	makeSound() const;
+};
 
-	for (int i = 3; i < 6; i++) {
-		animals[i] = new Cat();  }
-
-	for (int i = 0; i < 6; i++) {
-		delete animals[i];       }
-
-	return 0;
-}
+#endif

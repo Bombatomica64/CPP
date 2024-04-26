@@ -1,31 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/26 16:20:49 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/26 18:26:36 by lmicheli         ###   ########.fr       */
+/*   Created: 2024/04/26 16:04:25 by lmicheli          #+#    #+#             */
+/*   Updated: 2024/04/26 18:11:39 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
-#include "Cat.hpp"
-#include "WrongCat.hpp"
+#ifndef DOG_HPP
+# define DOG_HPP
 
-int main ( void )
+#include "Animal.hpp"
+
+class Dog : public Animal
 {
-	Animal *animals[6];
+	public:
+		Dog();
+		Dog(std::string type);
+		virtual ~Dog();
+		Dog(const Dog &obj);
+		Dog &operator=(const Dog &obj);
 
-	for (int i = 0; i < 3; i++) {
-		animals[i] = new Dog();	}
+		void	makeSound() const;
+};
 
-	for (int i = 3; i < 6; i++) {
-		animals[i] = new Cat();  }
-
-	for (int i = 0; i < 6; i++) {
-		delete animals[i];       }
-
-	return 0;
-}
+#endif

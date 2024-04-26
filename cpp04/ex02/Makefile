@@ -6,18 +6,18 @@
 #    By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/26 15:43:57 by lmicheli          #+#    #+#              #
-#    Updated: 2024/04/26 18:49:51 by lmicheli         ###   ########.fr        #
+#    Updated: 2024/04/26 18:36:15 by lmicheli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = 🔥Fire🔥
+NAME = 🤮Vomit🤮
 
 SRCS = 	main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp \
 		Brain.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
-CC = clang++ -std=c++98 -Wall -Wextra -Werror
+CC = clang++ -std=c++98 -Wall -Wextra -Werror -g
 
 all: $(NAME)
 
