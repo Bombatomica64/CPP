@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 17:39:49 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/26 10:26:16 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/26 11:18:46 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ int main ( void )
 	Marco.takeDamage(5);
 	Marco.beRepaired(3);
 	Marco.attack("Samu");
-	Samu.takeDamage(50);
 	Samu.takeDamage(50);
 	return 0;
 }
