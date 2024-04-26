@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 15:56:47 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/26 16:01:20 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/26 16:55:37 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,3 +42,8 @@ std::string	Animal::getType() const {
 void	Animal::SetType(std::string type) {
 	this->type = type;
 }
+
+void	Animal::makeSound() const {
+	return ;
+}
+		
