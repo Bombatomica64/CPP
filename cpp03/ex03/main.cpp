@@ -6,11 +6,12 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 17:39:49 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/26 11:23:44 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/26 11:50:03 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 int main ( void )
 {
@@ -31,5 +32,12 @@ int main ( void )
 	pippo.takeDamage(20);
 	pippo.guardGate();
 
+	FragTrap io("io");
+	FragTrap tu("tu");
+
+	tu = io;
+	tu.attack("io");
+	io.takeDamage(20);
+	tu.highFivesGuys();
 	return 0;
 }

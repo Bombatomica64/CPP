@@ -1,35 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/24 17:39:49 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/26 11:23:44 by lmicheli         ###   ########.fr       */
+/*   Created: 2024/04/26 11:40:25 by lmicheli          #+#    #+#             */
+/*   Updated: 2024/04/26 11:44:07 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
+#ifndef FRAGTRAP_HPP
+# define FRAGTRAP_HPP
+#include "ClapTrap.hpp"
 
-int main ( void )
+class FragTrap : public ClapTrap
 {
-	// ClapTrap Samu("Samu");
-	// ClapTrap Marco("Marco");
+	private :
+		std::string Name;
+		int Hitpoints;
+		int Energy_points;
+		int Attack_damage;
 
-	// Samu.attack("Marco");
-	// Marco.takeDamage(5);
-	// Marco.beRepaired(3);
-	// Marco.attack("Samu");
-	// Samu.takeDamage(50);
-	// Samu.takeDamage(50);
-	
-	ScavTrap lollo("Lollo");
-	ScavTrap pippo("Pippo");
+	public :
+		FragTrap(std::string name);
+		FragTrap(FragTrap const & rhs);
+		FragTrap & operator=(FragTrap const & rhs);
+		~FragTrap();
+		void attack(std::string const & target);
+		void highFivesGuys();
+};
 
-	lollo.attack("Pippo");
-	pippo.takeDamage(20);
-	pippo.guardGate();
-
-	return 0;
-}
+#endif

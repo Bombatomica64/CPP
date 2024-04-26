@@ -1,35 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   DiamondTrap.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/24 17:39:49 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/26 11:23:44 by lmicheli         ###   ########.fr       */
+/*   Created: 2024/04/26 12:04:06 by lmicheli          #+#    #+#             */
+/*   Updated: 2024/04/26 12:05:39 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef DIAMONDTRAP_HPP
+#define DIAMONDTRAP_HPP
+
 #include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
-int main ( void )
+class DiamondTrap : public ScavTrap, public FragTrap
 {
-	// ClapTrap Samu("Samu");
-	// ClapTrap Marco("Marco");
+	private:
+		std::string Name;
+};
 
-	// Samu.attack("Marco");
-	// Marco.takeDamage(5);
-	// Marco.beRepaired(3);
-	// Marco.attack("Samu");
-	// Samu.takeDamage(50);
-	// Samu.takeDamage(50);
-	
-	ScavTrap lollo("Lollo");
-	ScavTrap pippo("Pippo");
-
-	lollo.attack("Pippo");
-	pippo.takeDamage(20);
-	pippo.guardGate();
-
-	return 0;
-}
+#endif
