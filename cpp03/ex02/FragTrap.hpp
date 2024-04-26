@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 11:40:25 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/26 11:44:07 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/26 12:29:43 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,7 @@
 class FragTrap : public ClapTrap
 {
 	private :
-		std::string Name;
-		int Hitpoints;
-		int Energy_points;
-		int Attack_damage;
+		FragTrap();
 
 	public :
 		FragTrap(std::string name);

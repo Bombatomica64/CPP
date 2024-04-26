@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 10:33:42 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/26 12:27:00 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/26 12:32:03 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 {
 	std::cout << "Wait no! i'm \033[34mScavTrap\033[0m " << name << std::endl;
+	this->Hitpoints = 100;
+	this->Energy_points = 50;
+	this->Attack_damage = 20;
 }
 
 ScavTrap::ScavTrap() : ClapTrap("ScavTrap")
