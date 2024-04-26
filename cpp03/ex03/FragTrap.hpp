@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 11:40:25 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/26 12:29:43 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/26 13:04:47 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define FRAGTRAP_HPP
 #include "ClapTrap.hpp"
 
-class FragTrap : public ClapTrap
+class FragTrap : virtual public ClapTrap
 {
 	private :
 		FragTrap();
