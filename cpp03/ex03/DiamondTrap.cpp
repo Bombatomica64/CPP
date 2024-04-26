@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 12:42:32 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/26 13:09:19 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/26 15:29:24 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name"), ScavTrap(name), FragTrap(name)
 {
-	std::cout << "Yes! i'm \033[35mDiamondTrap\033[0m " << name << std::endl;
+	std::cout << "Yes! i'm \033[97mDiamondTrap\033[0m " << name << std::endl;
 	this->Name = name;
 	this->ClapTrap::Name = name + "_clap_name";
 
@@ -26,7 +26,7 @@ DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name"), Scav
 
 DiamondTrap::~DiamondTrap()
 {
-	std::cout << "DiamondTrap " << this->Name << " is dead" << std::endl;
+	std::cout << "\033[97mDiamondTrap\033[0m " << this->Name << " is dead" << std::endl;
 }
 
 void DiamondTrap::whoAmI()
