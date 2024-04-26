@@ -6,13 +6,14 @@
 #    By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/26 15:43:57 by lmicheli          #+#    #+#              #
-#    Updated: 2024/04/26 17:46:04 by lmicheli         ###   ########.fr        #
+#    Updated: 2024/04/26 17:45:55 by lmicheli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Polymerization
+NAME = 🔥Fire🔥
 
-SRCS = main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
+SRCS = 	main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp \
+		Brain.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 

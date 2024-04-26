@@ -6,12 +6,13 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 16:20:49 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/26 16:54:38 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/26 17:33:39 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 #include "Cat.hpp"
+#include "WrongCat.hpp"
 
 int main ( void )
 {
@@ -33,8 +34,13 @@ int main ( void )
 	jay->makeSound();
 	meta->makeSound();
 
+	delete meta;
+	delete jay;
+	delete ii;
 
+	WrongCat* wcat = new WrongCat();
+	wcat->makeSound();
 
-
+	delete wcat;
 	return 0;
 }
