@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 17:00:15 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/30 17:17:40 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/30 18:33:11 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Character::Character(std::string const & name) : _name(name) {
 	for (int i = 0; i < 4; i++)
-		_inventory[i] = nullptr;
+		_inventory[i] = NULL;
 }
 
 Character::~Character() {
@@ -38,7 +38,7 @@ Character & Character::operator=( Character const & rhs ) {
 			if (rhs._inventory[i])
 				this->_inventory[i] = rhs._inventory[i]->clone();
 			else
-				this->_inventory[i] = nullptr;
+				this->_inventory[i] = NULL;
 		}
 	return *this;
 }

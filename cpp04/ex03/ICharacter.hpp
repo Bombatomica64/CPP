@@ -6,15 +6,16 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 16:24:58 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/30 16:54:16 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/30 18:22:18 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ICHARACTER_HPP
 #define ICHARACTER_HPP
 
-#include "Ice.hpp"
-#include "Cure.hpp"
+# include "AMateria.hpp"
+
+class AMateria;
 
 class ICharacter
 {

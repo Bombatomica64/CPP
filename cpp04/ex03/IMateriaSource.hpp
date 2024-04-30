@@ -6,14 +6,16 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 17:40:41 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/30 17:41:22 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/30 18:21:00 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef IMATERIASOURCE_HPP
-#define IMATERIASOURCE_HPP
+# define IMATERIASOURCE_HPP
 
-#include "AMateria.hpp"
+# include "AMateria.hpp"
+
+class AMateria;
 
 class IMateriaSource
 {

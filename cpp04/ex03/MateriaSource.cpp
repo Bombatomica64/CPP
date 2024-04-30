@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 17:42:55 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/30 17:44:23 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/04/30 18:36:33 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 MateriaSource::MateriaSource() {
 	for (int i = 0; i < 4; i++)
-		_materia[i] = nullptr;
+		_materia[i] = NULL;
 }
 
 MateriaSource::MateriaSource (MateriaSource const & copy) {
@@ -31,8 +31,16 @@ MateriaSource & MateriaSource::operator=(MateriaSource const & rhs) {
 			if (rhs._materia[i])
 				_materia[i] = rhs._materia[i]->clone();
 			else
-				_materia[i] = nullptr;
+				_materia[i] = NULL;
 		}
 	}
 	return *this;
+}
+
+MateriaSource::~MateriaSource() {
+	for (int i = 0; i < 4; i++)
+	{
+		if (_materia[i])
+			delete _materia[i];
+	}
 }
