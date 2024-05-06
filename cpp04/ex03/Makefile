@@ -6,14 +6,15 @@
 #    By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/26 15:43:57 by lmicheli          #+#    #+#              #
-#    Updated: 2024/04/30 18:36:00 by lmicheli         ###   ########.fr        #
+#    Updated: 2024/05/06 17:32:29 by lmicheli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = 🔥Primateria🔥 
 
-SRCS =	AMateria.cpp   Cure.cpp  ICharacter.cpp      main.cpp \
-		Character.cpp  Ice.cpp   IMateriaSource.cpp  MateriaSource.cpp
+SRCS =	AMateria.cpp  	Cure.cpp  ICharacter.cpp      main.cpp \
+		Character.cpp 	Ice.cpp   IMateriaSource.cpp  MateriaSource.cpp \
+		Floor.cpp		ATile.cpp
 
 CC = clang++ -std=c++98 -Wall -Wextra -Werror -g
 

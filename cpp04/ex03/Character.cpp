@@ -6,11 +6,12 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 17:00:15 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/30 18:33:11 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/05/06 17:55:13 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Character.hpp"
+#include "Floor.hpp"
 
 Character::Character(std::string const & name) : _name(name) {
 	for (int i = 0; i < 4; i++)
@@ -20,7 +21,7 @@ Character::Character(std::string const & name) : _name(name) {
 Character::~Character() {
 	for (int i = 0; i < 4; i++)
 		if (_inventory[i])
-			delete _inventory[i];
+			{delete _inventory[i];}
 }
 
 
@@ -61,4 +62,14 @@ void Character::use(int idx, ICharacter& target) {
 		return ;
 	_inventory[idx]->use(target);
 	delete _inventory[idx];
+	_inventory[idx] = NULL;
+}
+
+void Character::unequip(int idx) {
+	if (idx < 0 || idx > 3 || !_inventory[idx])
+		return ;
+	ATile* tmp = new ATile();
+	tmp->setMateria(_inventory[idx]);
+	Pavement.pushTile(tmp);
+	_inventory[idx] = NULL;
 }

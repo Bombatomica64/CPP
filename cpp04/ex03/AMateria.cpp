@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 18:01:17 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/30 16:34:22 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/05/06 17:49:29 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,8 @@ AMateria::~AMateria() {
 
 std::string const & AMateria::getType() const {
 	return _type;
+}
+
+void AMateria::use(ICharacter& target) {
+	(void)target;
 }

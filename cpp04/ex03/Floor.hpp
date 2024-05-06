@@ -1,38 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Ice.cpp                                            :+:      :+:    :+:   */
+/*   Floor.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/29 18:04:44 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/05/06 18:06:28 by lmicheli         ###   ########.fr       */
+/*   Created: 2024/05/02 10:46:57 by lmicheli          #+#    #+#             */
+/*   Updated: 2024/05/06 16:49:50 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Ice.hpp"
+#ifndef FLOOR_HPP
+# define FLOOR_HPP
 
-Ice::Ice() : AMateria("ice") {
-}
+# include "ATile.hpp"
 
-Ice::Ice(Ice const & copy) : AMateria(copy) {
+class Floor
+{
+	private:
+		ATile* _head;
 
-}
+	public:
+		Floor();
+		Floor(Floor const & copy);
+		Floor & operator=(Floor const & rhs);
+		~Floor();
 
-Ice & Ice::operator=(Ice const & rhs) {
-	if (this != &rhs)
-		AMateria::operator=(rhs);
-	return *this;
-}
+		void pushTile(ATile* tile);
+		void popTile( void );
+};
 
-Ice::~Ice() {
+extern Floor Pavement;
 
-}
-
-AMateria* Ice::clone() const {
-	return new Ice(*this);
-}
-
-void Ice::use(ICharacter& target) {
-	std::cout << "* shoots an ice bolt at " << target.getName() << " *" << std::endl;
-}
+#endif

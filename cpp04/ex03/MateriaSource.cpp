@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 17:42:55 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/30 18:36:33 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/05/06 17:57:04 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,3 +44,29 @@ MateriaSource::~MateriaSource() {
 			delete _materia[i];
 	}
 }
+
+void	MateriaSource::learnMateria(AMateria* m) {
+
+	if (!m)
+		return ;
+	for (int i = 0; i < 4; i++)
+	{
+		if (!_materia[i])
+		{
+			_materia[i] = m->clone();
+			break ;
+		}
+	}
+	delete m;
+}
+
+AMateria* MateriaSource::createMateria(std::string const & type) {
+
+	for (int i = 0; i < 4; i++)
+	{
+		if (_materia[i] && _materia[i]->getType() == type)
+			return _materia[i]->clone();
+	}
+	return 0;
+}
+	

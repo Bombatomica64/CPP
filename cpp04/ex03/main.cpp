@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 17:12:25 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/30 17:12:47 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/05/06 17:10:54 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 #include "MateriaSource.hpp"
 #include "Ice.hpp"
 #include "Cure.hpp"
+#include "Floor.hpp"
+
+Floor Pavement = Floor();
 
 int main()
 {

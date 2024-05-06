@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 17:42:05 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/30 17:43:44 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/05/06 17:09:36 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ class MateriaSource : public IMateriaSource
 {
 	private:
 		AMateria* _materia[4];
-		int _index;
 
 	public:
 		MateriaSource();
