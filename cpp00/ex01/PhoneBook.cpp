@@ -6,13 +6,14 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 16:05:40 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/15 18:19:58 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/05/02 15:38:46 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
 #include <iomanip>
 #include <sstream>
+#include <cstdlib>
 
 PhoneBook::PhoneBook()
 {
@@ -42,7 +43,8 @@ void	PhoneBook::add_contact()
 	do
 	{
 		std::cout << "Enter first name: ";
-		std::getline(std::cin, input);
+		if (std::getline(std::cin, input).eof())
+			std::exit(1) ;
 		contact.set_first_name(input);
 	}
 	while (input.empty());
@@ -50,7 +52,8 @@ void	PhoneBook::add_contact()
 	do
 	{
 		std::cout << "Enter last name: ";
-		std::getline(std::cin, input);
+		if (std::getline(std::cin, input).eof())
+			std::exit(1) ;
 		contact.set_last_name(input);
 	}
 	while (input.empty());
@@ -58,7 +61,8 @@ void	PhoneBook::add_contact()
 	do
 	{
 		std::cout << "Enter nickname: ";
-		std::getline(std::cin, input);
+		if (std::getline(std::cin, input).eof())
+			std::exit(1) ;
 		contact.set_nickname(input);
 	}
 	while (input.empty());
@@ -66,7 +70,8 @@ void	PhoneBook::add_contact()
 	do
 	{
 		std::cout << "Enter phone number: ";
-		std::getline(std::cin, input);
+		if (std::getline(std::cin, input).eof())
+			std::exit(1) ;
 		contact.set_phone_number(input);
 	}
 	while (input.empty());
@@ -74,7 +79,8 @@ void	PhoneBook::add_contact()
 	do
 	{
 		std::cout << "Enter darkest secret: ";
-		std::getline(std::cin, input);
+		if (std::getline(std::cin, input).eof())
+			std::exit(1) ;
 		contact.set_darkest_secret(input);
 	}
 	while (input.empty());
@@ -109,7 +115,10 @@ void	PhoneBook::search_contact()
 	{
 	
 		std::cout << "Enter index: ";
-		std::cin >> input;
+		if (!(std::cin >> input)) {
+        std::cerr << "Input error or EOF detected, exiting..." << std::endl;
+        std::exit(1);
+    }
 		std::istringstream ss(input);
 		ss >> index;
 	

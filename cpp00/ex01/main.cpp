@@ -6,12 +6,13 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 16:06:46 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/03 18:26:11 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/05/07 16:45:43 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
 #include "Contact.hpp"
+#include <cstdlib>
 
 int main()
 {
@@ -20,7 +21,11 @@ int main()
 
 	while (true)
 	{
-		std::cin >> input;
+		if (!(std::cin >> input)) 
+		{
+        std::cerr << "Input error or EOF detected, exiting..." << std::endl;
+        std::exit(1);
+		}
 		if (input == "EXIT")
 			break;
 		else if (input == "ADD")

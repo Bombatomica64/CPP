@@ -6,22 +6,18 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 11:00:37 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/24 12:51:52 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/05/03 12:32:15 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 #include "Point.hpp"
 
-static bool	is_a_triangle(Point const a, Point const b, Point const c)
-{
-	Fixed check;
-
-	check =	(c.getY() - b.getY()) / (c.getX() - b.getX()) * (a.getX() - c.getX()) + c.getY();
-
-	if (check == a.getY())
-		return false;
-	return true;
+static bool is_a_triangle(Point const a, Point const b, Point const c) {
+	Fixed area = (a.getX() * (b.getY() - c.getY()) +
+				  b.getX() * (c.getY() - a.getY()) +
+				  c.getX() * (a.getY() - b.getY())) / Fixed(2);
+	return area != Fixed(0);
 }
 
 int main ( void )
@@ -43,7 +39,8 @@ int main ( void )
 			std::cout << "Invalid input" << std::endl;
 			return 1;
 		}
-		points[i] = Point(Fixed(x), Fixed(y));
+		points[i].setX(Fixed(x));
+		points[i].setY(Fixed(y));
 	}
 
 	if (!is_a_triangle(points[0], points[1], points[2])) {

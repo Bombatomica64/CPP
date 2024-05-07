@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 16:04:20 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/26 18:07:28 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/05/07 11:25:20 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,10 @@ class Cat : public Animal
 		Cat &operator=(const Cat &obj);
 
 		void	makeSound() const;
+		Brain* getBrain() const { return this->brain; }
+	
+	private:
+		Brain* brain;
 };
 
 #endif

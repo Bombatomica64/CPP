@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 17:39:51 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/26 12:25:19 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/05/06 10:57:24 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ class ClapTrap
 		int Attack_damage;
 
 	public:
+		ClapTrap() {}
 		ClapTrap( std::string name );
 		ClapTrap( ClapTrap const & rhs );
 		ClapTrap & operator=( ClapTrap const & rhs );

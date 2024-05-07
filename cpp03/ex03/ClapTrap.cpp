@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 17:39:54 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/26 11:14:30 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/05/06 10:18:54 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,19 +43,25 @@ void ClapTrap::attack( std::string const & target )
 		std::cout << "ClapTrap " << Name << " is out of energy!" << std::endl;
 		return ;
 	}
-	std::cout << "ClapTrap " << Name << " attacks " << target << "!" << "causing :" << this->Attack_damage << " damage" << std::endl;
+	std::cout << "ClapTrap " << Name << " attacks " << target << " causing: " << this->Attack_damage << " points of damage" << std::endl;
 	this->Energy_points--;
 }
 
 void ClapTrap::takeDamage( unsigned int amount )
 {
-	if (Hitpoints < 0) {
+	if (amount == 0)
+	{
 		std::cout << "ClapTrap " << Name << " is already dead!" << std::endl;
 		return ;
 	}
-		
 	std::cout << "ClapTrap " << Name << " takes " << amount << " points of damage!" << std::endl;
 	Hitpoints -= amount;
+	if (Hitpoints < 0)
+	{
+			Hitpoints = 0;
+			std::cout << "ClapTrap " << Name << " has been destroyed!" << std::endl;
+	}
+
 }
 
 void ClapTrap::beRepaired( unsigned int amount )
@@ -72,5 +78,7 @@ void ClapTrap::beRepaired( unsigned int amount )
 	}
 	std::cout << "ClapTrap " << Name << " is being repaired for " << amount << " points!" << std::endl;
 	Hitpoints += amount;
+	if (Hitpoints > 10)
+		Hitpoints = 10;
 	this->Energy_points--;
 }

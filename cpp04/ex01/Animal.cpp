@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 15:56:47 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/26 18:23:22 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/05/07 11:18:14 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,14 @@
 
 Animal::Animal() : type("Animal") {
 	std::cout << "Animal default constructor called" << std::endl;
-	this->brain = new Brain();
 }
 
 Animal::Animal(std::string type) : type(type) {
 	std::cout << "Animal type constructor called" << std::endl;
-	this->brain = new Brain();
 }
 
 Animal::~Animal() {
 	std::cout << "Animal destructor called" << std::endl;
-	delete this->brain;
 }
 
 Animal::Animal(const Animal &obj) {
@@ -35,7 +32,6 @@ Animal::Animal(const Animal &obj) {
 Animal		&Animal::operator=(const Animal &obj) {
 	std::cout << "Animal assignation operator called" << std::endl;
 	this->type = obj.type;
-	this->brain = obj.brain;
 	return *this;
 }
 

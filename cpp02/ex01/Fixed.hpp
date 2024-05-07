@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 18:34:37 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/16 16:44:21 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/05/03 10:27:36 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,6 @@ class Fixed
 		static const int bits = 8;
 
 };
-
 
 std::ostream& operator<<( std::ostream& os, const Fixed& value );
 

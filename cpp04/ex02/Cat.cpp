@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 16:16:58 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/26 16:34:58 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/05/07 11:29:20 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 Cat::Cat() : Animal("Cat") {
 	std::cout << "Cat default constructor called" << std::endl;
+	this->brain = new Brain();
 }
 
 Cat::Cat(std::string type) : Animal(type) {
@@ -22,6 +23,7 @@ Cat::Cat(std::string type) : Animal(type) {
 
 Cat::~Cat() {
 	std::cout << "Cat destructor called" << std::endl;
+	delete this->brain;
 }
 
 Cat::Cat(const Cat &obj) {
@@ -32,6 +34,7 @@ Cat::Cat(const Cat &obj) {
 Cat	&Cat::operator=(const Cat &obj) {
 	std::cout << "Cat assignation operator called" << std::endl;
 	this->SetType(obj.getType());
+	this->brain = new Brain(*obj.getBrain());
 	return *this;
 }
 

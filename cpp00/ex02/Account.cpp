@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/03 10:41:26 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/04/04 10:03:52 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/05/02 15:49:22 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,3 +109,5 @@ void	Account::_displayTimestamp( void ) {
 	strftime(buff, 80, "%Y%m%d_%H%M%S", localtime(&t));
 	std::cout << "[" << buff << "] ";
 }
+
+//(./test > file && diff <(cut -c 19- 19920104_091532.log) <(cut -c 19- file) || echo fail) 
