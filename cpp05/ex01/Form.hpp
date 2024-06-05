@@ -6,14 +6,18 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 10:56:29 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/05 11:04:00 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/05 12:06:01 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
+# pragma once
 #ifndef FORM_HPP
 #define FORM_HPP
 
 #include "Bureaucrat.hpp"
+
+class Bureaucrat;
 
 class Form
 {
@@ -37,6 +41,7 @@ class Form
 		bool 				getSigned() const;
 
 		void beSigned(Bureaucrat const &bureaucrat);
+		int gradeCheck(int grade) const;
 
 	public:
 		class GradeTooHighException : public std::exception

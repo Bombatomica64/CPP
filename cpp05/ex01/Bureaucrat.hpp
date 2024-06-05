@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 10:20:01 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/05 11:16:37 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/05 12:34:47 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,23 @@
 #include <iostream>
 #include "Form.hpp"
 
+#define RED "\033[0;31m"
+#define GREEN "\033[0;32m"
+#define YELLOW "\033[0;33m"
+#define BLUE "\033[0;34m"
+#define MAGENTA "\033[0;35m"
+#define CYAN "\033[0;36m"
+#define WHITE "\033[0;37m"
+#define RESET "\033[0m"
+
+class Form;
+
 class Bureaucrat
 {
 	private:
 		std::string const m_name;
 		int m_grade;
+
 	public:
 		Bureaucrat();
 		Bureaucrat(std::string const &name, int grade);

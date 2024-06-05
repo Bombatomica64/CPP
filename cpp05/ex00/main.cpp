@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 10:19:42 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/05 10:51:29 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/05 12:22:58 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 int main()
 {
-	try
-	{
-		Bureaucrat bob("Bob", 2);
+	// try
+	// {
+		Bureaucrat bob("Bob", 200);
 		std::cout << bob << std::endl;
-	}
-	catch(const std::exception &e)
-	{
-		std::cerr << e.what() << '\n';
-	}
+	// }
+	// catch(const std::exception &e)
+	// {
+	// 	std::cerr << e.what() << '\n';
+	// }
 
 	try
 	{
