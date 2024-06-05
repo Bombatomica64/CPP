@@ -6,13 +6,13 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 12:42:32 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/05/06 11:13:23 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/05/14 16:35:58 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "DiamondTrap.hpp"
 
-DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name"), ScavTrap(name), FragTrap(name)
+DiamondTrap::DiamondTrap(std::string name) : ScavTrap(name), FragTrap(name)
 {
 	std::cout << "Yes! i'm \033[97mDiamondTrap\033[0m " << name << std::endl;
 	this->Name = name;
