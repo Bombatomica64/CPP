@@ -1,37 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ShrubberyCreationForm.hpp                          :+:      :+:    :+:   */
+/*   RobotomyRequestForm.hpp                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/06 10:58:30 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/06 15:27:42 by lmicheli         ###   ########.fr       */
+/*   Created: 2024/06/06 10:58:59 by lmicheli          #+#    #+#             */
+/*   Updated: 2024/06/06 12:12:46 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SHRUBBERYCREATIONFORM_HPP
-#define SHRUBBERYCREATIONFORM_HPP
+#ifndef ROBOTOMYREQUESTFORM_HPP
+#define ROBOTOMYREQUESTFORM_HPP
 
 #include "AForm.hpp"
-#include <fstream>
+#include <cstdlib>
+#include <ctime>
 
-class ShrubberyCreationForm : public Form
+class RobotomyRequestForm : public Form
 {
 	private:
 		std::string const m_target;
 
 	public:
-		ShrubberyCreationForm();
-		ShrubberyCreationForm(std::string const &target);
-		ShrubberyCreationForm(ShrubberyCreationForm const &other);
-		~ShrubberyCreationForm();
+		RobotomyRequestForm();
+		RobotomyRequestForm(std::string const &target);
+		RobotomyRequestForm(RobotomyRequestForm const &other);
+		~RobotomyRequestForm();
 
-		ShrubberyCreationForm &operator=(ShrubberyCreationForm const &other);
+		RobotomyRequestForm &operator=(RobotomyRequestForm const &other);
 
 		void execute(Bureaucrat const &executor) const;
 };
-
-std::ostream &operator<<(std::ostream &out, ShrubberyCreationForm const &form);
 
 #endif
