@@ -5,14 +5,14 @@
 #                                                     +:+ +:+         +:+      #
 #    By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/06/07 11:31:43 by lmicheli          #+#    #+#              #
-#    Updated: 2024/06/07 17:02:44 by lmicheli         ###   ########.fr        #
+#    Created: 2024/06/07 18:13:18 by lmicheli          #+#    #+#              #
+#    Updated: 2024/06/07 18:13:48 by lmicheli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = convert
 
-SRCS =	main.cpp Data.cpp ScalarConverter.cpp
+SRCS =	main.cpp Serializer.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
