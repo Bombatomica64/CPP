@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 11:38:11 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/07 12:05:51 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/07 16:19:28 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class ScalarConverter
 
 	public:
 		~ScalarConverter();
-		void	convert(std::string const &str);
+		static void	convert(std::string const &str);
 };
 
 #endif
