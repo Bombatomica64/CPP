@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 16:08:57 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/07 10:52:26 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/07 11:09:47 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,11 @@ Form* Intern::createPresidentialPardonForm(std::string const &target) {
 	return new PresidentialPardonForm(target);
 }
 
+const char* Intern::FormNotFoundException::what() const throw()
+{
+	return "Did not find the form :";
+}
+
 Form* Intern::makeForm(std::string const &name, std::string const &target)
 {
 	std::string form_names[3] = {
@@ -58,12 +63,21 @@ Form* Intern::makeForm(std::string const &name, std::string const &target)
 		&Intern::createPresidentialPardonForm
 	};
 
-	for (int i = 0; i < 3; i++)
+	try
 	{
-		if (name == form_names[i])
+		for (int i = 0; i < 3; i++)
 		{
-			std::cout << "Intern creates " << name << " form" << std::endl;
-			return (this->*form_creators[i])(target);
+			if (name == form_names[i])
+			{
+				std::cout << "Intern creates " << name << " form" << std::endl;
+				return (this->*form_creators[i])(target);
+			}
 		}
+		throw FormNotFoundException();
+	}
+	catch (std::exception &e)
+	{
+		std::cerr << e.what() << name << std::endl;
+		return NULL;
 	}
 }
