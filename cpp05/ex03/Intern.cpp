@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 16:08:57 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/06 16:26:21 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/07 10:52:26 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,23 +32,38 @@ Intern &Intern::operator=(Intern const &other)
 	return *this;
 }
 
+Form* Intern::createShrubberyCreationForm(std::string const &target) {
+	return new ShrubberyCreationForm(target);
+}
+
+Form* Intern::createRobotomyRequestForm(std::string const &target) {
+	return new RobotomyRequestForm(target);
+}
+
+Form* Intern::createPresidentialPardonForm(std::string const &target) {
+	return new PresidentialPardonForm(target);
+}
+
 Form* Intern::makeForm(std::string const &name, std::string const &target)
 {
-	std::map<std::string, std::function<Form*(std::string const &target)>> formCreators = {
-		{"shrubbery creation", [](std::string const &target) { return new ShrubberyCreationForm(target); }},
-		{"robotomy request", [](std::string const &target) { return new RobotomyRequestForm(target); }},
-		{"presidential pardon", [](std::string const &target) { return new PresidentialPardonForm(target); }}
+	std::string form_names[3] = {
+		"shrubbery creation",
+		"robotomy request",
+		"presidential pardon"
 	};
 
-	auto it = formCreators.find(name);
-	if (it != formCreators.end())
+	Form* (Intern::*form_creators[3])(std::string const &target) = {
+		&Intern::createShrubberyCreationForm,
+		&Intern::createRobotomyRequestForm,
+		&Intern::createPresidentialPardonForm
+	};
+
+	for (int i = 0; i < 3; i++)
 	{
-		std::cout << "Intern creates " << name << " form" << std::endl;
-		return it->second(target);
-	}
-	else
-	{
-		std::cout << "Intern can't create " << name << " form" << std::endl;
-		return nullptr;
+		if (name == form_names[i])
+		{
+			std::cout << "Intern creates " << name << " form" << std::endl;
+			return (this->*form_creators[i])(target);
+		}
 	}
 }
