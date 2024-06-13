@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 18:29:12 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/07 18:36:11 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/13 10:16:48 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int main() {
 	// delete d2;
 	// delete ptr2;
 	// delete d3;
-    // delete ptr3;
+    delete ptr3;
 
     return 0;
 }
