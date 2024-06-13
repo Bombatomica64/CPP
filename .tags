@@ -1,0 +1,1264 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+$(NAME)	cpp00/ex00/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp00/ex01/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp00/ex02/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp01/ex00/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp01/ex01/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp01/ex02/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp01/ex03/Makefile	/^$(NAME): $(OBJS)$/;"	t
+$(NAME)	cpp01/ex04/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp01/ex05/Makefile	/^$(NAME): $(OBJS)$/;"	t
+$(NAME)	cpp01/ex06/Makefile	/^$(NAME): $(OBJS)$/;"	t
+$(NAME)	cpp02/ex00/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp02/ex01/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp02/ex02/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp02/ex03/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp03/ex00/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp03/ex01/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp03/ex02/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp03/ex03/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp04/ex00/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp04/ex01/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp04/ex02/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp04/ex03/Makefile	/^$(NAME):$/;"	t
+$(NAME)	cpp05/ex00/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp05/ex01/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp05/ex02/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp05/ex03/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp06/ex00/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp06/ex01/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp06/ex02/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp07/ex00/Makefile	/^$(NAME): $(SRCS)$/;"	t
+$(NAME)	cpp07/ex01/Makefile	/^$(NAME): $(SRCS)$/;"	t
+*.tcc	.vscode/settings.json	/^		"*.tcc": "cpp",$/;"	s	object:files.associations
+0	.vscode/launch.json	/^	{$/;"	o	array:configurations
+A	cpp06/ex02/A.hpp	/^class A : public Base$/;"	c
+AFORM_HPP	cpp05/ex02/AForm.hpp	/^#define AFORM_HPP$/;"	d
+AFORM_HPP	cpp05/ex03/AForm.hpp	/^#define AFORM_HPP$/;"	d
+AMATERIA_HPP	cpp04/ex03/AMateria.hpp	/^#define AMATERIA_HPP$/;"	d
+AMateria	cpp04/ex03/AMateria.cpp	/^AMateria::AMateria(AMateria const & copy) {$/;"	f	class:AMateria
+AMateria	cpp04/ex03/AMateria.cpp	/^AMateria::AMateria(std::string const & type) : _type(type) {$/;"	f	class:AMateria
+AMateria	cpp04/ex03/AMateria.hpp	/^class AMateria$/;"	c
+ANIMAL_HPP	cpp04/ex00/Animal.hpp	/^# define ANIMAL_HPP$/;"	d
+ANIMAL_HPP	cpp04/ex01/Animal.hpp	/^# define ANIMAL_HPP$/;"	d
+ANIMAL_HPP	cpp04/ex02/Animal.hpp	/^# define ANIMAL_HPP$/;"	d
+ATILE_HPP	cpp04/ex03/ATile.hpp	/^# define ATILE_HPP$/;"	d
+ATile	cpp04/ex03/ATile.cpp	/^ATile::ATile() : _next(NULL), _prev(NULL), _materia(NULL) {}$/;"	f	class:ATile
+ATile	cpp04/ex03/ATile.cpp	/^ATile::ATile(ATile const & copy)$/;"	f	class:ATile
+ATile	cpp04/ex03/ATile.hpp	/^class ATile$/;"	c
+A_HPP	cpp06/ex02/A.hpp	/^#define A_HPP$/;"	d
+Account	cpp00/ex02/Account.cpp	/^Account::Account( int initial_deposit )$/;"	f	class:Account
+Account	cpp00/ex02/Account.hpp	/^class Account {$/;"	c
+Animal	cpp04/ex00/Animal.cpp	/^Animal::Animal() : type("Animal") {$/;"	f	class:Animal
+Animal	cpp04/ex00/Animal.cpp	/^Animal::Animal(const Animal &obj) {$/;"	f	class:Animal
+Animal	cpp04/ex00/Animal.cpp	/^Animal::Animal(std::string type) : type(type) {$/;"	f	class:Animal
+Animal	cpp04/ex00/Animal.hpp	/^class Animal$/;"	c
+Animal	cpp04/ex01/Animal.cpp	/^Animal::Animal() : type("Animal") {$/;"	f	class:Animal
+Animal	cpp04/ex01/Animal.cpp	/^Animal::Animal(const Animal &obj) {$/;"	f	class:Animal
+Animal	cpp04/ex01/Animal.cpp	/^Animal::Animal(std::string type) : type(type) {$/;"	f	class:Animal
+Animal	cpp04/ex01/Animal.hpp	/^class Animal$/;"	c
+Animal	cpp04/ex02/Animal.cpp	/^Animal::Animal() : type("Animal") {$/;"	f	class:Animal
+Animal	cpp04/ex02/Animal.cpp	/^Animal::Animal(const Animal &obj) {$/;"	f	class:Animal
+Animal	cpp04/ex02/Animal.cpp	/^Animal::Animal(std::string type) : type(type) {$/;"	f	class:Animal
+Animal	cpp04/ex02/Animal.hpp	/^class Animal$/;"	c
+Attack_damage	cpp03/ex00/ClapTrap.hpp	/^		int Attack_damage;$/;"	m	class:ClapTrap	typeref:typename:int
+Attack_damage	cpp03/ex01/ClapTrap.hpp	/^		int Attack_damage;$/;"	m	class:ClapTrap	typeref:typename:int
+Attack_damage	cpp03/ex02/ClapTrap.hpp	/^		int Attack_damage;$/;"	m	class:ClapTrap	typeref:typename:int
+Attack_damage	cpp03/ex03/ClapTrap.hpp	/^		int Attack_damage;$/;"	m	class:ClapTrap	typeref:typename:int
+B	cpp06/ex02/B.hpp	/^class B : public Base$/;"	c
+BASE_HPP	cpp06/ex02/Base.hpp	/^#define BASE_HPP$/;"	d
+BLUE	cpp05/ex00/Bureaucrat.hpp	/^#define BLUE /;"	d
+BLUE	cpp05/ex01/Bureaucrat.hpp	/^#define BLUE /;"	d
+BLUE	cpp05/ex02/Bureaucrat.hpp	/^#define BLUE /;"	d
+BLUE	cpp05/ex03/Bureaucrat.hpp	/^#define BLUE /;"	d
+BRAIN_HPP	cpp04/ex01/Brain.hpp	/^# define BRAIN_HPP$/;"	d
+BRAIN_HPP	cpp04/ex02/Brain.hpp	/^# define BRAIN_HPP$/;"	d
+BUREAUCRAT_HPP	cpp05/ex00/Bureaucrat.hpp	/^#define BUREAUCRAT_HPP$/;"	d
+BUREAUCRAT_HPP	cpp05/ex01/Bureaucrat.hpp	/^#define BUREAUCRAT_HPP$/;"	d
+BUREAUCRAT_HPP	cpp05/ex02/Bureaucrat.hpp	/^#define BUREAUCRAT_HPP$/;"	d
+BUREAUCRAT_HPP	cpp05/ex03/Bureaucrat.hpp	/^#define BUREAUCRAT_HPP$/;"	d
+B_HPP	cpp06/ex02/B.hpp	/^#define B_HPP$/;"	d
+Base	cpp06/ex02/Base.hpp	/^class Base$/;"	c
+Brain	cpp04/ex01/Brain.cpp	/^Brain::Brain() {$/;"	f	class:Brain
+Brain	cpp04/ex01/Brain.cpp	/^Brain::Brain(const Brain &obj) {$/;"	f	class:Brain
+Brain	cpp04/ex01/Brain.hpp	/^class Brain$/;"	c
+Brain	cpp04/ex02/Brain.cpp	/^Brain::Brain() {$/;"	f	class:Brain
+Brain	cpp04/ex02/Brain.cpp	/^Brain::Brain(const Brain &obj) {$/;"	f	class:Brain
+Brain	cpp04/ex02/Brain.hpp	/^class Brain$/;"	c
+Bureaucrat	cpp05/ex00/Bureaucrat.cpp	/^Bureaucrat::Bureaucrat() : m_name("default"), m_grade(150)$/;"	f	class:Bureaucrat
+Bureaucrat	cpp05/ex00/Bureaucrat.cpp	/^Bureaucrat::Bureaucrat(Bureaucrat const &other) : m_name(other.m_name), m_grade(other.m_grade)$/;"	f	class:Bureaucrat
+Bureaucrat	cpp05/ex00/Bureaucrat.cpp	/^Bureaucrat::Bureaucrat(std::string const &name, int grade) : m_name(name)$/;"	f	class:Bureaucrat
+Bureaucrat	cpp05/ex00/Bureaucrat.hpp	/^class Bureaucrat$/;"	c
+Bureaucrat	cpp05/ex01/Bureaucrat.cpp	/^Bureaucrat::Bureaucrat() : m_name("default"), m_grade(150)$/;"	f	class:Bureaucrat
+Bureaucrat	cpp05/ex01/Bureaucrat.cpp	/^Bureaucrat::Bureaucrat(Bureaucrat const &other) : m_name(other.m_name), m_grade(other.m_grade)$/;"	f	class:Bureaucrat
+Bureaucrat	cpp05/ex01/Bureaucrat.cpp	/^Bureaucrat::Bureaucrat(std::string const &name, int grade) : m_name(name)$/;"	f	class:Bureaucrat
+Bureaucrat	cpp05/ex01/Bureaucrat.hpp	/^class Bureaucrat$/;"	c
+Bureaucrat	cpp05/ex02/Bureaucrat.cpp	/^Bureaucrat::Bureaucrat() : m_name("default"), m_grade(150)$/;"	f	class:Bureaucrat
+Bureaucrat	cpp05/ex02/Bureaucrat.cpp	/^Bureaucrat::Bureaucrat(Bureaucrat const &other) : m_name(other.m_name), m_grade(other.m_grade)$/;"	f	class:Bureaucrat
+Bureaucrat	cpp05/ex02/Bureaucrat.cpp	/^Bureaucrat::Bureaucrat(std::string const &name, int grade) : m_name(name)$/;"	f	class:Bureaucrat
+Bureaucrat	cpp05/ex02/Bureaucrat.hpp	/^class Bureaucrat$/;"	c
+Bureaucrat	cpp05/ex03/Bureaucrat.cpp	/^Bureaucrat::Bureaucrat() : m_name("default"), m_grade(150)$/;"	f	class:Bureaucrat
+Bureaucrat	cpp05/ex03/Bureaucrat.cpp	/^Bureaucrat::Bureaucrat(Bureaucrat const &other) : m_name(other.m_name), m_grade(other.m_grade)$/;"	f	class:Bureaucrat
+Bureaucrat	cpp05/ex03/Bureaucrat.cpp	/^Bureaucrat::Bureaucrat(std::string const &name, int grade) : m_name(name)$/;"	f	class:Bureaucrat
+Bureaucrat	cpp05/ex03/Bureaucrat.hpp	/^class Bureaucrat$/;"	c
+C	cpp06/ex02/C.hpp	/^class C : public Base$/;"	c
+CAT_HPP	cpp04/ex00/Cat.hpp	/^# define CAT_HPP$/;"	d
+CAT_HPP	cpp04/ex01/Cat.hpp	/^# define CAT_HPP$/;"	d
+CAT_HPP	cpp04/ex02/Cat.hpp	/^# define CAT_HPP$/;"	d
+CC	cpp00/ex00/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp00/ex01/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp00/ex02/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp01/ex00/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp01/ex01/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp01/ex02/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp01/ex03/Makefile	/^CC = c++ -std=c++98 -Wall -Wextra -Werror -g$/;"	m
+CC	cpp01/ex04/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp01/ex05/Makefile	/^CC = c++ -std=c++98 -Wall -Wextra -Werror -g$/;"	m
+CC	cpp01/ex06/Makefile	/^CC = c++ -std=c++98 -Wall -Wextra -Werror -g$/;"	m
+CC	cpp02/ex00/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp02/ex01/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp02/ex02/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp02/ex03/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp03/ex00/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp03/ex01/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp03/ex02/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp03/ex03/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp04/ex00/Makefile	/^CC = clang++ -std=c++98 -Wall -Wextra -Werror$/;"	m
+CC	cpp04/ex01/Makefile	/^CC = clang++ -std=c++98 -Wall -Wextra -Werror$/;"	m
+CC	cpp04/ex02/Makefile	/^CC = clang++ -std=c++98 -Wall -Wextra -Werror -g$/;"	m
+CC	cpp04/ex03/Makefile	/^CC = clang++ -std=c++98 -Wall -Wextra -Werror -g$/;"	m
+CC	cpp05/ex00/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp05/ex01/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp05/ex02/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp05/ex03/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp06/ex00/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp06/ex01/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp06/ex02/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp07/ex00/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CC	cpp07/ex01/Makefile	/^CC = c++ -Wall -Wextra -Werror -std=c++98 -g$/;"	m
+CHARACTER_HPP	cpp04/ex03/Character.hpp	/^#define CHARACTER_HPP$/;"	d
+CLAPTRAP_HPP	cpp03/ex00/ClapTrap.hpp	/^# define CLAPTRAP_HPP$/;"	d
+CLAPTRAP_HPP	cpp03/ex01/ClapTrap.hpp	/^# define CLAPTRAP_HPP$/;"	d
+CLAPTRAP_HPP	cpp03/ex02/ClapTrap.hpp	/^# define CLAPTRAP_HPP$/;"	d
+CLAPTRAP_HPP	cpp03/ex03/ClapTrap.hpp	/^# define CLAPTRAP_HPP$/;"	d
+CONTACT_HPP	cpp00/ex01/Contact.hpp	/^# define CONTACT_HPP$/;"	d
+CPP	README.md	/^# CPP$/;"	c
+CURE_HPP	cpp04/ex03/Cure.hpp	/^#define CURE_HPP$/;"	d
+CYAN	cpp05/ex00/Bureaucrat.hpp	/^#define CYAN /;"	d
+CYAN	cpp05/ex01/Bureaucrat.hpp	/^#define CYAN /;"	d
+CYAN	cpp05/ex02/Bureaucrat.hpp	/^#define CYAN /;"	d
+CYAN	cpp05/ex03/Bureaucrat.hpp	/^#define CYAN /;"	d
+C_HPP	cpp06/ex02/C.hpp	/^#define C_HPP$/;"	d
+Cat	cpp04/ex00/Cat.cpp	/^Cat::Cat() : Animal("Cat") {$/;"	f	class:Cat
+Cat	cpp04/ex00/Cat.cpp	/^Cat::Cat(const Cat &obj) {$/;"	f	class:Cat
+Cat	cpp04/ex00/Cat.cpp	/^Cat::Cat(std::string type) : Animal(type) {$/;"	f	class:Cat
+Cat	cpp04/ex00/Cat.hpp	/^class Cat : public Animal$/;"	c
+Cat	cpp04/ex01/Cat.cpp	/^Cat::Cat() : Animal("Cat") {$/;"	f	class:Cat
+Cat	cpp04/ex01/Cat.cpp	/^Cat::Cat(const Cat &obj) {$/;"	f	class:Cat
+Cat	cpp04/ex01/Cat.cpp	/^Cat::Cat(std::string type) : Animal(type) {$/;"	f	class:Cat
+Cat	cpp04/ex01/Cat.hpp	/^class Cat : public Animal$/;"	c
+Cat	cpp04/ex02/Cat.cpp	/^Cat::Cat() : Animal("Cat") {$/;"	f	class:Cat
+Cat	cpp04/ex02/Cat.cpp	/^Cat::Cat(const Cat &obj) {$/;"	f	class:Cat
+Cat	cpp04/ex02/Cat.cpp	/^Cat::Cat(std::string type) : Animal(type) {$/;"	f	class:Cat
+Cat	cpp04/ex02/Cat.hpp	/^class Cat : public Animal$/;"	c
+Character	cpp04/ex03/Character.cpp	/^Character::Character( Character const & copy ) {$/;"	f	class:Character
+Character	cpp04/ex03/Character.cpp	/^Character::Character(std::string const & name) : _name(name) {$/;"	f	class:Character
+Character	cpp04/ex03/Character.hpp	/^class Character : public ICharacter$/;"	c
+ClapTrap	cpp03/ex00/ClapTrap.cpp	/^ClapTrap::ClapTrap( ClapTrap const & rhs )$/;"	f	class:ClapTrap
+ClapTrap	cpp03/ex00/ClapTrap.cpp	/^ClapTrap::ClapTrap( std::string name ) : Name(name), Hitpoints(10), Energy_points(10), Attack_da/;"	f	class:ClapTrap
+ClapTrap	cpp03/ex00/ClapTrap.hpp	/^class ClapTrap$/;"	c
+ClapTrap	cpp03/ex01/ClapTrap.cpp	/^ClapTrap::ClapTrap( ClapTrap const & rhs )$/;"	f	class:ClapTrap
+ClapTrap	cpp03/ex01/ClapTrap.cpp	/^ClapTrap::ClapTrap( std::string name ) : Name(name), Hitpoints(10), Energy_points(10), Attack_da/;"	f	class:ClapTrap
+ClapTrap	cpp03/ex01/ClapTrap.hpp	/^class ClapTrap$/;"	c
+ClapTrap	cpp03/ex02/ClapTrap.cpp	/^ClapTrap::ClapTrap( ClapTrap const & rhs )$/;"	f	class:ClapTrap
+ClapTrap	cpp03/ex02/ClapTrap.cpp	/^ClapTrap::ClapTrap( std::string name ) : Name(name), Hitpoints(10), Energy_points(10), Attack_da/;"	f	class:ClapTrap
+ClapTrap	cpp03/ex02/ClapTrap.hpp	/^class ClapTrap$/;"	c
+ClapTrap	cpp03/ex03/ClapTrap.cpp	/^ClapTrap::ClapTrap( ClapTrap const & rhs )$/;"	f	class:ClapTrap
+ClapTrap	cpp03/ex03/ClapTrap.cpp	/^ClapTrap::ClapTrap( std::string name ) : Name(name), Hitpoints(10), Energy_points(10), Attack_da/;"	f	class:ClapTrap
+ClapTrap	cpp03/ex03/ClapTrap.hpp	/^		ClapTrap() {}$/;"	f	class:ClapTrap
+ClapTrap	cpp03/ex03/ClapTrap.hpp	/^class ClapTrap$/;"	c
+Contact	cpp00/ex01/Contact.cpp	/^Contact::Contact()$/;"	f	class:Contact
+Contact	cpp00/ex01/Contact.cpp	/^Contact::Contact(const Contact& other)$/;"	f	class:Contact
+Contact	cpp00/ex01/Contact.hpp	/^class Contact$/;"	c
+Cure	cpp04/ex03/Cure.cpp	/^Cure::Cure() : AMateria("cure") {$/;"	f	class:Cure
+Cure	cpp04/ex03/Cure.cpp	/^Cure::Cure(Cure const & copy) : AMateria(copy) {$/;"	f	class:Cure
+Cure	cpp04/ex03/Cure.hpp	/^class Cure : public AMateria$/;"	c
+DATA_HPP	cpp06/ex00/Data.hpp	/^#define DATA_HPP$/;"	d
+DIAMONDTRAP_HPP	cpp03/ex03/DiamondTrap.hpp	/^#define DIAMONDTRAP_HPP$/;"	d
+DOG_HPP	cpp04/ex00/Dog.hpp	/^# define DOG_HPP$/;"	d
+DOG_HPP	cpp04/ex01/Dog.hpp	/^# define DOG_HPP$/;"	d
+DOG_HPP	cpp04/ex02/Dog.hpp	/^# define DOG_HPP$/;"	d
+Data	cpp06/ex01/Serializer.hpp	/^struct Data$/;"	s
+DiamondTrap	cpp03/ex03/DiamondTrap.cpp	/^DiamondTrap::DiamondTrap(DiamondTrap const & rhs) : ScavTrap(rhs), FragTrap(rhs)$/;"	f	class:DiamondTrap
+DiamondTrap	cpp03/ex03/DiamondTrap.cpp	/^DiamondTrap::DiamondTrap(std::string name) : ScavTrap(name), FragTrap(name)$/;"	f	class:DiamondTrap
+DiamondTrap	cpp03/ex03/DiamondTrap.hpp	/^class DiamondTrap : public ScavTrap, public FragTrap$/;"	c
+Dog	cpp04/ex00/Dog.cpp	/^Dog::Dog() : Animal("Dog") {$/;"	f	class:Dog
+Dog	cpp04/ex00/Dog.cpp	/^Dog::Dog(const Dog &obj) {$/;"	f	class:Dog
+Dog	cpp04/ex00/Dog.cpp	/^Dog::Dog(std::string type) : Animal(type) {$/;"	f	class:Dog
+Dog	cpp04/ex00/Dog.hpp	/^class Dog : public Animal$/;"	c
+Dog	cpp04/ex01/Dog.cpp	/^Dog::Dog() : Animal("Dog") {$/;"	f	class:Dog
+Dog	cpp04/ex01/Dog.cpp	/^Dog::Dog(const Dog &obj) {$/;"	f	class:Dog
+Dog	cpp04/ex01/Dog.cpp	/^Dog::Dog(std::string type) : Animal(type) {$/;"	f	class:Dog
+Dog	cpp04/ex01/Dog.hpp	/^class Dog : public Animal$/;"	c
+Dog	cpp04/ex02/Dog.cpp	/^Dog::Dog() : Animal("Dog") {$/;"	f	class:Dog
+Dog	cpp04/ex02/Dog.cpp	/^Dog::Dog(const Dog &obj) {$/;"	f	class:Dog
+Dog	cpp04/ex02/Dog.cpp	/^Dog::Dog(std::string type) : Animal(type) {$/;"	f	class:Dog
+Dog	cpp04/ex02/Dog.hpp	/^class Dog : public Animal$/;"	c
+Energy_points	cpp03/ex00/ClapTrap.hpp	/^		int Energy_points;$/;"	m	class:ClapTrap	typeref:typename:int
+Energy_points	cpp03/ex01/ClapTrap.hpp	/^		int Energy_points;$/;"	m	class:ClapTrap	typeref:typename:int
+Energy_points	cpp03/ex02/ClapTrap.hpp	/^		int Energy_points;$/;"	m	class:ClapTrap	typeref:typename:int
+Energy_points	cpp03/ex03/ClapTrap.hpp	/^		int Energy_points;$/;"	m	class:ClapTrap	typeref:typename:int
+FIXED_HPP	cpp02/ex00/Fixed.hpp	/^# define FIXED_HPP$/;"	d
+FIXED_HPP	cpp02/ex01/Fixed.hpp	/^# define FIXED_HPP$/;"	d
+FIXED_HPP	cpp02/ex02/Fixed.hpp	/^# define FIXED_HPP$/;"	d
+FIXED_HPP	cpp02/ex03/Fixed.hpp	/^# define FIXED_HPP$/;"	d
+FLOOR_HPP	cpp04/ex03/Floor.hpp	/^# define FLOOR_HPP$/;"	d
+FORM_HPP	cpp05/ex01/Form.hpp	/^#define FORM_HPP$/;"	d
+FRAGTRAP_HPP	cpp03/ex02/FragTrap.hpp	/^# define FRAGTRAP_HPP$/;"	d
+FRAGTRAP_HPP	cpp03/ex03/FragTrap.hpp	/^# define FRAGTRAP_HPP$/;"	d
+FUNC_HPP	cpp06/ex02/Func.hpp	/^#define FUNC_HPP$/;"	d
+Fixed	cpp02/ex00/Fixed.cpp	/^Fixed::Fixed( const Fixed& other )$/;"	f	class:Fixed
+Fixed	cpp02/ex00/Fixed.cpp	/^Fixed::Fixed()$/;"	f	class:Fixed
+Fixed	cpp02/ex00/Fixed.hpp	/^class Fixed$/;"	c
+Fixed	cpp02/ex01/Fixed.cpp	/^Fixed::Fixed( const Fixed& other )$/;"	f	class:Fixed
+Fixed	cpp02/ex01/Fixed.cpp	/^Fixed::Fixed( const float value )$/;"	f	class:Fixed
+Fixed	cpp02/ex01/Fixed.cpp	/^Fixed::Fixed( const int value )$/;"	f	class:Fixed
+Fixed	cpp02/ex01/Fixed.cpp	/^Fixed::Fixed()$/;"	f	class:Fixed
+Fixed	cpp02/ex01/Fixed.hpp	/^class Fixed$/;"	c
+Fixed	cpp02/ex02/Fixed.cpp	/^Fixed::Fixed( const Fixed& other )$/;"	f	class:Fixed
+Fixed	cpp02/ex02/Fixed.cpp	/^Fixed::Fixed( const float value )$/;"	f	class:Fixed
+Fixed	cpp02/ex02/Fixed.cpp	/^Fixed::Fixed( const int value )$/;"	f	class:Fixed
+Fixed	cpp02/ex02/Fixed.cpp	/^Fixed::Fixed()$/;"	f	class:Fixed
+Fixed	cpp02/ex02/Fixed.hpp	/^class Fixed$/;"	c
+Fixed	cpp02/ex03/Fixed.cpp	/^Fixed::Fixed( const Fixed& other )$/;"	f	class:Fixed
+Fixed	cpp02/ex03/Fixed.cpp	/^Fixed::Fixed( const float value )$/;"	f	class:Fixed
+Fixed	cpp02/ex03/Fixed.cpp	/^Fixed::Fixed( const int value )$/;"	f	class:Fixed
+Fixed	cpp02/ex03/Fixed.cpp	/^Fixed::Fixed( std::string value )$/;"	f	class:Fixed
+Fixed	cpp02/ex03/Fixed.cpp	/^Fixed::Fixed()$/;"	f	class:Fixed
+Fixed	cpp02/ex03/Fixed.hpp	/^class Fixed$/;"	c
+Floor	cpp04/ex03/Floor.cpp	/^Floor::Floor() : _head(NULL) {}$/;"	f	class:Floor
+Floor	cpp04/ex03/Floor.cpp	/^Floor::Floor(Floor const & copy)$/;"	f	class:Floor
+Floor	cpp04/ex03/Floor.hpp	/^class Floor$/;"	c
+Form	cpp05/ex01/Form.cpp	/^Form::Form() : m_name("default"), m_signed(false), m_gradeToSign(150), m_gradeToExecute(150)$/;"	f	class:Form
+Form	cpp05/ex01/Form.cpp	/^Form::Form(Form const &other) : m_name(other.m_name), m_signed(other.m_signed), m_gradeToSign(ot/;"	f	class:Form
+Form	cpp05/ex01/Form.cpp	/^Form::Form(std::string const &name, int gradeToSign, int gradeToExecute) $/;"	f	class:Form
+Form	cpp05/ex01/Form.hpp	/^class Form$/;"	c
+Form	cpp05/ex02/AForm.cpp	/^Form::Form() : m_name("default"), m_signed(false), m_gradeToSign(150), m_gradeToExecute(150)$/;"	f	class:Form
+Form	cpp05/ex02/AForm.cpp	/^Form::Form(Form const &other) : m_name(other.m_name), m_signed(other.m_signed), m_gradeToSign(ot/;"	f	class:Form
+Form	cpp05/ex02/AForm.cpp	/^Form::Form(std::string const &name, int gradeToSign, int gradeToExecute) $/;"	f	class:Form
+Form	cpp05/ex02/AForm.hpp	/^class Form$/;"	c
+Form	cpp05/ex03/AForm.cpp	/^Form::Form() : m_name("default"), m_signed(false), m_gradeToSign(150), m_gradeToExecute(150)$/;"	f	class:Form
+Form	cpp05/ex03/AForm.cpp	/^Form::Form(Form const &other) : m_name(other.m_name), m_signed(other.m_signed), m_gradeToSign(ot/;"	f	class:Form
+Form	cpp05/ex03/AForm.cpp	/^Form::Form(std::string const &name, int gradeToSign, int gradeToExecute) $/;"	f	class:Form
+Form	cpp05/ex03/AForm.hpp	/^class Form$/;"	c
+FormNotFoundException	cpp05/ex03/Intern.hpp	/^		class FormNotFoundException : public std::exception$/;"	c	class:Intern
+FormNotSignedException	cpp05/ex02/AForm.hpp	/^		class FormNotSignedException : public std::exception$/;"	c	class:Form
+FormNotSignedException	cpp05/ex03/AForm.hpp	/^		class FormNotSignedException : public std::exception$/;"	c	class:Form
+FragTrap	cpp03/ex02/FragTrap.cpp	/^FragTrap::FragTrap(FragTrap const & rhs) : ClapTrap(rhs)$/;"	f	class:FragTrap
+FragTrap	cpp03/ex02/FragTrap.cpp	/^FragTrap::FragTrap(std::string name) : ClapTrap(name)$/;"	f	class:FragTrap
+FragTrap	cpp03/ex02/FragTrap.hpp	/^class FragTrap : public ClapTrap$/;"	c
+FragTrap	cpp03/ex03/FragTrap.cpp	/^FragTrap::FragTrap(FragTrap const & rhs) : ClapTrap(rhs)$/;"	f	class:FragTrap
+FragTrap	cpp03/ex03/FragTrap.cpp	/^FragTrap::FragTrap(std::string name) : ClapTrap(name)$/;"	f	class:FragTrap
+FragTrap	cpp03/ex03/FragTrap.hpp	/^class FragTrap : virtual public ClapTrap$/;"	c
+GREEN	cpp05/ex00/Bureaucrat.hpp	/^#define GREEN /;"	d
+GREEN	cpp05/ex01/Bureaucrat.hpp	/^#define GREEN /;"	d
+GREEN	cpp05/ex02/Bureaucrat.hpp	/^#define GREEN /;"	d
+GREEN	cpp05/ex03/Bureaucrat.hpp	/^#define GREEN /;"	d
+GradeTooHighException	cpp05/ex00/Bureaucrat.hpp	/^		class GradeTooHighException : public std::exception$/;"	c	class:Bureaucrat
+GradeTooHighException	cpp05/ex01/Bureaucrat.hpp	/^		class GradeTooHighException : public std::exception$/;"	c	class:Bureaucrat
+GradeTooHighException	cpp05/ex01/Form.hpp	/^		class GradeTooHighException : public std::exception$/;"	c	class:Form
+GradeTooHighException	cpp05/ex02/AForm.hpp	/^		class GradeTooHighException : public std::exception$/;"	c	class:Form
+GradeTooHighException	cpp05/ex02/Bureaucrat.hpp	/^		class GradeTooHighException : public std::exception$/;"	c	class:Bureaucrat
+GradeTooHighException	cpp05/ex03/AForm.hpp	/^		class GradeTooHighException : public std::exception$/;"	c	class:Form
+GradeTooHighException	cpp05/ex03/Bureaucrat.hpp	/^		class GradeTooHighException : public std::exception$/;"	c	class:Bureaucrat
+GradeTooLowException	cpp05/ex00/Bureaucrat.hpp	/^		class GradeTooLowException : public std::exception$/;"	c	class:Bureaucrat
+GradeTooLowException	cpp05/ex01/Bureaucrat.hpp	/^		class GradeTooLowException : public std::exception$/;"	c	class:Bureaucrat
+GradeTooLowException	cpp05/ex01/Form.hpp	/^		class GradeTooLowException : public std::exception$/;"	c	class:Form
+GradeTooLowException	cpp05/ex02/AForm.hpp	/^		class GradeTooLowException : public std::exception$/;"	c	class:Form
+GradeTooLowException	cpp05/ex02/Bureaucrat.hpp	/^		class GradeTooLowException : public std::exception$/;"	c	class:Bureaucrat
+GradeTooLowException	cpp05/ex03/AForm.hpp	/^		class GradeTooLowException : public std::exception$/;"	c	class:Form
+GradeTooLowException	cpp05/ex03/Bureaucrat.hpp	/^		class GradeTooLowException : public std::exception$/;"	c	class:Bureaucrat
+HARL_HPP	cpp01/ex05/Harl.hpp	/^# define HARL_HPP$/;"	d
+HARL_HPP	cpp01/ex06/Harl.hpp	/^# define HARL_HPP$/;"	d
+HUMANA_HPP	cpp01/ex03/HumanA.hpp	/^#define HUMANA_HPP$/;"	d
+HUMANB_HPP	cpp01/ex03/HumanB.hpp	/^#define HUMANB_HPP$/;"	d
+Harl	cpp01/ex05/Harl.cpp	/^Harl::Harl( void ) {$/;"	f	class:Harl
+Harl	cpp01/ex05/Harl.cpp	/^Harl::Harl(const Harl &other) {$/;"	f	class:Harl
+Harl	cpp01/ex05/Harl.hpp	/^class	Harl$/;"	c
+Harl	cpp01/ex06/Harl.cpp	/^Harl::Harl( void ) {$/;"	f	class:Harl
+Harl	cpp01/ex06/Harl.cpp	/^Harl::Harl(const Harl &other) {$/;"	f	class:Harl
+Harl	cpp01/ex06/Harl.hpp	/^class	Harl$/;"	c
+Hitpoints	cpp03/ex00/ClapTrap.hpp	/^		int Hitpoints;$/;"	m	class:ClapTrap	typeref:typename:int
+Hitpoints	cpp03/ex01/ClapTrap.hpp	/^		int Hitpoints;$/;"	m	class:ClapTrap	typeref:typename:int
+Hitpoints	cpp03/ex02/ClapTrap.hpp	/^		int Hitpoints;$/;"	m	class:ClapTrap	typeref:typename:int
+Hitpoints	cpp03/ex03/ClapTrap.hpp	/^		int Hitpoints;$/;"	m	class:ClapTrap	typeref:typename:int
+HumanA	cpp01/ex03/HumanA.cpp	/^HumanA::HumanA(const HumanA &other) : name(other.name), weapon(other.weapon)$/;"	f	class:HumanA
+HumanA	cpp01/ex03/HumanA.cpp	/^HumanA::HumanA(std::string name, Weapon &weapon) : name(name), weapon(weapon)$/;"	f	class:HumanA
+HumanA	cpp01/ex03/HumanA.hpp	/^class HumanA$/;"	c
+HumanB	cpp01/ex03/HumanB.cpp	/^HumanB::HumanB(const HumanB &other) : name(other.name), weapon(other.weapon)$/;"	f	class:HumanB
+HumanB	cpp01/ex03/HumanB.cpp	/^HumanB::HumanB(std::string name) : name(name), weapon(weapon) {$/;"	f	class:HumanB
+HumanB	cpp01/ex03/HumanB.hpp	/^class HumanB$/;"	c
+ICE_HPP	cpp04/ex03/Ice.hpp	/^#define ICE_HPP$/;"	d
+ICHARACTER_HPP	cpp04/ex03/ICharacter.hpp	/^#define ICHARACTER_HPP$/;"	d
+ICharacter	cpp04/ex03/ICharacter.hpp	/^class ICharacter$/;"	c
+IMATERIASOURCE_HPP	cpp04/ex03/IMateriaSource.hpp	/^# define IMATERIASOURCE_HPP$/;"	d
+IMateriaSource	cpp04/ex03/IMateriaSource.hpp	/^class IMateriaSource$/;"	c
+INTERN_HPP	cpp05/ex03/Intern.hpp	/^#define INTERN_HPP$/;"	d
+Ice	cpp04/ex03/Ice.cpp	/^Ice::Ice() : AMateria("ice") {$/;"	f	class:Ice
+Ice	cpp04/ex03/Ice.cpp	/^Ice::Ice(Ice const & copy) : AMateria(copy) {$/;"	f	class:Ice
+Ice	cpp04/ex03/Ice.hpp	/^class Ice : public AMateria$/;"	c
+InitRandCaller	cpp06/ex02/Func.hpp	/^	InitRandCaller() {$/;"	f	class:InitRandCaller
+InitRandCaller	cpp06/ex02/Func.hpp	/^class InitRandCaller {$/;"	c
+Intern	cpp05/ex03/Intern.cpp	/^Intern::Intern()$/;"	f	class:Intern
+Intern	cpp05/ex03/Intern.cpp	/^Intern::Intern(Intern const &other)$/;"	f	class:Intern
+Intern	cpp05/ex03/Intern.hpp	/^class Intern$/;"	c
+MAGENTA	cpp05/ex00/Bureaucrat.hpp	/^#define MAGENTA /;"	d
+MAGENTA	cpp05/ex01/Bureaucrat.hpp	/^#define MAGENTA /;"	d
+MAGENTA	cpp05/ex02/Bureaucrat.hpp	/^#define MAGENTA /;"	d
+MAGENTA	cpp05/ex03/Bureaucrat.hpp	/^#define MAGENTA /;"	d
+MATERIASOURCE_HPP	cpp04/ex03/MateriaSource.hpp	/^#define MATERIASOURCE_HPP$/;"	d
+MIMode	.vscode/launch.json	/^		"MIMode": "gdb",$/;"	s	object:configurations.0
+MateriaSource	cpp04/ex03/MateriaSource.cpp	/^MateriaSource::MateriaSource (MateriaSource const & copy) {$/;"	f	class:MateriaSource
+MateriaSource	cpp04/ex03/MateriaSource.cpp	/^MateriaSource::MateriaSource() {$/;"	f	class:MateriaSource
+MateriaSource	cpp04/ex03/MateriaSource.hpp	/^class MateriaSource : public IMateriaSource$/;"	c
+NAME	cpp00/ex00/Makefile	/^NAME = megaphone$/;"	m
+NAME	cpp00/ex01/Makefile	/^NAME = phonebook$/;"	m
+NAME	cpp00/ex02/Makefile	/^NAME = test$/;"	m
+NAME	cpp01/ex00/Makefile	/^NAME = zombies$/;"	m
+NAME	cpp01/ex01/Makefile	/^NAME = zombies$/;"	m
+NAME	cpp01/ex02/Makefile	/^NAME = test_ref$/;"	m
+NAME	cpp01/ex03/Makefile	/^NAME = violence$/;"	m
+NAME	cpp01/ex04/Makefile	/^NAME = sed$/;"	m
+NAME	cpp01/ex05/Makefile	/^NAME = harl$/;"	m
+NAME	cpp01/ex06/Makefile	/^NAME = harlFilter$/;"	m
+NAME	cpp02/ex00/Makefile	/^NAME = Fixed$/;"	m
+NAME	cpp02/ex01/Makefile	/^NAME = Fixed$/;"	m
+NAME	cpp02/ex02/Makefile	/^NAME = Fixed$/;"	m
+NAME	cpp02/ex03/Makefile	/^NAME = BSP$/;"	m
+NAME	cpp03/ex00/Makefile	/^NAME = ClapTrap_stories$/;"	m
+NAME	cpp03/ex01/Makefile	/^NAME = ClapTrap_2_the_revenge$/;"	m
+NAME	cpp03/ex02/Makefile	/^NAME = ClapTrap_3_the_return_of_the_rev$/;"	m
+NAME	cpp03/ex03/Makefile	/^NAME = ClapTrap_4_Endgame$/;"	m
+NAME	cpp04/ex00/Makefile	/^NAME = Polymerization$/;"	m
+NAME	cpp04/ex01/Makefile	/^NAME = 🔥Fire🔥$/;"	m
+NAME	cpp04/ex02/Makefile	/^NAME = 🤮Vomit🤮$/;"	m
+NAME	cpp04/ex03/Makefile	/^NAME = 🔥Primateria🔥 $/;"	m
+NAME	cpp05/ex00/Makefile	/^NAME = burocracy_is_fun$/;"	m
+NAME	cpp05/ex01/Makefile	/^NAME = burocracy_is_more_fun$/;"	m
+NAME	cpp05/ex02/Makefile	/^NAME = burocracy_is_even_more_fun$/;"	m
+NAME	cpp05/ex03/Makefile	/^NAME = burocracy_is_the_job$/;"	m
+NAME	cpp06/ex00/Makefile	/^NAME = convert$/;"	m
+NAME	cpp06/ex01/Makefile	/^NAME = convert$/;"	m
+NAME	cpp06/ex02/Makefile	/^NAME = IdentinfyDeez$/;"	m
+NAME	cpp07/ex00/Makefile	/^NAME = TempleRun$/;"	m
+NAME	cpp07/ex01/Makefile	/^NAME = ForzaInter$/;"	m
+Name	cpp03/ex00/ClapTrap.hpp	/^		std::string Name;$/;"	m	class:ClapTrap	typeref:typename:std::string
+Name	cpp03/ex01/ClapTrap.hpp	/^		std::string Name;$/;"	m	class:ClapTrap	typeref:typename:std::string
+Name	cpp03/ex02/ClapTrap.hpp	/^		std::string Name;$/;"	m	class:ClapTrap	typeref:typename:std::string
+Name	cpp03/ex03/ClapTrap.hpp	/^		std::string Name;$/;"	m	class:ClapTrap	typeref:typename:std::string
+Name	cpp03/ex03/DiamondTrap.hpp	/^		std::string Name;$/;"	m	class:DiamondTrap	typeref:typename:std::string
+OBJS	cpp00/ex00/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp00/ex01/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp00/ex02/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp01/ex00/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp01/ex02/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp01/ex03/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp01/ex04/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp01/ex05/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp01/ex06/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp02/ex00/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp02/ex01/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp02/ex02/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp02/ex03/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp03/ex00/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp03/ex01/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp03/ex02/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp03/ex03/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp04/ex00/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp04/ex01/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp04/ex02/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp05/ex00/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp05/ex01/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp05/ex02/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp05/ex03/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp06/ex00/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp06/ex01/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp06/ex02/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp07/ex00/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	cpp07/ex01/Makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+PHONEBOOK_HPP	cpp00/ex01/PhoneBook.hpp	/^# define PHONEBOOK_HPP$/;"	d
+POINT_HPP	cpp02/ex03/Point.hpp	/^# define POINT_HPP$/;"	d
+PRESIDENTIALPARDONFORM_HPP	cpp05/ex02/PresidentialPardonForm.hpp	/^#define PRESIDENTIALPARDONFORM_HPP$/;"	d
+PRESIDENTIALPARDONFORM_HPP	cpp05/ex03/PresidentialPardonForm.hpp	/^#define PRESIDENTIALPARDONFORM_HPP$/;"	d
+Pavement	cpp04/ex03/main.cpp	/^Floor Pavement = Floor();$/;"	v	typeref:typename:Floor
+PhoneBook	cpp00/ex01/PhoneBook.cpp	/^PhoneBook::PhoneBook()$/;"	f	class:PhoneBook
+PhoneBook	cpp00/ex01/PhoneBook.cpp	/^PhoneBook::PhoneBook(const PhoneBook& other)$/;"	f	class:PhoneBook
+PhoneBook	cpp00/ex01/PhoneBook.hpp	/^class PhoneBook$/;"	c
+Point	cpp02/ex03/Point.cpp	/^Point::Point() : x(0), y(0), real_x(0), real_y(0){$/;"	f	class:Point
+Point	cpp02/ex03/Point.cpp	/^Point::Point(Fixed const x, Fixed const y) : x(x), y(y), real_x(x), real_y(y){$/;"	f	class:Point
+Point	cpp02/ex03/Point.cpp	/^Point::Point(const Point& other) : x(other.x), y(other.y), real_x(other.real_x), real_y(other.re/;"	f	class:Point
+Point	cpp02/ex03/Point.hpp	/^class Point$/;"	c
+PresidentialPardonForm	cpp05/ex02/PresidentialPardonForm.cpp	/^PresidentialPardonForm::PresidentialPardonForm() $/;"	f	class:PresidentialPardonForm
+PresidentialPardonForm	cpp05/ex02/PresidentialPardonForm.cpp	/^PresidentialPardonForm::PresidentialPardonForm(PresidentialPardonForm const &other) $/;"	f	class:PresidentialPardonForm
+PresidentialPardonForm	cpp05/ex02/PresidentialPardonForm.cpp	/^PresidentialPardonForm::PresidentialPardonForm(std::string const &target) $/;"	f	class:PresidentialPardonForm
+PresidentialPardonForm	cpp05/ex02/PresidentialPardonForm.hpp	/^class PresidentialPardonForm : public Form$/;"	c
+PresidentialPardonForm	cpp05/ex03/PresidentialPardonForm.cpp	/^PresidentialPardonForm::PresidentialPardonForm() $/;"	f	class:PresidentialPardonForm
+PresidentialPardonForm	cpp05/ex03/PresidentialPardonForm.cpp	/^PresidentialPardonForm::PresidentialPardonForm(PresidentialPardonForm const &other) $/;"	f	class:PresidentialPardonForm
+PresidentialPardonForm	cpp05/ex03/PresidentialPardonForm.cpp	/^PresidentialPardonForm::PresidentialPardonForm(std::string const &target) $/;"	f	class:PresidentialPardonForm
+PresidentialPardonForm	cpp05/ex03/PresidentialPardonForm.hpp	/^class PresidentialPardonForm : public Form$/;"	c
+PseudoLiteral	cpp06/ex00/Data.cpp	/^void	PseudoLiteral(std::string const &str)$/;"	f	typeref:typename:void
+RED	cpp05/ex00/Bureaucrat.hpp	/^#define RED /;"	d
+RED	cpp05/ex01/Bureaucrat.hpp	/^#define RED /;"	d
+RED	cpp05/ex02/Bureaucrat.hpp	/^#define RED /;"	d
+RED	cpp05/ex03/Bureaucrat.hpp	/^#define RED /;"	d
+RESET	cpp05/ex00/Bureaucrat.hpp	/^#define RESET /;"	d
+RESET	cpp05/ex01/Bureaucrat.hpp	/^#define RESET /;"	d
+RESET	cpp05/ex02/Bureaucrat.hpp	/^#define RESET /;"	d
+RESET	cpp05/ex03/Bureaucrat.hpp	/^#define RESET /;"	d
+ROBOTOMYREQUESTFORM_HPP	cpp05/ex02/RobotomyRequestForm.hpp	/^#define ROBOTOMYREQUESTFORM_HPP$/;"	d
+ROBOTOMYREQUESTFORM_HPP	cpp05/ex03/RobotomyRequestForm.hpp	/^#define ROBOTOMYREQUESTFORM_HPP$/;"	d
+RobotomyRequestForm	cpp05/ex02/RobotomyRequestForm.cpp	/^RobotomyRequestForm::RobotomyRequestForm() $/;"	f	class:RobotomyRequestForm
+RobotomyRequestForm	cpp05/ex02/RobotomyRequestForm.cpp	/^RobotomyRequestForm::RobotomyRequestForm(RobotomyRequestForm const &other) $/;"	f	class:RobotomyRequestForm
+RobotomyRequestForm	cpp05/ex02/RobotomyRequestForm.cpp	/^RobotomyRequestForm::RobotomyRequestForm(std::string const &target) $/;"	f	class:RobotomyRequestForm
+RobotomyRequestForm	cpp05/ex02/RobotomyRequestForm.hpp	/^class RobotomyRequestForm : public Form$/;"	c
+RobotomyRequestForm	cpp05/ex03/RobotomyRequestForm.cpp	/^RobotomyRequestForm::RobotomyRequestForm() $/;"	f	class:RobotomyRequestForm
+RobotomyRequestForm	cpp05/ex03/RobotomyRequestForm.cpp	/^RobotomyRequestForm::RobotomyRequestForm(RobotomyRequestForm const &other) $/;"	f	class:RobotomyRequestForm
+RobotomyRequestForm	cpp05/ex03/RobotomyRequestForm.cpp	/^RobotomyRequestForm::RobotomyRequestForm(std::string const &target) $/;"	f	class:RobotomyRequestForm
+RobotomyRequestForm	cpp05/ex03/RobotomyRequestForm.hpp	/^class RobotomyRequestForm : public Form$/;"	c
+SCALARCONVERTER_HPP	cpp06/ex00/ScalarConverter.hpp	/^#define SCALARCONVERTER_HPP$/;"	d
+SCAVTRAP_HPP	cpp03/ex01/ScavTrap.hpp	/^# define SCAVTRAP_HPP$/;"	d
+SCAVTRAP_HPP	cpp03/ex02/ScavTrap.hpp	/^# define SCAVTRAP_HPP$/;"	d
+SCAVTRAP_HPP	cpp03/ex03/ScavTrap.hpp	/^# define SCAVTRAP_HPP$/;"	d
+SERIALIZER_HPP	cpp06/ex01/Serializer.hpp	/^#define SERIALIZER_HPP$/;"	d
+SHRUBBERYCREATIONFORM_HPP	cpp05/ex02/ShrubberyCreationForm.hpp	/^#define SHRUBBERYCREATIONFORM_HPP$/;"	d
+SHRUBBERYCREATIONFORM_HPP	cpp05/ex03/ShrubberyCreationForm.hpp	/^#define SHRUBBERYCREATIONFORM_HPP$/;"	d
+SRCS	cpp01/ex00/Makefile	/^SRCS = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp$/;"	m
+SRCS	cpp01/ex01/Makefile	/^SRCS = main.cpp Zombie.cpp zombieHorde.cpp$/;"	m
+SRCS	cpp01/ex02/Makefile	/^SRCS = main.cpp$/;"	m
+SRCS	cpp01/ex03/Makefile	/^SRCS = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp$/;"	m
+SRCS	cpp01/ex04/Makefile	/^SRCS = main.cpp$/;"	m
+SRCS	cpp01/ex05/Makefile	/^SRCS = main.cpp Harl.cpp$/;"	m
+SRCS	cpp01/ex06/Makefile	/^SRCS = main.cpp Harl.cpp$/;"	m
+SRCS	cpp02/ex00/Makefile	/^SRCS = main.cpp Fixed.cpp$/;"	m
+SRCS	cpp02/ex01/Makefile	/^SRCS = main.cpp Fixed.cpp$/;"	m
+SRCS	cpp02/ex02/Makefile	/^SRCS = main.cpp Fixed.cpp$/;"	m
+SRCS	cpp02/ex03/Makefile	/^SRCS = main.cpp Fixed.cpp Point.cpp bsp.cpp$/;"	m
+SRCS	cpp03/ex00/Makefile	/^SRCS = main.cpp ClapTrap.cpp$/;"	m
+SRCS	cpp03/ex01/Makefile	/^SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp$/;"	m
+SRCS	cpp03/ex02/Makefile	/^SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp$/;"	m
+SRCS	cpp03/ex03/Makefile	/^SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp$/;"	m
+SRCS	cpp04/ex00/Makefile	/^SRCS = main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp$/;"	m
+SRCS	cpp04/ex01/Makefile	/^SRCS = 	main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp \\$/;"	m
+SRCS	cpp04/ex02/Makefile	/^SRCS = 	main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp \\$/;"	m
+SRCS	cpp04/ex03/Makefile	/^SRCS =	AMateria.cpp  	Cure.cpp  ICharacter.cpp      main.cpp \\$/;"	m
+SRCS	cpp05/ex00/Makefile	/^SRCS = main.cpp Bureaucrat.cpp$/;"	m
+SRCS	cpp05/ex01/Makefile	/^SRCS = main.cpp Bureaucrat.cpp Form.cpp$/;"	m
+SRCS	cpp05/ex02/Makefile	/^SRCS =	main.cpp Bureaucrat.cpp AForm.cpp \\$/;"	m
+SRCS	cpp05/ex03/Makefile	/^SRCS =	main.cpp Bureaucrat.cpp AForm.cpp \\$/;"	m
+SRCS	cpp06/ex00/Makefile	/^SRCS =	main.cpp Data.cpp ScalarConverter.cpp$/;"	m
+SRCS	cpp06/ex01/Makefile	/^SRCS =	main.cpp Serializer.cpp$/;"	m
+SRCS	cpp06/ex02/Makefile	/^SRCS = main.cpp Func.cpp$/;"	m
+SRCS	cpp07/ex00/Makefile	/^SRCS = main.cpp$/;"	m
+SRCS	cpp07/ex01/Makefile	/^SRCS = main.cpp $/;"	m
+ScalarConverter	cpp06/ex00/ScalarConverter.cpp	/^ScalarConverter::ScalarConverter()$/;"	f	class:ScalarConverter
+ScalarConverter	cpp06/ex00/ScalarConverter.cpp	/^ScalarConverter::ScalarConverter(ScalarConverter const &copy)$/;"	f	class:ScalarConverter
+ScalarConverter	cpp06/ex00/ScalarConverter.hpp	/^class ScalarConverter$/;"	c
+ScavTrap	cpp03/ex01/ScavTrap.cpp	/^ScavTrap::ScavTrap() : ClapTrap("ScavTrap")$/;"	f	class:ScavTrap
+ScavTrap	cpp03/ex01/ScavTrap.cpp	/^ScavTrap::ScavTrap(ScavTrap const & rhs) : ClapTrap(rhs)$/;"	f	class:ScavTrap
+ScavTrap	cpp03/ex01/ScavTrap.cpp	/^ScavTrap::ScavTrap(std::string name) : ClapTrap(name)$/;"	f	class:ScavTrap
+ScavTrap	cpp03/ex01/ScavTrap.hpp	/^class ScavTrap : public ClapTrap$/;"	c
+ScavTrap	cpp03/ex02/ScavTrap.cpp	/^ScavTrap::ScavTrap() : ClapTrap("ScavTrap")$/;"	f	class:ScavTrap
+ScavTrap	cpp03/ex02/ScavTrap.cpp	/^ScavTrap::ScavTrap(ScavTrap const & rhs) : ClapTrap(rhs)$/;"	f	class:ScavTrap
+ScavTrap	cpp03/ex02/ScavTrap.cpp	/^ScavTrap::ScavTrap(std::string name) : ClapTrap(name)$/;"	f	class:ScavTrap
+ScavTrap	cpp03/ex02/ScavTrap.hpp	/^class ScavTrap : public ClapTrap$/;"	c
+ScavTrap	cpp03/ex03/ScavTrap.cpp	/^ScavTrap::ScavTrap() : ClapTrap("ScavTrap")$/;"	f	class:ScavTrap
+ScavTrap	cpp03/ex03/ScavTrap.cpp	/^ScavTrap::ScavTrap(ScavTrap const & rhs) : ClapTrap(rhs)$/;"	f	class:ScavTrap
+ScavTrap	cpp03/ex03/ScavTrap.cpp	/^ScavTrap::ScavTrap(std::string name) : ClapTrap(name)$/;"	f	class:ScavTrap
+ScavTrap	cpp03/ex03/ScavTrap.hpp	/^class ScavTrap : virtual public ClapTrap$/;"	c
+Serializer	cpp06/ex01/Serializer.hpp	/^		Serializer() {};$/;"	f	class:Serializer
+Serializer	cpp06/ex01/Serializer.hpp	/^		Serializer(Serializer const &copy) {(void)copy;};$/;"	f	class:Serializer
+Serializer	cpp06/ex01/Serializer.hpp	/^class Serializer$/;"	c
+SetType	cpp04/ex00/Animal.cpp	/^void	Animal::SetType(std::string type) {$/;"	f	class:Animal	typeref:typename:void
+SetType	cpp04/ex00/WrongAnimal.cpp	/^void	WrongAnimal::SetType(std::string type) {$/;"	f	class:WrongAnimal	typeref:typename:void
+SetType	cpp04/ex01/Animal.cpp	/^void	Animal::SetType(std::string type) {$/;"	f	class:Animal	typeref:typename:void
+SetType	cpp04/ex01/WrongAnimal.cpp	/^void	WrongAnimal::SetType(std::string type) {$/;"	f	class:WrongAnimal	typeref:typename:void
+SetType	cpp04/ex02/Animal.cpp	/^void	Animal::SetType(std::string type) {$/;"	f	class:Animal	typeref:typename:void
+SetType	cpp04/ex02/WrongAnimal.cpp	/^void	WrongAnimal::SetType(std::string type) {$/;"	f	class:WrongAnimal	typeref:typename:void
+ShrubberyCreationForm	cpp05/ex02/ShrubberyCreationForm.cpp	/^ShrubberyCreationForm::ShrubberyCreationForm() $/;"	f	class:ShrubberyCreationForm
+ShrubberyCreationForm	cpp05/ex02/ShrubberyCreationForm.cpp	/^ShrubberyCreationForm::ShrubberyCreationForm(ShrubberyCreationForm const &other) $/;"	f	class:ShrubberyCreationForm
+ShrubberyCreationForm	cpp05/ex02/ShrubberyCreationForm.cpp	/^ShrubberyCreationForm::ShrubberyCreationForm(std::string const &target) $/;"	f	class:ShrubberyCreationForm
+ShrubberyCreationForm	cpp05/ex02/ShrubberyCreationForm.hpp	/^class ShrubberyCreationForm : public Form$/;"	c
+ShrubberyCreationForm	cpp05/ex03/ShrubberyCreationForm.cpp	/^ShrubberyCreationForm::ShrubberyCreationForm() $/;"	f	class:ShrubberyCreationForm
+ShrubberyCreationForm	cpp05/ex03/ShrubberyCreationForm.cpp	/^ShrubberyCreationForm::ShrubberyCreationForm(ShrubberyCreationForm const &other) $/;"	f	class:ShrubberyCreationForm
+ShrubberyCreationForm	cpp05/ex03/ShrubberyCreationForm.cpp	/^ShrubberyCreationForm::ShrubberyCreationForm(std::string const &target) $/;"	f	class:ShrubberyCreationForm
+ShrubberyCreationForm	cpp05/ex03/ShrubberyCreationForm.hpp	/^class ShrubberyCreationForm : public Form$/;"	c
+WEAPON_HPP	cpp01/ex03/Weapon.hpp	/^#define WEAPON_HPP$/;"	d
+WHATEVER_HPP	cpp07/ex00/Whatever.hpp	/^#define WHATEVER_HPP$/;"	d
+WHITE	cpp05/ex00/Bureaucrat.hpp	/^#define WHITE /;"	d
+WHITE	cpp05/ex01/Bureaucrat.hpp	/^#define WHITE /;"	d
+WHITE	cpp05/ex02/Bureaucrat.hpp	/^#define WHITE /;"	d
+WHITE	cpp05/ex03/Bureaucrat.hpp	/^#define WHITE /;"	d
+WRONGANIMAL_HPP	cpp04/ex00/WrongAnimal.hpp	/^# define WRONGANIMAL_HPP$/;"	d
+WRONGANIMAL_HPP	cpp04/ex01/WrongAnimal.hpp	/^# define WRONGANIMAL_HPP$/;"	d
+WRONGANIMAL_HPP	cpp04/ex02/WrongAnimal.hpp	/^# define WRONGANIMAL_HPP$/;"	d
+WRONGCAT_HPP	cpp04/ex00/WrongCat.hpp	/^# define WRONGCAT_HPP$/;"	d
+WRONGCAT_HPP	cpp04/ex01/WrongCat.hpp	/^# define WRONGCAT_HPP$/;"	d
+WRONGCAT_HPP	cpp04/ex02/WrongCat.hpp	/^# define WRONGCAT_HPP$/;"	d
+Weapon	cpp01/ex03/Weapon.cpp	/^Weapon::Weapon(const Weapon &other)$/;"	f	class:Weapon
+Weapon	cpp01/ex03/Weapon.cpp	/^Weapon::Weapon(std::string type)$/;"	f	class:Weapon
+Weapon	cpp01/ex03/Weapon.hpp	/^class Weapon$/;"	c
+WrongAnimal	cpp04/ex00/WrongAnimal.cpp	/^WrongAnimal::WrongAnimal() : type("WrongAnimal") {$/;"	f	class:WrongAnimal
+WrongAnimal	cpp04/ex00/WrongAnimal.cpp	/^WrongAnimal::WrongAnimal(const WrongAnimal &obj) {$/;"	f	class:WrongAnimal
+WrongAnimal	cpp04/ex00/WrongAnimal.cpp	/^WrongAnimal::WrongAnimal(std::string type) : type(type) {$/;"	f	class:WrongAnimal
+WrongAnimal	cpp04/ex00/WrongAnimal.hpp	/^class WrongAnimal$/;"	c
+WrongAnimal	cpp04/ex01/WrongAnimal.cpp	/^WrongAnimal::WrongAnimal() : type("WrongAnimal") {$/;"	f	class:WrongAnimal
+WrongAnimal	cpp04/ex01/WrongAnimal.cpp	/^WrongAnimal::WrongAnimal(const WrongAnimal &obj) {$/;"	f	class:WrongAnimal
+WrongAnimal	cpp04/ex01/WrongAnimal.cpp	/^WrongAnimal::WrongAnimal(std::string type) : type(type) {$/;"	f	class:WrongAnimal
+WrongAnimal	cpp04/ex01/WrongAnimal.hpp	/^class WrongAnimal$/;"	c
+WrongAnimal	cpp04/ex02/WrongAnimal.cpp	/^WrongAnimal::WrongAnimal() : type("WrongAnimal") {$/;"	f	class:WrongAnimal
+WrongAnimal	cpp04/ex02/WrongAnimal.cpp	/^WrongAnimal::WrongAnimal(const WrongAnimal &obj) {$/;"	f	class:WrongAnimal
+WrongAnimal	cpp04/ex02/WrongAnimal.cpp	/^WrongAnimal::WrongAnimal(std::string type) : type(type) {$/;"	f	class:WrongAnimal
+WrongAnimal	cpp04/ex02/WrongAnimal.hpp	/^class WrongAnimal$/;"	c
+WrongCat	cpp04/ex00/WrongCat.cpp	/^WrongCat::WrongCat() : Animal("WrongCat") {$/;"	f	class:WrongCat
+WrongCat	cpp04/ex00/WrongCat.cpp	/^WrongCat::WrongCat(const WrongCat &obj) {$/;"	f	class:WrongCat
+WrongCat	cpp04/ex00/WrongCat.cpp	/^WrongCat::WrongCat(std::string type) : Animal(type) {$/;"	f	class:WrongCat
+WrongCat	cpp04/ex00/WrongCat.hpp	/^class WrongCat : public Animal$/;"	c
+WrongCat	cpp04/ex01/WrongCat.cpp	/^WrongCat::WrongCat() : Animal("WrongCat") {$/;"	f	class:WrongCat
+WrongCat	cpp04/ex01/WrongCat.cpp	/^WrongCat::WrongCat(const WrongCat &obj) {$/;"	f	class:WrongCat
+WrongCat	cpp04/ex01/WrongCat.cpp	/^WrongCat::WrongCat(std::string type) : Animal(type) {$/;"	f	class:WrongCat
+WrongCat	cpp04/ex01/WrongCat.hpp	/^class WrongCat : public Animal$/;"	c
+WrongCat	cpp04/ex02/WrongCat.cpp	/^WrongCat::WrongCat() : Animal("WrongCat") {$/;"	f	class:WrongCat
+WrongCat	cpp04/ex02/WrongCat.cpp	/^WrongCat::WrongCat(const WrongCat &obj) {$/;"	f	class:WrongCat
+WrongCat	cpp04/ex02/WrongCat.cpp	/^WrongCat::WrongCat(std::string type) : Animal(type) {$/;"	f	class:WrongCat
+WrongCat	cpp04/ex02/WrongCat.hpp	/^class WrongCat : public Animal$/;"	c
+YELLOW	cpp05/ex00/Bureaucrat.hpp	/^#define YELLOW /;"	d
+YELLOW	cpp05/ex01/Bureaucrat.hpp	/^#define YELLOW /;"	d
+YELLOW	cpp05/ex02/Bureaucrat.hpp	/^#define YELLOW /;"	d
+YELLOW	cpp05/ex03/Bureaucrat.hpp	/^#define YELLOW /;"	d
+ZOMBIE_HPP	cpp01/ex00/Zombie.hpp	/^#define ZOMBIE_HPP$/;"	d
+ZOMBIE_HPP	cpp01/ex01/Zombie.hpp	/^#define ZOMBIE_HPP$/;"	d
+Zombie	cpp01/ex00/Zombie.cpp	/^Zombie::Zombie(const Zombie& other)$/;"	f	class:Zombie
+Zombie	cpp01/ex00/Zombie.cpp	/^Zombie::Zombie(std::string name)$/;"	f	class:Zombie
+Zombie	cpp01/ex00/Zombie.hpp	/^class Zombie$/;"	c
+Zombie	cpp01/ex01/Zombie.cpp	/^Zombie::Zombie(const Zombie& other)$/;"	f	class:Zombie
+Zombie	cpp01/ex01/Zombie.cpp	/^Zombie::Zombie(std::string name)$/;"	f	class:Zombie
+Zombie	cpp01/ex01/Zombie.hpp	/^		Zombie() {};$/;"	f	class:Zombie
+Zombie	cpp01/ex01/Zombie.hpp	/^class Zombie$/;"	c
+__ACCOUNT_H__	cpp00/ex02/Account.hpp	/^#define __ACCOUNT_H__$/;"	d
+_accountIndex	cpp00/ex02/Account.hpp	/^	int				_accountIndex;$/;"	m	class:Account	typeref:typename:int
+_amount	cpp00/ex02/Account.hpp	/^	int				_amount;$/;"	m	class:Account	typeref:typename:int
+_displayTimestamp	cpp00/ex02/Account.cpp	/^void	Account::_displayTimestamp( void ) {$/;"	f	class:Account	typeref:typename:void
+_head	cpp04/ex03/Floor.hpp	/^		ATile* _head;$/;"	m	class:Floor	typeref:typename:ATile *
+_inventory	cpp04/ex03/Character.hpp	/^		AMateria* _inventory[4];$/;"	m	class:Character	typeref:typename:AMateria * [4]
+_materia	cpp04/ex03/ATile.hpp	/^		AMateria*	_materia;$/;"	m	class:ATile	typeref:typename:AMateria *
+_materia	cpp04/ex03/MateriaSource.hpp	/^		AMateria* _materia[4];$/;"	m	class:MateriaSource	typeref:typename:AMateria * [4]
+_name	cpp04/ex03/Character.hpp	/^		std::string _name;$/;"	m	class:Character	typeref:typename:std::string
+_nbAccounts	cpp00/ex02/Account.cpp	/^int	Account::_nbAccounts = 0;$/;"	m	class:Account	typeref:typename:int
+_nbAccounts	cpp00/ex02/Account.hpp	/^	static int	_nbAccounts;$/;"	m	class:Account	typeref:typename:int
+_nbDeposits	cpp00/ex02/Account.hpp	/^	int				_nbDeposits;$/;"	m	class:Account	typeref:typename:int
+_nbWithdrawals	cpp00/ex02/Account.hpp	/^	int				_nbWithdrawals;$/;"	m	class:Account	typeref:typename:int
+_next	cpp04/ex03/ATile.hpp	/^		ATile*		_next;$/;"	m	class:ATile	typeref:typename:ATile *
+_prev	cpp04/ex03/ATile.hpp	/^		ATile*		_prev;$/;"	m	class:ATile	typeref:typename:ATile *
+_totalAmount	cpp00/ex02/Account.cpp	/^int	Account::_totalAmount = 0;$/;"	m	class:Account	typeref:typename:int
+_totalAmount	cpp00/ex02/Account.hpp	/^	static int	_totalAmount;$/;"	m	class:Account	typeref:typename:int
+_totalNbDeposits	cpp00/ex02/Account.cpp	/^int	Account::_totalNbDeposits = 0;$/;"	m	class:Account	typeref:typename:int
+_totalNbDeposits	cpp00/ex02/Account.hpp	/^	static int	_totalNbDeposits;$/;"	m	class:Account	typeref:typename:int
+_totalNbWithdrawals	cpp00/ex02/Account.cpp	/^int	Account::_totalNbWithdrawals = 0;$/;"	m	class:Account	typeref:typename:int
+_totalNbWithdrawals	cpp00/ex02/Account.hpp	/^	static int	_totalNbWithdrawals;$/;"	m	class:Account	typeref:typename:int
+_type	cpp04/ex03/AMateria.hpp	/^		std::string _type;$/;"	m	class:AMateria	typeref:typename:std::string
+acc_int_t	cpp00/ex02/tests.cpp	/^	typedef std::pair<accounts_t::iterator, ints_t::iterator> acc_int_t;$/;"	t	function:main	typeref:typename:std::pair<accounts_t::iterator,ints_t::iterator>	file:
+accounts_t	cpp00/ex02/tests.cpp	/^	typedef std::vector<Account::t>							  accounts_t;$/;"	t	function:main	typeref:typename:std::vector<Account::t>	file:
+add_contact	cpp00/ex01/PhoneBook.cpp	/^void	PhoneBook::add_contact()$/;"	f	class:PhoneBook	typeref:typename:void
+algorithm	.vscode/settings.json	/^		"algorithm": "cpp",$/;"	s	object:files.associations
+all	cpp00/ex00/Makefile	/^all: $(NAME)$/;"	t
+all	cpp00/ex01/Makefile	/^all: $(NAME)$/;"	t
+all	cpp00/ex02/Makefile	/^all: $(NAME)$/;"	t
+all	cpp01/ex00/Makefile	/^all: $(NAME)$/;"	t
+all	cpp01/ex01/Makefile	/^all: $(NAME)$/;"	t
+all	cpp01/ex02/Makefile	/^all: $(NAME)$/;"	t
+all	cpp01/ex03/Makefile	/^all: $(NAME)$/;"	t
+all	cpp01/ex04/Makefile	/^all: $(NAME)$/;"	t
+all	cpp01/ex05/Makefile	/^all: $(NAME)$/;"	t
+all	cpp01/ex06/Makefile	/^all: $(NAME)$/;"	t
+all	cpp02/ex00/Makefile	/^all: $(NAME)$/;"	t
+all	cpp02/ex01/Makefile	/^all: $(NAME)$/;"	t
+all	cpp02/ex02/Makefile	/^all: $(NAME)$/;"	t
+all	cpp02/ex03/Makefile	/^all: $(NAME)$/;"	t
+all	cpp03/ex00/Makefile	/^all: $(NAME)$/;"	t
+all	cpp03/ex01/Makefile	/^all: $(NAME)$/;"	t
+all	cpp03/ex02/Makefile	/^all: $(NAME)$/;"	t
+all	cpp03/ex03/Makefile	/^all: $(NAME)$/;"	t
+all	cpp04/ex00/Makefile	/^all: $(NAME)$/;"	t
+all	cpp04/ex01/Makefile	/^all: $(NAME)$/;"	t
+all	cpp04/ex02/Makefile	/^all: $(NAME)$/;"	t
+all	cpp04/ex03/Makefile	/^all: $(NAME)$/;"	t
+all	cpp05/ex00/Makefile	/^all: $(NAME)$/;"	t
+all	cpp05/ex01/Makefile	/^all: $(NAME)$/;"	t
+all	cpp05/ex02/Makefile	/^all: $(NAME)$/;"	t
+all	cpp05/ex03/Makefile	/^all: $(NAME)$/;"	t
+all	cpp06/ex00/Makefile	/^all: $(NAME)$/;"	t
+all	cpp06/ex01/Makefile	/^all: $(NAME)$/;"	t
+all	cpp06/ex02/Makefile	/^all: $(NAME)$/;"	t
+all	cpp07/ex00/Makefile	/^all: $(NAME)$/;"	t
+all	cpp07/ex01/Makefile	/^all: $(NAME)$/;"	t
+announce	cpp01/ex00/Zombie.cpp	/^void Zombie::announce( void )$/;"	f	class:Zombie	typeref:typename:void
+announce	cpp01/ex01/Zombie.cpp	/^void Zombie::announce( void )$/;"	f	class:Zombie	typeref:typename:void
+args	.vscode/launch.json	/^		"args": [],$/;"	a	object:configurations.0
+array	.vscode/settings.json	/^		"array": "cpp",$/;"	s	object:files.associations
+atomic	.vscode/settings.json	/^		"atomic": "cpp",$/;"	s	object:files.associations
+attack	cpp01/ex03/HumanA.cpp	/^void HumanA::attack( void )$/;"	f	class:HumanA	typeref:typename:void
+attack	cpp01/ex03/HumanB.cpp	/^void HumanB::attack( void )$/;"	f	class:HumanB	typeref:typename:void
+attack	cpp03/ex00/ClapTrap.cpp	/^void ClapTrap::attack( std::string const & target )$/;"	f	class:ClapTrap	typeref:typename:void
+attack	cpp03/ex01/ClapTrap.cpp	/^void ClapTrap::attack( std::string const & target )$/;"	f	class:ClapTrap	typeref:typename:void
+attack	cpp03/ex01/ScavTrap.cpp	/^void ScavTrap::attack( std::string const & target )$/;"	f	class:ScavTrap	typeref:typename:void
+attack	cpp03/ex02/ClapTrap.cpp	/^void ClapTrap::attack( std::string const & target )$/;"	f	class:ClapTrap	typeref:typename:void
+attack	cpp03/ex02/FragTrap.cpp	/^void FragTrap::attack(std::string const & target)$/;"	f	class:FragTrap	typeref:typename:void
+attack	cpp03/ex02/ScavTrap.cpp	/^void ScavTrap::attack( std::string const & target )$/;"	f	class:ScavTrap	typeref:typename:void
+attack	cpp03/ex03/ClapTrap.cpp	/^void ClapTrap::attack( std::string const & target )$/;"	f	class:ClapTrap	typeref:typename:void
+attack	cpp03/ex03/FragTrap.cpp	/^void FragTrap::attack(std::string const & target)$/;"	f	class:FragTrap	typeref:typename:void
+attack	cpp03/ex03/ScavTrap.cpp	/^void ScavTrap::attack( std::string const & target )$/;"	f	class:ScavTrap	typeref:typename:void
+beRepaired	cpp03/ex00/ClapTrap.cpp	/^void ClapTrap::beRepaired( unsigned int amount )$/;"	f	class:ClapTrap	typeref:typename:void
+beRepaired	cpp03/ex01/ClapTrap.cpp	/^void ClapTrap::beRepaired( unsigned int amount )$/;"	f	class:ClapTrap	typeref:typename:void
+beRepaired	cpp03/ex02/ClapTrap.cpp	/^void ClapTrap::beRepaired( unsigned int amount )$/;"	f	class:ClapTrap	typeref:typename:void
+beRepaired	cpp03/ex03/ClapTrap.cpp	/^void ClapTrap::beRepaired( unsigned int amount )$/;"	f	class:ClapTrap	typeref:typename:void
+beSigned	cpp05/ex01/Form.cpp	/^void	Form::beSigned(Bureaucrat const &bureaucrat)$/;"	f	class:Form	typeref:typename:void
+beSigned	cpp05/ex02/AForm.cpp	/^void	Form::beSigned(Bureaucrat const &bureaucrat)$/;"	f	class:Form	typeref:typename:void
+beSigned	cpp05/ex03/AForm.cpp	/^void	Form::beSigned(Bureaucrat const &bureaucrat)$/;"	f	class:Form	typeref:typename:void
+bit	.vscode/settings.json	/^		"bit": "cpp",$/;"	s	object:files.associations
+bits	cpp02/ex00/Fixed.hpp	/^		static const int bits = 8;$/;"	m	class:Fixed	typeref:typename:const int
+bits	cpp02/ex01/Fixed.hpp	/^		static const int bits = 8;$/;"	m	class:Fixed	typeref:typename:const int
+bits	cpp02/ex02/Fixed.hpp	/^		static const int bits = 8;$/;"	m	class:Fixed	typeref:typename:const int
+bits	cpp02/ex03/Fixed.hpp	/^		static const int bits = 8;$/;"	m	class:Fixed	typeref:typename:const int
+brain	cpp04/ex01/Animal.hpp	/^		Brain* brain;$/;"	m	class:Animal	typeref:typename:Brain *
+brain	cpp04/ex01/Cat.hpp	/^		Brain* brain;$/;"	m	class:Cat	typeref:typename:Brain *
+brain	cpp04/ex01/Dog.hpp	/^		Brain* brain;$/;"	m	class:Dog	typeref:typename:Brain *
+brain	cpp04/ex02/Animal.hpp	/^		Brain* brain;$/;"	m	class:Animal	typeref:typename:Brain *
+brain	cpp04/ex02/Cat.hpp	/^		Brain* brain;$/;"	m	class:Cat	typeref:typename:Brain *
+brain	cpp04/ex02/Dog.hpp	/^		Brain* brain;$/;"	m	class:Dog	typeref:typename:Brain *
+bsp	cpp02/ex03/bsp.cpp	/^bool bsp( Point const a, Point const b, Point const c, Point const point)$/;"	f	typeref:typename:bool
+cctype	.vscode/settings.json	/^		"cctype": "cpp",$/;"	s	object:files.associations
+charLiteral	cpp06/ex00/Data.cpp	/^void	charLiteral(std::string const &str)$/;"	f	typeref:typename:void
+checkAmount	cpp00/ex02/Account.cpp	/^int		Account::checkAmount( void ) const {$/;"	f	class:Account	typeref:typename:int
+clean	cpp00/ex00/Makefile	/^clean:$/;"	t
+clean	cpp00/ex01/Makefile	/^clean:$/;"	t
+clean	cpp00/ex02/Makefile	/^clean:$/;"	t
+clean	cpp01/ex00/Makefile	/^clean:$/;"	t
+clean	cpp01/ex01/Makefile	/^clean:$/;"	t
+clean	cpp01/ex02/Makefile	/^clean:$/;"	t
+clean	cpp01/ex03/Makefile	/^clean:$/;"	t
+clean	cpp01/ex04/Makefile	/^clean:$/;"	t
+clean	cpp01/ex05/Makefile	/^clean:$/;"	t
+clean	cpp01/ex06/Makefile	/^clean:$/;"	t
+clean	cpp02/ex00/Makefile	/^clean:$/;"	t
+clean	cpp02/ex01/Makefile	/^clean:$/;"	t
+clean	cpp02/ex02/Makefile	/^clean:$/;"	t
+clean	cpp02/ex03/Makefile	/^clean:$/;"	t
+clean	cpp03/ex00/Makefile	/^clean:$/;"	t
+clean	cpp03/ex01/Makefile	/^clean:$/;"	t
+clean	cpp03/ex02/Makefile	/^clean:$/;"	t
+clean	cpp03/ex03/Makefile	/^clean:$/;"	t
+clean	cpp04/ex00/Makefile	/^clean:$/;"	t
+clean	cpp04/ex01/Makefile	/^clean:$/;"	t
+clean	cpp04/ex02/Makefile	/^clean:$/;"	t
+clean	cpp04/ex03/Makefile	/^clean:$/;"	t
+clean	cpp05/ex00/Makefile	/^clean:$/;"	t
+clean	cpp05/ex01/Makefile	/^clean:$/;"	t
+clean	cpp05/ex02/Makefile	/^clean:$/;"	t
+clean	cpp05/ex03/Makefile	/^clean:$/;"	t
+clean	cpp06/ex00/Makefile	/^clean:$/;"	t
+clean	cpp06/ex01/Makefile	/^clean:$/;"	t
+clean	cpp06/ex02/Makefile	/^clean:$/;"	t
+clean	cpp07/ex00/Makefile	/^clean:$/;"	t
+clean	cpp07/ex01/Makefile	/^clean:$/;"	t
+clocale	.vscode/settings.json	/^		"clocale": "cpp",$/;"	s	object:files.associations
+clone	cpp04/ex03/Cure.cpp	/^AMateria* Cure::clone() const {$/;"	f	class:Cure	typeref:typename:AMateria *
+clone	cpp04/ex03/Ice.cpp	/^AMateria* Ice::clone() const {$/;"	f	class:Ice	typeref:typename:AMateria *
+cmath	.vscode/settings.json	/^		"cmath": "cpp",$/;"	s	object:files.associations
+compare	.vscode/settings.json	/^		"compare": "cpp",$/;"	s	object:files.associations
+complain	cpp01/ex05/Harl.cpp	/^void	Harl::complain( std::string level)$/;"	f	class:Harl	typeref:typename:void
+complain	cpp01/ex06/Harl.cpp	/^void	Harl::complain( std::string level)$/;"	f	class:Harl	typeref:typename:void
+concepts	.vscode/settings.json	/^		"concepts": "cpp",$/;"	s	object:files.associations
+configurations	.vscode/launch.json	/^	"configurations": [$/;"	a
+contacts	cpp00/ex01/PhoneBook.hpp	/^	Contact contacts[8];$/;"	m	class:PhoneBook	typeref:typename:Contact[8]
+convert	cpp06/ex00/ScalarConverter.cpp	/^void ScalarConverter::convert(std::string const &str)$/;"	f	class:ScalarConverter	typeref:typename:void
+createMateria	cpp04/ex03/MateriaSource.cpp	/^AMateria* MateriaSource::createMateria(std::string const & type) {$/;"	f	class:MateriaSource	typeref:typename:AMateria *
+createPresidentialPardonForm	cpp05/ex03/Intern.cpp	/^Form* Intern::createPresidentialPardonForm(std::string const &target) {$/;"	f	class:Intern	typeref:typename:Form *
+createRobotomyRequestForm	cpp05/ex03/Intern.cpp	/^Form* Intern::createRobotomyRequestForm(std::string const &target) {$/;"	f	class:Intern	typeref:typename:Form *
+createShrubberyCreationForm	cpp05/ex03/Intern.cpp	/^Form* Intern::createShrubberyCreationForm(std::string const &target) {$/;"	f	class:Intern	typeref:typename:Form *
+cstdarg	.vscode/settings.json	/^		"cstdarg": "cpp",$/;"	s	object:files.associations
+cstddef	.vscode/settings.json	/^		"cstddef": "cpp",$/;"	s	object:files.associations
+cstdint	.vscode/settings.json	/^		"cstdint": "cpp",$/;"	s	object:files.associations
+cstdio	.vscode/settings.json	/^		"cstdio": "cpp",$/;"	s	object:files.associations
+cstdlib	.vscode/settings.json	/^		"cstdlib": "cpp",$/;"	s	object:files.associations
+ctime	.vscode/settings.json	/^		"ctime": "cpp",$/;"	s	object:files.associations
+cwchar	.vscode/settings.json	/^		"cwchar": "cpp",$/;"	s	object:files.associations
+cwctype	.vscode/settings.json	/^		"cwctype": "cpp",$/;"	s	object:files.associations
+cwd	.vscode/launch.json	/^		"cwd": "${fileDirname}",$/;"	s	object:configurations.0
+darkest_secret	cpp00/ex01/Contact.hpp	/^		std::string	darkest_secret;$/;"	m	class:Contact	typeref:typename:std::string
+debug	cpp01/ex05/Harl.cpp	/^void	Harl::debug( void ) {$/;"	f	class:Harl	typeref:typename:void
+debug	cpp01/ex06/Harl.cpp	/^void	Harl::debug( void ) {$/;"	f	class:Harl	typeref:typename:void
+decrementGrade	cpp05/ex00/Bureaucrat.cpp	/^void Bureaucrat::decrementGrade( void)$/;"	f	class:Bureaucrat	typeref:typename:void
+decrementGrade	cpp05/ex01/Bureaucrat.cpp	/^void Bureaucrat::decrementGrade( void)$/;"	f	class:Bureaucrat	typeref:typename:void
+decrementGrade	cpp05/ex02/Bureaucrat.cpp	/^void Bureaucrat::decrementGrade( void)$/;"	f	class:Bureaucrat	typeref:typename:void
+decrementGrade	cpp05/ex03/Bureaucrat.cpp	/^void Bureaucrat::decrementGrade( void)$/;"	f	class:Bureaucrat	typeref:typename:void
+deque	.vscode/settings.json	/^		"deque": "cpp",$/;"	s	object:files.associations
+deserialize	cpp06/ex01/Serializer.cpp	/^Data* Serializer::deserialize(uintptr_t raw)$/;"	f	class:Serializer	typeref:typename:Data *
+displayAccountsInfos	cpp00/ex02/Account.cpp	/^void	Account::displayAccountsInfos( void ) {$/;"	f	class:Account	typeref:typename:void
+displayContacts	cpp00/ex01/PhoneBook.cpp	/^void PhoneBook::displayContacts()$/;"	f	class:PhoneBook	typeref:typename:void
+displayStatus	cpp00/ex02/Account.cpp	/^void	Account::displayStatus( void ) const {$/;"	f	class:Account	typeref:typename:void
+doubleLiteral	cpp06/ex00/Data.cpp	/^void	doubleLiteral(std::string const &str)$/;"	f	typeref:typename:void
+eng	cpp06/ex02/Func.cpp	/^std::tr1::mt19937 eng;$/;"	v	typeref:typename:std::tr1::mt19937
+environment	.vscode/launch.json	/^		"environment": [],$/;"	a	object:configurations.0
+equip	cpp04/ex03/Character.cpp	/^void Character::equip(AMateria* m) {$/;"	f	class:Character	typeref:typename:void
+error	cpp01/ex05/Harl.cpp	/^void	Harl::error( void ) {$/;"	f	class:Harl	typeref:typename:void
+error	cpp01/ex06/Harl.cpp	/^void	Harl::error( void ) {$/;"	f	class:Harl	typeref:typename:void
+exception	.vscode/settings.json	/^		"exception": "cpp",$/;"	s	object:files.associations
+execute	cpp05/ex02/PresidentialPardonForm.cpp	/^void	PresidentialPardonForm::execute(Bureaucrat const &executor) const$/;"	f	class:PresidentialPardonForm	typeref:typename:void
+execute	cpp05/ex02/RobotomyRequestForm.cpp	/^void	RobotomyRequestForm::execute(Bureaucrat const &executor) const$/;"	f	class:RobotomyRequestForm	typeref:typename:void
+execute	cpp05/ex02/ShrubberyCreationForm.cpp	/^void	ShrubberyCreationForm::execute(Bureaucrat const &executor) const$/;"	f	class:ShrubberyCreationForm	typeref:typename:void
+execute	cpp05/ex03/PresidentialPardonForm.cpp	/^void	PresidentialPardonForm::execute(Bureaucrat const &executor) const$/;"	f	class:PresidentialPardonForm	typeref:typename:void
+execute	cpp05/ex03/RobotomyRequestForm.cpp	/^void	RobotomyRequestForm::execute(Bureaucrat const &executor) const$/;"	f	class:RobotomyRequestForm	typeref:typename:void
+execute	cpp05/ex03/ShrubberyCreationForm.cpp	/^void	ShrubberyCreationForm::execute(Bureaucrat const &executor) const$/;"	f	class:ShrubberyCreationForm	typeref:typename:void
+executeForm	cpp05/ex02/Bureaucrat.cpp	/^void Bureaucrat::executeForm(Form const &form)$/;"	f	class:Bureaucrat	typeref:typename:void
+executeForm	cpp05/ex03/Bureaucrat.cpp	/^void Bureaucrat::executeForm(Form const &form)$/;"	f	class:Bureaucrat	typeref:typename:void
+externalConsole	.vscode/launch.json	/^		"externalConsole": false,$/;"	b	object:configurations.0
+fclean	cpp00/ex00/Makefile	/^fclean: clean$/;"	t
+fclean	cpp00/ex01/Makefile	/^fclean: clean$/;"	t
+fclean	cpp00/ex02/Makefile	/^fclean: clean$/;"	t
+fclean	cpp01/ex00/Makefile	/^fclean: clean$/;"	t
+fclean	cpp01/ex01/Makefile	/^fclean: clean$/;"	t
+fclean	cpp01/ex02/Makefile	/^fclean: clean$/;"	t
+fclean	cpp01/ex03/Makefile	/^fclean: clean$/;"	t
+fclean	cpp01/ex04/Makefile	/^fclean: clean$/;"	t
+fclean	cpp01/ex05/Makefile	/^fclean: clean$/;"	t
+fclean	cpp01/ex06/Makefile	/^fclean: clean$/;"	t
+fclean	cpp02/ex00/Makefile	/^fclean: clean$/;"	t
+fclean	cpp02/ex01/Makefile	/^fclean: clean$/;"	t
+fclean	cpp02/ex02/Makefile	/^fclean: clean$/;"	t
+fclean	cpp02/ex03/Makefile	/^fclean: clean$/;"	t
+fclean	cpp03/ex00/Makefile	/^fclean: clean$/;"	t
+fclean	cpp03/ex01/Makefile	/^fclean: clean$/;"	t
+fclean	cpp03/ex02/Makefile	/^fclean: clean$/;"	t
+fclean	cpp03/ex03/Makefile	/^fclean: clean$/;"	t
+fclean	cpp04/ex00/Makefile	/^fclean: clean$/;"	t
+fclean	cpp04/ex01/Makefile	/^fclean: clean$/;"	t
+fclean	cpp04/ex02/Makefile	/^fclean: clean$/;"	t
+fclean	cpp04/ex03/Makefile	/^fclean: clean$/;"	t
+fclean	cpp05/ex00/Makefile	/^fclean: clean$/;"	t
+fclean	cpp05/ex01/Makefile	/^fclean: clean$/;"	t
+fclean	cpp05/ex02/Makefile	/^fclean: clean$/;"	t
+fclean	cpp05/ex03/Makefile	/^fclean: clean$/;"	t
+fclean	cpp06/ex00/Makefile	/^fclean: clean$/;"	t
+fclean	cpp06/ex01/Makefile	/^fclean: clean$/;"	t
+fclean	cpp06/ex02/Makefile	/^fclean: clean$/;"	t
+fclean	cpp07/ex00/Makefile	/^fclean: clean$/;"	t
+fclean	cpp07/ex01/Makefile	/^fclean: clean$/;"	t
+files.associations	.vscode/settings.json	/^	"files.associations": {$/;"	o
+first_name	cpp00/ex01/Contact.hpp	/^		std::string	first_name;$/;"	m	class:Contact	typeref:typename:std::string
+floatLiteral	cpp06/ex00/Data.cpp	/^void	floatLiteral(std::string const &str)$/;"	f	typeref:typename:void
+fstream	.vscode/settings.json	/^		"fstream": "cpp",$/;"	s	object:files.associations
+functional	.vscode/settings.json	/^		"functional": "cpp",$/;"	s	object:files.associations
+generate	cpp06/ex02/Func.cpp	/^Base *generate( void )$/;"	f	typeref:typename:Base *
+getBrain	cpp04/ex01/Cat.hpp	/^		Brain* getBrain() const { return this->brain; }$/;"	f	class:Cat	typeref:typename:Brain *
+getBrain	cpp04/ex01/Dog.hpp	/^		Brain* getBrain() const { return this->brain; }$/;"	f	class:Dog	typeref:typename:Brain *
+getBrain	cpp04/ex02/Cat.hpp	/^		Brain* getBrain() const { return this->brain; }$/;"	f	class:Cat	typeref:typename:Brain *
+getBrain	cpp04/ex02/Dog.hpp	/^		Brain* getBrain() const { return this->brain; }$/;"	f	class:Dog	typeref:typename:Brain *
+getGrade	cpp05/ex00/Bureaucrat.cpp	/^int Bureaucrat::getGrade( void ) const$/;"	f	class:Bureaucrat	typeref:typename:int
+getGrade	cpp05/ex01/Bureaucrat.cpp	/^int Bureaucrat::getGrade( void ) const$/;"	f	class:Bureaucrat	typeref:typename:int
+getGrade	cpp05/ex02/Bureaucrat.cpp	/^int Bureaucrat::getGrade( void ) const$/;"	f	class:Bureaucrat	typeref:typename:int
+getGrade	cpp05/ex03/Bureaucrat.cpp	/^int Bureaucrat::getGrade( void ) const$/;"	f	class:Bureaucrat	typeref:typename:int
+getGradeToExecute	cpp05/ex01/Form.cpp	/^int Form::getGradeToExecute() const$/;"	f	class:Form	typeref:typename:int
+getGradeToExecute	cpp05/ex02/AForm.cpp	/^int Form::getGradeToExecute() const$/;"	f	class:Form	typeref:typename:int
+getGradeToExecute	cpp05/ex03/AForm.cpp	/^int Form::getGradeToExecute() const$/;"	f	class:Form	typeref:typename:int
+getGradeToSign	cpp05/ex01/Form.cpp	/^int Form::getGradeToSign() const$/;"	f	class:Form	typeref:typename:int
+getGradeToSign	cpp05/ex02/AForm.cpp	/^int Form::getGradeToSign() const$/;"	f	class:Form	typeref:typename:int
+getGradeToSign	cpp05/ex03/AForm.cpp	/^int Form::getGradeToSign() const$/;"	f	class:Form	typeref:typename:int
+getMateria	cpp04/ex03/ATile.cpp	/^AMateria*	ATile::getMateria() const { return this->_materia; }$/;"	f	class:ATile	typeref:typename:AMateria *
+getName	cpp01/ex00/Zombie.cpp	/^std::string Zombie::getName( void ) const$/;"	f	class:Zombie	typeref:typename:std::string
+getName	cpp01/ex01/Zombie.cpp	/^std::string Zombie::getName( void ) const$/;"	f	class:Zombie	typeref:typename:std::string
+getName	cpp04/ex03/Character.cpp	/^std::string const & Character::getName() const {$/;"	f	class:Character	typeref:typename:std::string const &
+getName	cpp05/ex00/Bureaucrat.cpp	/^std::string const	&Bureaucrat::getName( void ) const$/;"	f	class:Bureaucrat	typeref:typename:std::string const &
+getName	cpp05/ex01/Bureaucrat.cpp	/^std::string const	&Bureaucrat::getName( void ) const$/;"	f	class:Bureaucrat	typeref:typename:std::string const &
+getName	cpp05/ex01/Form.cpp	/^std::string const &Form::getName() const$/;"	f	class:Form	typeref:typename:std::string const &
+getName	cpp05/ex02/AForm.cpp	/^std::string const &Form::getName() const$/;"	f	class:Form	typeref:typename:std::string const &
+getName	cpp05/ex02/Bureaucrat.cpp	/^std::string const	&Bureaucrat::getName( void ) const$/;"	f	class:Bureaucrat	typeref:typename:std::string const &
+getName	cpp05/ex03/AForm.cpp	/^std::string const &Form::getName() const$/;"	f	class:Form	typeref:typename:std::string const &
+getName	cpp05/ex03/Bureaucrat.cpp	/^std::string const	&Bureaucrat::getName( void ) const$/;"	f	class:Bureaucrat	typeref:typename:std::string const &
+getNbAccounts	cpp00/ex02/Account.cpp	/^int	Account::getNbAccounts( void ) {$/;"	f	class:Account	typeref:typename:int
+getNbDeposits	cpp00/ex02/Account.cpp	/^int	Account::getNbDeposits( void ) {$/;"	f	class:Account	typeref:typename:int
+getNbWithdrawals	cpp00/ex02/Account.cpp	/^int	Account::getNbWithdrawals( void ) {$/;"	f	class:Account	typeref:typename:int
+getNext	cpp04/ex03/ATile.cpp	/^ATile*		ATile::getNext() const { return this->_next; }$/;"	f	class:ATile	typeref:typename:ATile *
+getPrecision	cpp06/ex00/Data.cpp	/^int     getPrecision(const std::string& literal)$/;"	f	typeref:typename:int
+getPrev	cpp04/ex03/ATile.cpp	/^ATile*		ATile::getPrev() const { return this->_prev; }$/;"	f	class:ATile	typeref:typename:ATile *
+getRawBits	cpp02/ex00/Fixed.cpp	/^int Fixed::getRawBits( void ) const$/;"	f	class:Fixed	typeref:typename:int
+getRawBits	cpp02/ex01/Fixed.cpp	/^int Fixed::getRawBits( void ) const$/;"	f	class:Fixed	typeref:typename:int
+getRawBits	cpp02/ex02/Fixed.cpp	/^int Fixed::getRawBits( void ) const$/;"	f	class:Fixed	typeref:typename:int
+getRawBits	cpp02/ex03/Fixed.cpp	/^int Fixed::getRawBits( void ) const$/;"	f	class:Fixed	typeref:typename:int
+getSigned	cpp05/ex01/Form.cpp	/^bool Form::getSigned() const$/;"	f	class:Form	typeref:typename:bool
+getSigned	cpp05/ex02/AForm.cpp	/^bool Form::getSigned() const$/;"	f	class:Form	typeref:typename:bool
+getSigned	cpp05/ex03/AForm.cpp	/^bool Form::getSigned() const$/;"	f	class:Form	typeref:typename:bool
+getTotalAmount	cpp00/ex02/Account.cpp	/^int	Account::getTotalAmount( void ) {$/;"	f	class:Account	typeref:typename:int
+getType	cpp01/ex03/Weapon.cpp	/^std::string& Weapon::getType()$/;"	f	class:Weapon	typeref:typename:std::string &
+getType	cpp04/ex00/Animal.cpp	/^std::string	Animal::getType() const {$/;"	f	class:Animal	typeref:typename:std::string
+getType	cpp04/ex00/WrongAnimal.cpp	/^std::string	WrongAnimal::getType() const {$/;"	f	class:WrongAnimal	typeref:typename:std::string
+getType	cpp04/ex01/Animal.cpp	/^std::string	Animal::getType() const {$/;"	f	class:Animal	typeref:typename:std::string
+getType	cpp04/ex01/WrongAnimal.cpp	/^std::string	WrongAnimal::getType() const {$/;"	f	class:WrongAnimal	typeref:typename:std::string
+getType	cpp04/ex02/Animal.cpp	/^std::string	Animal::getType() const {$/;"	f	class:Animal	typeref:typename:std::string
+getType	cpp04/ex02/WrongAnimal.cpp	/^std::string	WrongAnimal::getType() const {$/;"	f	class:WrongAnimal	typeref:typename:std::string
+getType	cpp04/ex03/AMateria.cpp	/^std::string const & AMateria::getType() const {$/;"	f	class:AMateria	typeref:typename:std::string const &
+getX	cpp02/ex03/Point.cpp	/^Fixed Point::getX() const {$/;"	f	class:Point	typeref:typename:Fixed
+getY	cpp02/ex03/Point.cpp	/^Fixed Point::getY() const {$/;"	f	class:Point	typeref:typename:Fixed
+get_darkest_secret	cpp00/ex01/Contact.cpp	/^std::string	Contact::get_darkest_secret()$/;"	f	class:Contact	typeref:typename:std::string
+get_first_name	cpp00/ex01/Contact.cpp	/^std::string	Contact::get_first_name()$/;"	f	class:Contact	typeref:typename:std::string
+get_index	cpp00/ex01/Contact.cpp	/^int	Contact::get_index()$/;"	f	class:Contact	typeref:typename:int
+get_last_name	cpp00/ex01/Contact.cpp	/^std::string	Contact::get_last_name()$/;"	f	class:Contact	typeref:typename:std::string
+get_nickname	cpp00/ex01/Contact.cpp	/^std::string	Contact::get_nickname()$/;"	f	class:Contact	typeref:typename:std::string
+get_phone_number	cpp00/ex01/Contact.cpp	/^std::string	Contact::get_phone_number()$/;"	f	class:Contact	typeref:typename:std::string
+get_type	cpp06/ex00/Data.cpp	/^int	get_type(std::string const &str)$/;"	f	typeref:typename:int
+gradeCheck	cpp05/ex00/Bureaucrat.cpp	/^int Bureaucrat::gradeCheck(int grade) const$/;"	f	class:Bureaucrat	typeref:typename:int
+gradeCheck	cpp05/ex01/Bureaucrat.cpp	/^int Bureaucrat::gradeCheck(int grade) const$/;"	f	class:Bureaucrat	typeref:typename:int
+gradeCheck	cpp05/ex01/Form.cpp	/^int Form::gradeCheck(int grade) const$/;"	f	class:Form	typeref:typename:int
+gradeCheck	cpp05/ex02/AForm.cpp	/^int Form::gradeCheck(int grade) const$/;"	f	class:Form	typeref:typename:int
+gradeCheck	cpp05/ex02/Bureaucrat.cpp	/^int Bureaucrat::gradeCheck(int grade) const$/;"	f	class:Bureaucrat	typeref:typename:int
+gradeCheck	cpp05/ex03/AForm.cpp	/^int Form::gradeCheck(int grade) const$/;"	f	class:Form	typeref:typename:int
+gradeCheck	cpp05/ex03/Bureaucrat.cpp	/^int Bureaucrat::gradeCheck(int grade) const$/;"	f	class:Bureaucrat	typeref:typename:int
+guardGate	cpp03/ex01/ScavTrap.cpp	/^void ScavTrap::guardGate()$/;"	f	class:ScavTrap	typeref:typename:void
+guardGate	cpp03/ex02/ScavTrap.cpp	/^void ScavTrap::guardGate()$/;"	f	class:ScavTrap	typeref:typename:void
+guardGate	cpp03/ex03/ScavTrap.cpp	/^void ScavTrap::guardGate()$/;"	f	class:ScavTrap	typeref:typename:void
+highFivesGuys	cpp03/ex02/FragTrap.cpp	/^void FragTrap::highFivesGuys()$/;"	f	class:FragTrap	typeref:typename:void
+highFivesGuys	cpp03/ex03/FragTrap.cpp	/^void FragTrap::highFivesGuys()$/;"	f	class:FragTrap	typeref:typename:void
+ideas	cpp04/ex01/Brain.hpp	/^		std::string ideas[100];$/;"	m	class:Brain	typeref:typename:std::string[100]
+ideas	cpp04/ex02/Brain.hpp	/^		std::string ideas[100];$/;"	m	class:Brain	typeref:typename:std::string[100]
+identify	cpp06/ex02/Func.cpp	/^void identify( Base &p )$/;"	f	typeref:typename:void
+identify	cpp06/ex02/Func.cpp	/^void identify( Base *p )$/;"	f	typeref:typename:void
+incrementGrade	cpp05/ex00/Bureaucrat.cpp	/^void Bureaucrat::incrementGrade( void )$/;"	f	class:Bureaucrat	typeref:typename:void
+incrementGrade	cpp05/ex01/Bureaucrat.cpp	/^void Bureaucrat::incrementGrade( void )$/;"	f	class:Bureaucrat	typeref:typename:void
+incrementGrade	cpp05/ex02/Bureaucrat.cpp	/^void Bureaucrat::incrementGrade( void )$/;"	f	class:Bureaucrat	typeref:typename:void
+incrementGrade	cpp05/ex03/Bureaucrat.cpp	/^void Bureaucrat::incrementGrade( void )$/;"	f	class:Bureaucrat	typeref:typename:void
+index	cpp00/ex01/Contact.hpp	/^		int			index;$/;"	m	class:Contact	typeref:typename:int
+info	cpp01/ex05/Harl.cpp	/^void	Harl::info( void ) {$/;"	f	class:Harl	typeref:typename:void
+info	cpp01/ex06/Harl.cpp	/^void	Harl::info( void ) {$/;"	f	class:Harl	typeref:typename:void
+initRandCaller	cpp06/ex02/Func.cpp	/^InitRandCaller initRandCaller;$/;"	v	typeref:typename:InitRandCaller
+init_rand	cpp06/ex02/Func.cpp	/^void init_rand( void )$/;"	f	typeref:typename:void
+initializer_list	.vscode/settings.json	/^		"initializer_list": "cpp",$/;"	s	object:files.associations
+intLiteral	cpp06/ex00/Data.cpp	/^void	intLiteral(std::string const &str)$/;"	f	typeref:typename:void
+ints_t	cpp00/ex02/tests.cpp	/^	typedef std::vector<int>								  ints_t;$/;"	t	function:main	typeref:typename:std::vector<int>	file:
+iomanip	.vscode/settings.json	/^		"iomanip": "cpp",$/;"	s	object:files.associations
+iosfwd	.vscode/settings.json	/^		"iosfwd": "cpp",$/;"	s	object:files.associations
+iostream	.vscode/settings.json	/^		"iostream": "cpp",$/;"	s	object:files.associations
+is_a_triangle	cpp02/ex03/main.cpp	/^static bool is_a_triangle(Point const a, Point const b, Point const c) {$/;"	f	typeref:typename:bool	file:
+istream	.vscode/settings.json	/^		"istream": "cpp",$/;"	s	object:files.associations
+iterator	.vscode/settings.json	/^		"iterator": "cpp",$/;"	s	object:files.associations
+last_name	cpp00/ex01/Contact.hpp	/^		std::string	last_name;$/;"	m	class:Contact	typeref:typename:std::string
+learnMateria	cpp04/ex03/MateriaSource.cpp	/^void	MateriaSource::learnMateria(AMateria* m) {$/;"	f	class:MateriaSource	typeref:typename:void
+limits	.vscode/settings.json	/^		"limits": "cpp",$/;"	s	object:files.associations
+m_grade	cpp05/ex00/Bureaucrat.hpp	/^		int m_grade;$/;"	m	class:Bureaucrat	typeref:typename:int
+m_grade	cpp05/ex01/Bureaucrat.hpp	/^		int m_grade;$/;"	m	class:Bureaucrat	typeref:typename:int
+m_grade	cpp05/ex02/Bureaucrat.hpp	/^		int m_grade;$/;"	m	class:Bureaucrat	typeref:typename:int
+m_grade	cpp05/ex03/Bureaucrat.hpp	/^		int m_grade;$/;"	m	class:Bureaucrat	typeref:typename:int
+m_gradeToExecute	cpp05/ex01/Form.hpp	/^		int const m_gradeToExecute;$/;"	m	class:Form	typeref:typename:int const
+m_gradeToExecute	cpp05/ex02/AForm.hpp	/^		int const m_gradeToExecute;$/;"	m	class:Form	typeref:typename:int const
+m_gradeToExecute	cpp05/ex03/AForm.hpp	/^		int const m_gradeToExecute;$/;"	m	class:Form	typeref:typename:int const
+m_gradeToSign	cpp05/ex01/Form.hpp	/^		int const m_gradeToSign;$/;"	m	class:Form	typeref:typename:int const
+m_gradeToSign	cpp05/ex02/AForm.hpp	/^		int const m_gradeToSign;$/;"	m	class:Form	typeref:typename:int const
+m_gradeToSign	cpp05/ex03/AForm.hpp	/^		int const m_gradeToSign;$/;"	m	class:Form	typeref:typename:int const
+m_name	cpp05/ex00/Bureaucrat.hpp	/^		std::string const m_name;$/;"	m	class:Bureaucrat	typeref:typename:std::string const
+m_name	cpp05/ex01/Bureaucrat.hpp	/^		std::string const m_name;$/;"	m	class:Bureaucrat	typeref:typename:std::string const
+m_name	cpp05/ex01/Form.hpp	/^		std::string const m_name;$/;"	m	class:Form	typeref:typename:std::string const
+m_name	cpp05/ex02/AForm.hpp	/^		std::string const m_name;$/;"	m	class:Form	typeref:typename:std::string const
+m_name	cpp05/ex02/Bureaucrat.hpp	/^		std::string const m_name;$/;"	m	class:Bureaucrat	typeref:typename:std::string const
+m_name	cpp05/ex03/AForm.hpp	/^		std::string const m_name;$/;"	m	class:Form	typeref:typename:std::string const
+m_name	cpp05/ex03/Bureaucrat.hpp	/^		std::string const m_name;$/;"	m	class:Bureaucrat	typeref:typename:std::string const
+m_signed	cpp05/ex01/Form.hpp	/^		bool m_signed;$/;"	m	class:Form	typeref:typename:bool
+m_signed	cpp05/ex02/AForm.hpp	/^		bool m_signed;$/;"	m	class:Form	typeref:typename:bool
+m_signed	cpp05/ex03/AForm.hpp	/^		bool m_signed;$/;"	m	class:Form	typeref:typename:bool
+m_target	cpp05/ex02/PresidentialPardonForm.hpp	/^		std::string const m_target;$/;"	m	class:PresidentialPardonForm	typeref:typename:std::string const
+m_target	cpp05/ex02/RobotomyRequestForm.hpp	/^		std::string const m_target;$/;"	m	class:RobotomyRequestForm	typeref:typename:std::string const
+m_target	cpp05/ex02/ShrubberyCreationForm.hpp	/^		std::string const m_target;$/;"	m	class:ShrubberyCreationForm	typeref:typename:std::string const
+m_target	cpp05/ex03/PresidentialPardonForm.hpp	/^		std::string const m_target;$/;"	m	class:PresidentialPardonForm	typeref:typename:std::string const
+m_target	cpp05/ex03/RobotomyRequestForm.hpp	/^		std::string const m_target;$/;"	m	class:RobotomyRequestForm	typeref:typename:std::string const
+m_target	cpp05/ex03/ShrubberyCreationForm.hpp	/^		std::string const m_target;$/;"	m	class:ShrubberyCreationForm	typeref:typename:std::string const
+main	cpp00/ex00/megaphone.cpp	/^int main(int ac, char **av)$/;"	f	typeref:typename:int
+main	cpp00/ex01/main.cpp	/^int main()$/;"	f	typeref:typename:int
+main	cpp00/ex02/tests.cpp	/^int		main( void ) {$/;"	f	typeref:typename:int
+main	cpp01/ex00/main.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	cpp01/ex01/main.cpp	/^int main ( void )$/;"	f	typeref:typename:int
+main	cpp01/ex02/main.cpp	/^int main( void )$/;"	f	typeref:typename:int
+main	cpp01/ex03/main.cpp	/^int main()$/;"	f	typeref:typename:int
+main	cpp01/ex04/main.cpp	/^int main (int ac, char **av)$/;"	f	typeref:typename:int
+main	cpp01/ex05/main.cpp	/^int main(int ac, char **av)$/;"	f	typeref:typename:int
+main	cpp01/ex06/main.cpp	/^int main(int ac, char **av)$/;"	f	typeref:typename:int
+main	cpp02/ex00/main.cpp	/^int main( void )$/;"	f	typeref:typename:int
+main	cpp02/ex01/main.cpp	/^int main( void )$/;"	f	typeref:typename:int
+main	cpp02/ex02/main.cpp	/^int main( void )$/;"	f	typeref:typename:int
+main	cpp02/ex03/main.cpp	/^int main ( void )$/;"	f	typeref:typename:int
+main	cpp03/ex00/main.cpp	/^int main ( void )$/;"	f	typeref:typename:int
+main	cpp03/ex01/main.cpp	/^int main ( void )$/;"	f	typeref:typename:int
+main	cpp03/ex02/main.cpp	/^int main ( void )$/;"	f	typeref:typename:int
+main	cpp03/ex03/main.cpp	/^int main ( void )$/;"	f	typeref:typename:int
+main	cpp04/ex00/main.cpp	/^int main ( void )$/;"	f	typeref:typename:int
+main	cpp04/ex01/main.cpp	/^int main ( void )$/;"	f	typeref:typename:int
+main	cpp04/ex02/main.cpp	/^int main ( void )$/;"	f	typeref:typename:int
+main	cpp04/ex03/main.cpp	/^int main()$/;"	f	typeref:typename:int
+main	cpp05/ex00/main.cpp	/^int main()$/;"	f	typeref:typename:int
+main	cpp05/ex01/main.cpp	/^int main(void)$/;"	f	typeref:typename:int
+main	cpp05/ex02/main.cpp	/^int main()$/;"	f	typeref:typename:int
+main	cpp05/ex03/main.cpp	/^int main()$/;"	f	typeref:typename:int
+main	cpp06/ex00/main.cpp	/^int main ( int ac , char **av)$/;"	f	typeref:typename:int
+main	cpp06/ex01/main.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	cpp06/ex02/main.cpp	/^int main ( void )$/;"	f	typeref:typename:int
+main	cpp07/ex00/main.cpp	/^int main() {$/;"	f	typeref:typename:int
+makeDeposit	cpp00/ex02/Account.cpp	/^void	Account::makeDeposit( int deposit ) {$/;"	f	class:Account	typeref:typename:void
+makeForm	cpp05/ex03/Intern.cpp	/^Form* Intern::makeForm(std::string const &name, std::string const &target)$/;"	f	class:Intern	typeref:typename:Form *
+makeSound	cpp04/ex00/Animal.cpp	/^void	Animal::makeSound() const {$/;"	f	class:Animal	typeref:typename:void
+makeSound	cpp04/ex00/Cat.cpp	/^void	Cat::makeSound() const {$/;"	f	class:Cat	typeref:typename:void
+makeSound	cpp04/ex00/Dog.cpp	/^void	Dog::makeSound() const {$/;"	f	class:Dog	typeref:typename:void
+makeSound	cpp04/ex00/WrongAnimal.cpp	/^void	WrongAnimal::makeSound() const {$/;"	f	class:WrongAnimal	typeref:typename:void
+makeSound	cpp04/ex00/WrongCat.cpp	/^void	WrongCat::makeSound() const {$/;"	f	class:WrongCat	typeref:typename:void
+makeSound	cpp04/ex01/Animal.cpp	/^void	Animal::makeSound() const {$/;"	f	class:Animal	typeref:typename:void
+makeSound	cpp04/ex01/Cat.cpp	/^void	Cat::makeSound() const {$/;"	f	class:Cat	typeref:typename:void
+makeSound	cpp04/ex01/Dog.cpp	/^void	Dog::makeSound() const {$/;"	f	class:Dog	typeref:typename:void
+makeSound	cpp04/ex01/WrongAnimal.cpp	/^void	WrongAnimal::makeSound() const {$/;"	f	class:WrongAnimal	typeref:typename:void
+makeSound	cpp04/ex01/WrongCat.cpp	/^void	WrongCat::makeSound() const {$/;"	f	class:WrongCat	typeref:typename:void
+makeSound	cpp04/ex02/Animal.cpp	/^void	Animal::makeSound() const {$/;"	f	class:Animal	typeref:typename:void
+makeSound	cpp04/ex02/Cat.cpp	/^void	Cat::makeSound() const {$/;"	f	class:Cat	typeref:typename:void
+makeSound	cpp04/ex02/Dog.cpp	/^void	Dog::makeSound() const {$/;"	f	class:Dog	typeref:typename:void
+makeSound	cpp04/ex02/WrongAnimal.cpp	/^void	WrongAnimal::makeSound() const {$/;"	f	class:WrongAnimal	typeref:typename:void
+makeSound	cpp04/ex02/WrongCat.cpp	/^void	WrongCat::makeSound() const {$/;"	f	class:WrongCat	typeref:typename:void
+makeWithdrawal	cpp00/ex02/Account.cpp	/^bool	Account::makeWithdrawal( int withdrawal ) {$/;"	f	class:Account	typeref:typename:bool
+map	.vscode/settings.json	/^		"map": "cpp"$/;"	s	object:files.associations
+max	cpp02/ex02/Fixed.cpp	/^Fixed& Fixed::max(Fixed& a, Fixed& b)$/;"	f	class:Fixed	typeref:typename:Fixed &
+max	cpp02/ex02/Fixed.cpp	/^const Fixed& Fixed::max(const Fixed& a, const Fixed& b)$/;"	f	class:Fixed	typeref:typename:const Fixed &
+max	cpp02/ex03/Fixed.cpp	/^Fixed& Fixed::max(Fixed& a, Fixed& b)$/;"	f	class:Fixed	typeref:typename:Fixed &
+max	cpp02/ex03/Fixed.cpp	/^const Fixed& Fixed::max(const Fixed& a, const Fixed& b)$/;"	f	class:Fixed	typeref:typename:const Fixed &
+max	cpp07/ex00/Whatever.hpp	/^template <typename T> T max(T x, T y)$/;"	f	typeref:typename:T
+memory	.vscode/settings.json	/^		"memory": "cpp",$/;"	s	object:files.associations
+memory_resource	.vscode/settings.json	/^		"memory_resource": "cpp",$/;"	s	object:files.associations
+min	cpp02/ex02/Fixed.cpp	/^Fixed& Fixed::min(Fixed& a, Fixed& b)$/;"	f	class:Fixed	typeref:typename:Fixed &
+min	cpp02/ex02/Fixed.cpp	/^const Fixed& Fixed::min(const Fixed& a, const Fixed& b)$/;"	f	class:Fixed	typeref:typename:const Fixed &
+min	cpp02/ex03/Fixed.cpp	/^Fixed& Fixed::min(Fixed& a, Fixed& b)$/;"	f	class:Fixed	typeref:typename:Fixed &
+min	cpp02/ex03/Fixed.cpp	/^const Fixed& Fixed::min(const Fixed& a, const Fixed& b)$/;"	f	class:Fixed	typeref:typename:const Fixed &
+min	cpp07/ex00/Whatever.hpp	/^template <typename T> T min(T x, T y)$/;"	f	typeref:typename:T
+n	cpp06/ex01/Serializer.hpp	/^	int n;$/;"	m	struct:Data	typeref:typename:int
+name	.vscode/launch.json	/^		"name": "(gdb) Launch Primateria",$/;"	s	object:configurations.0
+name	cpp01/ex00/Zombie.hpp	/^		std::string name;$/;"	m	class:Zombie	typeref:typename:std::string
+name	cpp01/ex01/Zombie.hpp	/^		std::string name;$/;"	m	class:Zombie	typeref:typename:std::string
+name	cpp01/ex03/HumanA.hpp	/^		std::string name;$/;"	m	class:HumanA	typeref:typename:std::string
+name	cpp01/ex03/HumanB.hpp	/^		std::string name;$/;"	m	class:HumanB	typeref:typename:std::string
+nb_contacts	cpp00/ex01/PhoneBook.hpp	/^	int nb_contacts;$/;"	m	class:PhoneBook	typeref:typename:int
+new	.vscode/settings.json	/^		"new": "cpp",$/;"	s	object:files.associations
+newZombie	cpp01/ex00/newZombie.cpp	/^Zombie*	newZombie( std::string name)$/;"	f	typeref:typename:Zombie *
+nickname	cpp00/ex01/Contact.hpp	/^		std::string	nickname;$/;"	m	class:Contact	typeref:typename:std::string
+numeric	.vscode/settings.json	/^		"numeric": "cpp",$/;"	s	object:files.associations
+oldest	cpp00/ex01/PhoneBook.hpp	/^	int oldest;$/;"	m	class:PhoneBook	typeref:typename:int
+operator !=	cpp02/ex02/Fixed.cpp	/^bool Fixed::operator!=( const Fixed& other ) const$/;"	f	class:Fixed	typeref:typename:bool
+operator !=	cpp02/ex03/Fixed.cpp	/^bool Fixed::operator!=( const Fixed& other ) const$/;"	f	class:Fixed	typeref:typename:bool
+operator *	cpp02/ex02/Fixed.cpp	/^Fixed Fixed::operator*(const Fixed& other) const $/;"	f	class:Fixed	typeref:typename:Fixed
+operator *	cpp02/ex03/Fixed.cpp	/^Fixed Fixed::operator*(const Fixed& other) const $/;"	f	class:Fixed	typeref:typename:Fixed
+operator +	cpp02/ex02/Fixed.cpp	/^Fixed Fixed::operator+(const Fixed& other) const$/;"	f	class:Fixed	typeref:typename:Fixed
+operator +	cpp02/ex03/Fixed.cpp	/^Fixed Fixed::operator+(const Fixed& other) const$/;"	f	class:Fixed	typeref:typename:Fixed
+operator ++	cpp02/ex02/Fixed.cpp	/^Fixed Fixed::operator++(int)$/;"	f	class:Fixed	typeref:typename:Fixed
+operator ++	cpp02/ex02/Fixed.cpp	/^Fixed& Fixed::operator++()$/;"	f	class:Fixed	typeref:typename:Fixed &
+operator ++	cpp02/ex03/Fixed.cpp	/^Fixed Fixed::operator++(int)$/;"	f	class:Fixed	typeref:typename:Fixed
+operator ++	cpp02/ex03/Fixed.cpp	/^Fixed& Fixed::operator++()$/;"	f	class:Fixed	typeref:typename:Fixed &
+operator -	cpp02/ex02/Fixed.cpp	/^Fixed Fixed::operator-(const Fixed& other) const$/;"	f	class:Fixed	typeref:typename:Fixed
+operator -	cpp02/ex03/Fixed.cpp	/^Fixed Fixed::operator-(const Fixed& other) const$/;"	f	class:Fixed	typeref:typename:Fixed
+operator --	cpp02/ex02/Fixed.cpp	/^Fixed Fixed::operator--( int )$/;"	f	class:Fixed	typeref:typename:Fixed
+operator --	cpp02/ex02/Fixed.cpp	/^Fixed& Fixed::operator--( void )$/;"	f	class:Fixed	typeref:typename:Fixed &
+operator --	cpp02/ex03/Fixed.cpp	/^Fixed Fixed::operator--( int )$/;"	f	class:Fixed	typeref:typename:Fixed
+operator --	cpp02/ex03/Fixed.cpp	/^Fixed& Fixed::operator--( void )$/;"	f	class:Fixed	typeref:typename:Fixed &
+operator /	cpp02/ex02/Fixed.cpp	/^Fixed Fixed::operator\/(const Fixed& other) const $/;"	f	class:Fixed	typeref:typename:Fixed
+operator /	cpp02/ex03/Fixed.cpp	/^Fixed Fixed::operator\/(const Fixed& other) const $/;"	f	class:Fixed	typeref:typename:Fixed
+operator <	cpp02/ex02/Fixed.cpp	/^bool Fixed::operator<( const Fixed& other ) const$/;"	f	class:Fixed	typeref:typename:bool
+operator <	cpp02/ex03/Fixed.cpp	/^bool Fixed::operator<( const Fixed& other ) const$/;"	f	class:Fixed	typeref:typename:bool
+operator <<	cpp02/ex01/Fixed.cpp	/^std::ostream& operator<<( std::ostream& os, const Fixed& value )$/;"	f	typeref:typename:std::ostream &
+operator <<	cpp02/ex02/Fixed.cpp	/^std::ostream& operator<<( std::ostream& os, const Fixed& value )$/;"	f	typeref:typename:std::ostream &
+operator <<	cpp02/ex03/Fixed.cpp	/^std::ostream& operator<<( std::ostream& os, const Fixed& value )$/;"	f	typeref:typename:std::ostream &
+operator <<	cpp05/ex00/Bureaucrat.cpp	/^std::ostream &operator<<(std::ostream &out, Bureaucrat const &bureaucrat)$/;"	f	typeref:typename:std::ostream &
+operator <<	cpp05/ex01/Bureaucrat.cpp	/^std::ostream &operator<<(std::ostream &out, Bureaucrat const &bureaucrat)$/;"	f	typeref:typename:std::ostream &
+operator <<	cpp05/ex01/Form.cpp	/^std::ostream &operator<<(std::ostream &out, Form const &form)$/;"	f	typeref:typename:std::ostream &
+operator <<	cpp05/ex02/AForm.cpp	/^std::ostream &operator<<(std::ostream &out, Form const &form)$/;"	f	typeref:typename:std::ostream &
+operator <<	cpp05/ex02/Bureaucrat.cpp	/^std::ostream &operator<<(std::ostream &out, Bureaucrat const &bureaucrat)$/;"	f	typeref:typename:std::ostream &
+operator <<	cpp05/ex02/ShrubberyCreationForm.cpp	/^std::ostream &operator<<(std::ostream &out, ShrubberyCreationForm const &form)$/;"	f	typeref:typename:std::ostream &
+operator <<	cpp05/ex03/AForm.cpp	/^std::ostream &operator<<(std::ostream &out, Form const &form)$/;"	f	typeref:typename:std::ostream &
+operator <<	cpp05/ex03/Bureaucrat.cpp	/^std::ostream &operator<<(std::ostream &out, Bureaucrat const &bureaucrat)$/;"	f	typeref:typename:std::ostream &
+operator <<	cpp05/ex03/ShrubberyCreationForm.cpp	/^std::ostream &operator<<(std::ostream &out, ShrubberyCreationForm const &form)$/;"	f	typeref:typename:std::ostream &
+operator <=	cpp02/ex02/Fixed.cpp	/^bool Fixed::operator<=( const Fixed& other ) const$/;"	f	class:Fixed	typeref:typename:bool
+operator <=	cpp02/ex03/Fixed.cpp	/^bool Fixed::operator<=( const Fixed& other ) const$/;"	f	class:Fixed	typeref:typename:bool
+operator =	cpp02/ex00/Fixed.cpp	/^Fixed& Fixed::operator=( const Fixed& other )$/;"	f	class:Fixed	typeref:typename:Fixed &
+operator =	cpp02/ex01/Fixed.cpp	/^Fixed& Fixed::operator=( const Fixed& other )$/;"	f	class:Fixed	typeref:typename:Fixed &
+operator =	cpp02/ex02/Fixed.cpp	/^Fixed& Fixed::operator=( const Fixed& other )$/;"	f	class:Fixed	typeref:typename:Fixed &
+operator =	cpp02/ex03/Fixed.cpp	/^Fixed& Fixed::operator=( const Fixed& other )$/;"	f	class:Fixed	typeref:typename:Fixed &
+operator =	cpp02/ex03/Point.cpp	/^Point& Point::operator=(const Point& other) {$/;"	f	class:Point	typeref:typename:Point &
+operator =	cpp03/ex00/ClapTrap.cpp	/^ClapTrap & ClapTrap::operator=( ClapTrap const & rhs )$/;"	f	class:ClapTrap	typeref:typename:ClapTrap &
+operator =	cpp03/ex01/ClapTrap.cpp	/^ClapTrap & ClapTrap::operator=( ClapTrap const & rhs )$/;"	f	class:ClapTrap	typeref:typename:ClapTrap &
+operator =	cpp03/ex01/ScavTrap.cpp	/^ScavTrap & ScavTrap::operator=(ScavTrap const & rhs)$/;"	f	class:ScavTrap	typeref:typename:ScavTrap &
+operator =	cpp03/ex02/ClapTrap.cpp	/^ClapTrap & ClapTrap::operator=( ClapTrap const & rhs )$/;"	f	class:ClapTrap	typeref:typename:ClapTrap &
+operator =	cpp03/ex02/FragTrap.cpp	/^FragTrap & FragTrap::operator=(FragTrap const & rhs)$/;"	f	class:FragTrap	typeref:typename:FragTrap &
+operator =	cpp03/ex02/ScavTrap.cpp	/^ScavTrap & ScavTrap::operator=(ScavTrap const & rhs)$/;"	f	class:ScavTrap	typeref:typename:ScavTrap &
+operator =	cpp03/ex03/ClapTrap.cpp	/^ClapTrap & ClapTrap::operator=( ClapTrap const & rhs )$/;"	f	class:ClapTrap	typeref:typename:ClapTrap &
+operator =	cpp03/ex03/DiamondTrap.cpp	/^DiamondTrap & DiamondTrap::operator=(DiamondTrap const & rhs)$/;"	f	class:DiamondTrap	typeref:typename:DiamondTrap &
+operator =	cpp03/ex03/FragTrap.cpp	/^FragTrap & FragTrap::operator=(FragTrap const & rhs)$/;"	f	class:FragTrap	typeref:typename:FragTrap &
+operator =	cpp03/ex03/ScavTrap.cpp	/^ScavTrap & ScavTrap::operator=(ScavTrap const & rhs)$/;"	f	class:ScavTrap	typeref:typename:ScavTrap &
+operator =	cpp04/ex00/Animal.cpp	/^Animal		&Animal::operator=(const Animal &obj) {$/;"	f	class:Animal	typeref:typename:Animal &
+operator =	cpp04/ex00/Cat.cpp	/^Cat	&Cat::operator=(const Cat &obj) {$/;"	f	class:Cat	typeref:typename:Cat &
+operator =	cpp04/ex00/Dog.cpp	/^Dog	&Dog::operator=(const Dog &obj) {$/;"	f	class:Dog	typeref:typename:Dog &
+operator =	cpp04/ex00/WrongAnimal.cpp	/^WrongAnimal		&WrongAnimal::operator=(const WrongAnimal &obj) {$/;"	f	class:WrongAnimal	typeref:typename:WrongAnimal &
+operator =	cpp04/ex00/WrongCat.cpp	/^WrongCat	&WrongCat::operator=(const WrongCat &obj) {$/;"	f	class:WrongCat	typeref:typename:WrongCat &
+operator =	cpp04/ex01/Animal.cpp	/^Animal		&Animal::operator=(const Animal &obj) {$/;"	f	class:Animal	typeref:typename:Animal &
+operator =	cpp04/ex01/Brain.cpp	/^Brain	&Brain::operator=(const Brain &obj) {$/;"	f	class:Brain	typeref:typename:Brain &
+operator =	cpp04/ex01/Cat.cpp	/^Cat	&Cat::operator=(const Cat &obj) {$/;"	f	class:Cat	typeref:typename:Cat &
+operator =	cpp04/ex01/Dog.cpp	/^Dog	&Dog::operator=(const Dog &obj) {$/;"	f	class:Dog	typeref:typename:Dog &
+operator =	cpp04/ex01/WrongAnimal.cpp	/^WrongAnimal		&WrongAnimal::operator=(const WrongAnimal &obj) {$/;"	f	class:WrongAnimal	typeref:typename:WrongAnimal &
+operator =	cpp04/ex01/WrongCat.cpp	/^WrongCat	&WrongCat::operator=(const WrongCat &obj) {$/;"	f	class:WrongCat	typeref:typename:WrongCat &
+operator =	cpp04/ex02/Animal.cpp	/^Animal		&Animal::operator=(const Animal &obj) {$/;"	f	class:Animal	typeref:typename:Animal &
+operator =	cpp04/ex02/Brain.cpp	/^Brain	&Brain::operator=(const Brain &obj) {$/;"	f	class:Brain	typeref:typename:Brain &
+operator =	cpp04/ex02/Cat.cpp	/^Cat	&Cat::operator=(const Cat &obj) {$/;"	f	class:Cat	typeref:typename:Cat &
+operator =	cpp04/ex02/Dog.cpp	/^Dog	&Dog::operator=(const Dog &obj) {$/;"	f	class:Dog	typeref:typename:Dog &
+operator =	cpp04/ex02/WrongAnimal.cpp	/^WrongAnimal		&WrongAnimal::operator=(const WrongAnimal &obj) {$/;"	f	class:WrongAnimal	typeref:typename:WrongAnimal &
+operator =	cpp04/ex02/WrongCat.cpp	/^WrongCat	&WrongCat::operator=(const WrongCat &obj) {$/;"	f	class:WrongCat	typeref:typename:WrongCat &
+operator =	cpp04/ex03/AMateria.cpp	/^AMateria & AMateria::operator=(AMateria const & rhs) {$/;"	f	class:AMateria	typeref:typename:AMateria &
+operator =	cpp04/ex03/ATile.cpp	/^ATile & ATile::operator=(ATile const & rhs)$/;"	f	class:ATile	typeref:typename:ATile &
+operator =	cpp04/ex03/Character.cpp	/^Character & Character::operator=( Character const & rhs ) {$/;"	f	class:Character	typeref:typename:Character &
+operator =	cpp04/ex03/Cure.cpp	/^Cure & Cure::operator=(Cure const & rhs) {$/;"	f	class:Cure	typeref:typename:Cure &
+operator =	cpp04/ex03/Floor.cpp	/^Floor& Floor::operator=(Floor const & rhs)$/;"	f	class:Floor	typeref:typename:Floor &
+operator =	cpp04/ex03/Ice.cpp	/^Ice & Ice::operator=(Ice const & rhs) {$/;"	f	class:Ice	typeref:typename:Ice &
+operator =	cpp04/ex03/MateriaSource.cpp	/^MateriaSource & MateriaSource::operator=(MateriaSource const & rhs) {$/;"	f	class:MateriaSource	typeref:typename:MateriaSource &
+operator =	cpp05/ex00/Bureaucrat.cpp	/^Bureaucrat &Bureaucrat::operator=(Bureaucrat const &other)$/;"	f	class:Bureaucrat	typeref:typename:Bureaucrat &
+operator =	cpp05/ex01/Bureaucrat.cpp	/^Bureaucrat &Bureaucrat::operator=(Bureaucrat const &other)$/;"	f	class:Bureaucrat	typeref:typename:Bureaucrat &
+operator =	cpp05/ex01/Form.cpp	/^Form &Form::operator=(Form const &other)$/;"	f	class:Form	typeref:typename:Form &
+operator =	cpp05/ex02/AForm.cpp	/^Form &Form::operator=(Form const &other)$/;"	f	class:Form	typeref:typename:Form &
+operator =	cpp05/ex02/Bureaucrat.cpp	/^Bureaucrat &Bureaucrat::operator=(Bureaucrat const &other)$/;"	f	class:Bureaucrat	typeref:typename:Bureaucrat &
+operator =	cpp05/ex02/PresidentialPardonForm.cpp	/^PresidentialPardonForm &PresidentialPardonForm::operator=(PresidentialPardonForm const &other)$/;"	f	class:PresidentialPardonForm	typeref:typename:PresidentialPardonForm &
+operator =	cpp05/ex02/RobotomyRequestForm.cpp	/^RobotomyRequestForm &RobotomyRequestForm::operator=(RobotomyRequestForm const &other)$/;"	f	class:RobotomyRequestForm	typeref:typename:RobotomyRequestForm &
+operator =	cpp05/ex02/ShrubberyCreationForm.cpp	/^ShrubberyCreationForm &ShrubberyCreationForm::operator=(ShrubberyCreationForm const &other)$/;"	f	class:ShrubberyCreationForm	typeref:typename:ShrubberyCreationForm &
+operator =	cpp05/ex03/AForm.cpp	/^Form &Form::operator=(Form const &other)$/;"	f	class:Form	typeref:typename:Form &
+operator =	cpp05/ex03/Bureaucrat.cpp	/^Bureaucrat &Bureaucrat::operator=(Bureaucrat const &other)$/;"	f	class:Bureaucrat	typeref:typename:Bureaucrat &
+operator =	cpp05/ex03/Intern.cpp	/^Intern &Intern::operator=(Intern const &other)$/;"	f	class:Intern	typeref:typename:Intern &
+operator =	cpp05/ex03/PresidentialPardonForm.cpp	/^PresidentialPardonForm &PresidentialPardonForm::operator=(PresidentialPardonForm const &other)$/;"	f	class:PresidentialPardonForm	typeref:typename:PresidentialPardonForm &
+operator =	cpp05/ex03/RobotomyRequestForm.cpp	/^RobotomyRequestForm &RobotomyRequestForm::operator=(RobotomyRequestForm const &other)$/;"	f	class:RobotomyRequestForm	typeref:typename:RobotomyRequestForm &
+operator =	cpp05/ex03/ShrubberyCreationForm.cpp	/^ShrubberyCreationForm &ShrubberyCreationForm::operator=(ShrubberyCreationForm const &other)$/;"	f	class:ShrubberyCreationForm	typeref:typename:ShrubberyCreationForm &
+operator =	cpp06/ex00/ScalarConverter.cpp	/^ScalarConverter &ScalarConverter::operator=(ScalarConverter const &rhs)$/;"	f	class:ScalarConverter	typeref:typename:ScalarConverter &
+operator =	cpp06/ex01/Serializer.hpp	/^		Serializer &operator=(Serializer const &copy) {(void)copy; return *this;};$/;"	f	class:Serializer	typeref:typename:Serializer &
+operator ==	cpp02/ex02/Fixed.cpp	/^bool Fixed::operator==( const Fixed& other ) const$/;"	f	class:Fixed	typeref:typename:bool
+operator ==	cpp02/ex03/Fixed.cpp	/^bool Fixed::operator==( const Fixed& other ) const$/;"	f	class:Fixed	typeref:typename:bool
+operator >	cpp02/ex02/Fixed.cpp	/^bool Fixed::operator>( const Fixed& other ) const$/;"	f	class:Fixed	typeref:typename:bool
+operator >	cpp02/ex03/Fixed.cpp	/^bool Fixed::operator>( const Fixed& other ) const$/;"	f	class:Fixed	typeref:typename:bool
+operator >=	cpp02/ex02/Fixed.cpp	/^bool Fixed::operator>=( const Fixed& other ) const$/;"	f	class:Fixed	typeref:typename:bool
+operator >=	cpp02/ex03/Fixed.cpp	/^bool Fixed::operator>=( const Fixed& other ) const$/;"	f	class:Fixed	typeref:typename:bool
+optional	.vscode/settings.json	/^		"optional": "cpp",$/;"	s	object:files.associations
+ostream	.vscode/settings.json	/^		"ostream": "cpp",$/;"	s	object:files.associations
+phone_number	cpp00/ex01/Contact.hpp	/^		std::string	phone_number;$/;"	m	class:Contact	typeref:typename:std::string
+popTile	cpp04/ex03/Floor.cpp	/^void Floor::popTile()$/;"	f	class:Floor	typeref:typename:void
+printBits	cpp02/ex02/Fixed.cpp	/^void printBits(int num) {$/;"	f	typeref:typename:void
+printBits	cpp02/ex03/Fixed.cpp	/^void printBits(int num) {$/;"	f	typeref:typename:void
+program	.vscode/launch.json	/^		"program": "${workspaceFolder}\/cpp04\/ex03\/🔥Primateria🔥",$/;"	s	object:configurations.0
+pushTile	cpp04/ex03/Floor.cpp	/^void Floor::pushTile(ATile* tile)$/;"	f	class:Floor	typeref:typename:void
+random	.vscode/settings.json	/^		"random": "cpp",$/;"	s	object:files.associations
+randomChump	cpp01/ex00/randomChump.cpp	/^void	randomChump( std::string name )$/;"	f	typeref:typename:void
+ranges	.vscode/settings.json	/^		"ranges": "cpp",$/;"	s	object:files.associations
+re	cpp00/ex00/Makefile	/^re: fclean all$/;"	t
+re	cpp00/ex01/Makefile	/^re: fclean all$/;"	t
+re	cpp00/ex02/Makefile	/^re: fclean all$/;"	t
+re	cpp01/ex00/Makefile	/^re: fclean all$/;"	t
+re	cpp01/ex01/Makefile	/^re: fclean all$/;"	t
+re	cpp01/ex02/Makefile	/^re: fclean all$/;"	t
+re	cpp01/ex03/Makefile	/^re: fclean all$/;"	t
+re	cpp01/ex04/Makefile	/^re: fclean all$/;"	t
+re	cpp01/ex05/Makefile	/^re: fclean all$/;"	t
+re	cpp01/ex06/Makefile	/^re: fclean all$/;"	t
+re	cpp02/ex00/Makefile	/^re: fclean all$/;"	t
+re	cpp02/ex01/Makefile	/^re: fclean all$/;"	t
+re	cpp02/ex02/Makefile	/^re: fclean all$/;"	t
+re	cpp02/ex03/Makefile	/^re: fclean all$/;"	t
+re	cpp03/ex00/Makefile	/^re: fclean all$/;"	t
+re	cpp03/ex01/Makefile	/^re: fclean all$/;"	t
+re	cpp03/ex02/Makefile	/^re: fclean all$/;"	t
+re	cpp03/ex03/Makefile	/^re: fclean all$/;"	t
+re	cpp04/ex00/Makefile	/^re: fclean all$/;"	t
+re	cpp04/ex01/Makefile	/^re: fclean all$/;"	t
+re	cpp04/ex02/Makefile	/^re: fclean all$/;"	t
+re	cpp04/ex03/Makefile	/^re: fclean all$/;"	t
+re	cpp05/ex00/Makefile	/^re: fclean all$/;"	t
+re	cpp05/ex01/Makefile	/^re: fclean all$/;"	t
+re	cpp05/ex02/Makefile	/^re: fclean all$/;"	t
+re	cpp05/ex03/Makefile	/^re: fclean all$/;"	t
+re	cpp06/ex00/Makefile	/^re: fclean all$/;"	t
+re	cpp06/ex01/Makefile	/^re: fclean all$/;"	t
+re	cpp06/ex02/Makefile	/^re: fclean all$/;"	t
+re	cpp07/ex00/Makefile	/^re: fclean all$/;"	t
+re	cpp07/ex01/Makefile	/^re: fclean all$/;"	t
+real_x	cpp02/ex03/Point.hpp	/^		Fixed real_x;$/;"	m	class:Point	typeref:typename:Fixed
+real_y	cpp02/ex03/Point.hpp	/^		Fixed real_y;$/;"	m	class:Point	typeref:typename:Fixed
+request	.vscode/launch.json	/^		"request": "launch",$/;"	s	object:configurations.0
+s1	cpp06/ex01/Serializer.hpp	/^	std::string s1;$/;"	m	struct:Data	typeref:typename:std::string
+s2	cpp06/ex01/Serializer.hpp	/^	std::string s2;$/;"	m	struct:Data	typeref:typename:std::string
+search_contact	cpp00/ex01/PhoneBook.cpp	/^void	PhoneBook::search_contact()$/;"	f	class:PhoneBook	typeref:typename:void
+serialize	cpp06/ex01/Serializer.cpp	/^uintptr_t Serializer::serialize(Data* ptr)$/;"	f	class:Serializer	typeref:typename:uintptr_t
+setMateria	cpp04/ex03/ATile.cpp	/^void		ATile::setMateria(AMateria* materia) { this->_materia = materia; }/;"	f	class:ATile	typeref:typename:void
+setName	cpp01/ex00/Zombie.cpp	/^void Zombie::setName(const std::string& newName)$/;"	f	class:Zombie	typeref:typename:void
+setName	cpp01/ex01/Zombie.cpp	/^void Zombie::setName(const std::string& newName)$/;"	f	class:Zombie	typeref:typename:void
+setNext	cpp04/ex03/ATile.cpp	/^void		ATile::setNext(ATile* next) { this->_next = next; }$/;"	f	class:ATile	typeref:typename:void
+setPrev	cpp04/ex03/ATile.cpp	/^void		ATile::setPrev(ATile* prev) { this->_prev = prev; }$/;"	f	class:ATile	typeref:typename:void
+setRawBits	cpp02/ex00/Fixed.cpp	/^void Fixed::setRawBits( int const raw )$/;"	f	class:Fixed	typeref:typename:void
+setRawBits	cpp02/ex01/Fixed.cpp	/^void Fixed::setRawBits( int const raw )$/;"	f	class:Fixed	typeref:typename:void
+setRawBits	cpp02/ex02/Fixed.cpp	/^void Fixed::setRawBits( int const raw )$/;"	f	class:Fixed	typeref:typename:void
+setRawBits	cpp02/ex03/Fixed.cpp	/^void Fixed::setRawBits( int const raw )$/;"	f	class:Fixed	typeref:typename:void
+setType	cpp01/ex03/Weapon.cpp	/^void Weapon::setType(std::string type)$/;"	f	class:Weapon	typeref:typename:void
+setWeapon	cpp01/ex03/HumanB.cpp	/^void HumanB::setWeapon(Weapon &weapon)$/;"	f	class:HumanB	typeref:typename:void
+setX	cpp02/ex03/Point.cpp	/^void Point::setX(Fixed const x) {$/;"	f	class:Point	typeref:typename:void
+setY	cpp02/ex03/Point.cpp	/^void Point::setY(Fixed const y) {$/;"	f	class:Point	typeref:typename:void
+set_darkest_secret	cpp00/ex01/Contact.cpp	/^void	Contact::set_darkest_secret(std::string darkest_secret)$/;"	f	class:Contact	typeref:typename:void
+set_first_name	cpp00/ex01/Contact.cpp	/^void	Contact::set_first_name(std::string first_name)$/;"	f	class:Contact	typeref:typename:void
+set_index	cpp00/ex01/Contact.cpp	/^void	Contact::set_index(int index)$/;"	f	class:Contact	typeref:typename:void
+set_last_name	cpp00/ex01/Contact.cpp	/^void	Contact::set_last_name(std::string last_name)$/;"	f	class:Contact	typeref:typename:void
+set_nickname	cpp00/ex01/Contact.cpp	/^void	Contact::set_nickname(std::string nickname)$/;"	f	class:Contact	typeref:typename:void
+set_phone_number	cpp00/ex01/Contact.cpp	/^void	Contact::set_phone_number(std::string phone_number)$/;"	f	class:Contact	typeref:typename:void
+signForm	cpp05/ex01/Bureaucrat.cpp	/^void Bureaucrat::signForm(Form &form)$/;"	f	class:Bureaucrat	typeref:typename:void
+signForm	cpp05/ex02/Bureaucrat.cpp	/^void Bureaucrat::signForm(Form &form)$/;"	f	class:Bureaucrat	typeref:typename:void
+signForm	cpp05/ex03/Bureaucrat.cpp	/^void Bureaucrat::signForm(Form &form)$/;"	f	class:Bureaucrat	typeref:typename:void
+sstream	.vscode/settings.json	/^		"sstream": "cpp",$/;"	s	object:files.associations
+stdexcept	.vscode/settings.json	/^		"stdexcept": "cpp",$/;"	s	object:files.associations
+stopAtEntry	.vscode/launch.json	/^		"stopAtEntry": false,$/;"	b	object:configurations.0
+streambuf	.vscode/settings.json	/^		"streambuf": "cpp",$/;"	s	object:files.associations
+string	.vscode/settings.json	/^		"string": "cpp",$/;"	s	object:files.associations
+string_view	.vscode/settings.json	/^		"string_view": "cpp",$/;"	s	object:files.associations
+swap	cpp07/ex00/Whatever.hpp	/^template <typename T> void swap(T &x, T &y)$/;"	f	typeref:typename:void
+system_error	.vscode/settings.json	/^		"system_error": "cpp",$/;"	s	object:files.associations
+t	cpp00/ex02/Account.hpp	/^	typedef Account		t;$/;"	t	class:Account	typeref:typename:Account
+takeDamage	cpp03/ex00/ClapTrap.cpp	/^void ClapTrap::takeDamage( unsigned int amount )$/;"	f	class:ClapTrap	typeref:typename:void
+takeDamage	cpp03/ex01/ClapTrap.cpp	/^void ClapTrap::takeDamage( unsigned int amount )$/;"	f	class:ClapTrap	typeref:typename:void
+takeDamage	cpp03/ex02/ClapTrap.cpp	/^void ClapTrap::takeDamage( unsigned int amount )$/;"	f	class:ClapTrap	typeref:typename:void
+takeDamage	cpp03/ex03/ClapTrap.cpp	/^void ClapTrap::takeDamage( unsigned int amount )$/;"	f	class:ClapTrap	typeref:typename:void
+test_announce	cpp01/ex00/main.cpp	/^void test_announce() {$/;"	f	typeref:typename:void
+test_constructor	cpp01/ex00/main.cpp	/^void test_constructor() {$/;"	f	typeref:typename:void
+test_copy_constructor	cpp01/ex00/main.cpp	/^void test_copy_constructor() {$/;"	f	typeref:typename:void
+test_setName	cpp01/ex00/main.cpp	/^void test_setName() {$/;"	f	typeref:typename:void
+toFloat	cpp02/ex01/Fixed.cpp	/^float Fixed::toFloat( void ) const$/;"	f	class:Fixed	typeref:typename:float
+toFloat	cpp02/ex02/Fixed.cpp	/^float Fixed::toFloat( void ) const$/;"	f	class:Fixed	typeref:typename:float
+toFloat	cpp02/ex03/Fixed.cpp	/^float Fixed::toFloat( void ) const$/;"	f	class:Fixed	typeref:typename:float
+toInt	cpp02/ex01/Fixed.cpp	/^int Fixed::toInt( void ) const$/;"	f	class:Fixed	typeref:typename:int
+toInt	cpp02/ex02/Fixed.cpp	/^int Fixed::toInt( void ) const$/;"	f	class:Fixed	typeref:typename:int
+toInt	cpp02/ex03/Fixed.cpp	/^int Fixed::toInt( void ) const$/;"	f	class:Fixed	typeref:typename:int
+tuple	.vscode/settings.json	/^		"tuple": "cpp",$/;"	s	object:files.associations
+type	.vscode/launch.json	/^		"type": "cppdbg",$/;"	s	object:configurations.0
+type	cpp01/ex03/Weapon.hpp	/^		std::string type;$/;"	m	class:Weapon	typeref:typename:std::string
+type	cpp04/ex00/Animal.hpp	/^		std::string type;$/;"	m	class:Animal	typeref:typename:std::string
+type	cpp04/ex00/WrongAnimal.hpp	/^		std::string type;$/;"	m	class:WrongAnimal	typeref:typename:std::string
+type	cpp04/ex01/Animal.hpp	/^		std::string type;$/;"	m	class:Animal	typeref:typename:std::string
+type	cpp04/ex01/WrongAnimal.hpp	/^		std::string type;$/;"	m	class:WrongAnimal	typeref:typename:std::string
+type	cpp04/ex02/Animal.hpp	/^		std::string type;$/;"	m	class:Animal	typeref:typename:std::string
+type	cpp04/ex02/WrongAnimal.hpp	/^		std::string type;$/;"	m	class:WrongAnimal	typeref:typename:std::string
+type_traits	.vscode/settings.json	/^		"type_traits": "cpp",$/;"	s	object:files.associations
+typeinfo	.vscode/settings.json	/^		"typeinfo": "cpp",$/;"	s	object:files.associations
+unequip	cpp04/ex03/Character.cpp	/^void Character::unequip(int idx) {$/;"	f	class:Character	typeref:typename:void
+unordered_map	.vscode/settings.json	/^		"unordered_map": "cpp",$/;"	s	object:files.associations
+use	cpp04/ex03/AMateria.cpp	/^void AMateria::use(ICharacter& target) {$/;"	f	class:AMateria	typeref:typename:void
+use	cpp04/ex03/Character.cpp	/^void Character::use(int idx, ICharacter& target) {$/;"	f	class:Character	typeref:typename:void
+use	cpp04/ex03/Cure.cpp	/^void Cure::use(ICharacter& target) {$/;"	f	class:Cure	typeref:typename:void
+use	cpp04/ex03/Ice.cpp	/^void Ice::use(ICharacter& target) {$/;"	f	class:Ice	typeref:typename:void
+utility	.vscode/settings.json	/^		"utility": "cpp",$/;"	s	object:files.associations
+value	cpp02/ex00/Fixed.hpp	/^		int value;$/;"	m	class:Fixed	typeref:typename:int
+value	cpp02/ex01/Fixed.hpp	/^		int value;$/;"	m	class:Fixed	typeref:typename:int
+value	cpp02/ex02/Fixed.hpp	/^		int value;$/;"	m	class:Fixed	typeref:typename:int
+value	cpp02/ex03/Fixed.hpp	/^		int value;$/;"	m	class:Fixed	typeref:typename:int
+vector	.vscode/settings.json	/^		"vector": "cpp",$/;"	s	object:files.associations
+warning	cpp01/ex05/Harl.cpp	/^void	Harl::warning( void ) {$/;"	f	class:Harl	typeref:typename:void
+warning	cpp01/ex06/Harl.cpp	/^void	Harl::warning( void ) {$/;"	f	class:Harl	typeref:typename:void
+weapon	cpp01/ex03/HumanA.hpp	/^		Weapon &weapon;$/;"	m	class:HumanA	typeref:typename:Weapon &
+weapon	cpp01/ex03/HumanB.hpp	/^		Weapon &weapon;$/;"	m	class:HumanB	typeref:typename:Weapon &
+what	cpp05/ex00/Bureaucrat.cpp	/^const char *Bureaucrat::GradeTooHighException::what() const throw()$/;"	f	class:Bureaucrat::GradeTooHighException	typeref:typename:const char *
+what	cpp05/ex00/Bureaucrat.cpp	/^const char *Bureaucrat::GradeTooLowException::what() const throw()$/;"	f	class:Bureaucrat::GradeTooLowException	typeref:typename:const char *
+what	cpp05/ex01/Bureaucrat.cpp	/^const char *Bureaucrat::GradeTooHighException::what() const throw()$/;"	f	class:Bureaucrat::GradeTooHighException	typeref:typename:const char *
+what	cpp05/ex01/Bureaucrat.cpp	/^const char *Bureaucrat::GradeTooLowException::what() const throw()$/;"	f	class:Bureaucrat::GradeTooLowException	typeref:typename:const char *
+what	cpp05/ex01/Form.cpp	/^const char *Form::GradeTooHighException::what() const throw()$/;"	f	class:Form::GradeTooHighException	typeref:typename:const char *
+what	cpp05/ex01/Form.cpp	/^const char *Form::GradeTooLowException::what() const throw()$/;"	f	class:Form::GradeTooLowException	typeref:typename:const char *
+what	cpp05/ex02/AForm.cpp	/^const char *Form::FormNotSignedException::what() const throw()$/;"	f	class:Form::FormNotSignedException	typeref:typename:const char *
+what	cpp05/ex02/AForm.cpp	/^const char *Form::GradeTooHighException::what() const throw()$/;"	f	class:Form::GradeTooHighException	typeref:typename:const char *
+what	cpp05/ex02/AForm.cpp	/^const char *Form::GradeTooLowException::what() const throw()$/;"	f	class:Form::GradeTooLowException	typeref:typename:const char *
+what	cpp05/ex02/Bureaucrat.cpp	/^const char *Bureaucrat::GradeTooHighException::what() const throw()$/;"	f	class:Bureaucrat::GradeTooHighException	typeref:typename:const char *
+what	cpp05/ex02/Bureaucrat.cpp	/^const char *Bureaucrat::GradeTooLowException::what() const throw()$/;"	f	class:Bureaucrat::GradeTooLowException	typeref:typename:const char *
+what	cpp05/ex03/AForm.cpp	/^const char *Form::FormNotSignedException::what() const throw()$/;"	f	class:Form::FormNotSignedException	typeref:typename:const char *
+what	cpp05/ex03/AForm.cpp	/^const char *Form::GradeTooHighException::what() const throw()$/;"	f	class:Form::GradeTooHighException	typeref:typename:const char *
+what	cpp05/ex03/AForm.cpp	/^const char *Form::GradeTooLowException::what() const throw()$/;"	f	class:Form::GradeTooLowException	typeref:typename:const char *
+what	cpp05/ex03/Bureaucrat.cpp	/^const char *Bureaucrat::GradeTooHighException::what() const throw()$/;"	f	class:Bureaucrat::GradeTooHighException	typeref:typename:const char *
+what	cpp05/ex03/Bureaucrat.cpp	/^const char *Bureaucrat::GradeTooLowException::what() const throw()$/;"	f	class:Bureaucrat::GradeTooLowException	typeref:typename:const char *
+what	cpp05/ex03/Intern.cpp	/^const char* Intern::FormNotFoundException::what() const throw()$/;"	f	class:Intern::FormNotFoundException	typeref:typename:const char *
+whoAmI	cpp03/ex03/DiamondTrap.cpp	/^void DiamondTrap::whoAmI()$/;"	f	class:DiamondTrap	typeref:typename:void
+x	cpp02/ex03/Point.hpp	/^		const Fixed x;$/;"	m	class:Point	typeref:typename:const Fixed
+y	cpp02/ex03/Point.hpp	/^		const Fixed y;$/;"	m	class:Point	typeref:typename:const Fixed
+zombieHorde	cpp01/ex01/zombieHorde.cpp	/^Zombie* zombieHorde(int N, std::string name)$/;"	f	typeref:typename:Zombie *
+~AMateria	cpp04/ex03/AMateria.cpp	/^AMateria::~AMateria() {$/;"	f	class:AMateria
+~ATile	cpp04/ex03/ATile.cpp	/^ATile::~ATile() {$/;"	f	class:ATile
+~Account	cpp00/ex02/Account.cpp	/^Account::~Account( void )$/;"	f	class:Account
+~Animal	cpp04/ex00/Animal.cpp	/^Animal::~Animal() {$/;"	f	class:Animal
+~Animal	cpp04/ex01/Animal.cpp	/^Animal::~Animal() {$/;"	f	class:Animal
+~Animal	cpp04/ex02/Animal.cpp	/^Animal::~Animal() {$/;"	f	class:Animal
+~Base	cpp06/ex02/Base.hpp	/^		virtual ~Base() {}$/;"	f	class:Base
+~Brain	cpp04/ex01/Brain.cpp	/^Brain::~Brain() {$/;"	f	class:Brain
+~Brain	cpp04/ex02/Brain.cpp	/^Brain::~Brain() {$/;"	f	class:Brain
+~Bureaucrat	cpp05/ex00/Bureaucrat.cpp	/^Bureaucrat::~Bureaucrat()$/;"	f	class:Bureaucrat
+~Bureaucrat	cpp05/ex01/Bureaucrat.cpp	/^Bureaucrat::~Bureaucrat()$/;"	f	class:Bureaucrat
+~Bureaucrat	cpp05/ex02/Bureaucrat.cpp	/^Bureaucrat::~Bureaucrat()$/;"	f	class:Bureaucrat
+~Bureaucrat	cpp05/ex03/Bureaucrat.cpp	/^Bureaucrat::~Bureaucrat()$/;"	f	class:Bureaucrat
+~Cat	cpp04/ex00/Cat.cpp	/^Cat::~Cat() {$/;"	f	class:Cat
+~Cat	cpp04/ex01/Cat.cpp	/^Cat::~Cat() {$/;"	f	class:Cat
+~Cat	cpp04/ex02/Cat.cpp	/^Cat::~Cat() {$/;"	f	class:Cat
+~Character	cpp04/ex03/Character.cpp	/^Character::~Character() {$/;"	f	class:Character
+~ClapTrap	cpp03/ex00/ClapTrap.cpp	/^ClapTrap::~ClapTrap()$/;"	f	class:ClapTrap
+~ClapTrap	cpp03/ex01/ClapTrap.cpp	/^ClapTrap::~ClapTrap()$/;"	f	class:ClapTrap
+~ClapTrap	cpp03/ex02/ClapTrap.cpp	/^ClapTrap::~ClapTrap()$/;"	f	class:ClapTrap
+~ClapTrap	cpp03/ex03/ClapTrap.cpp	/^ClapTrap::~ClapTrap()$/;"	f	class:ClapTrap
+~Contact	cpp00/ex01/Contact.cpp	/^Contact::~Contact()$/;"	f	class:Contact
+~Cure	cpp04/ex03/Cure.cpp	/^Cure::~Cure() {$/;"	f	class:Cure
+~DiamondTrap	cpp03/ex03/DiamondTrap.cpp	/^DiamondTrap::~DiamondTrap()$/;"	f	class:DiamondTrap
+~Dog	cpp04/ex00/Dog.cpp	/^Dog::~Dog() {$/;"	f	class:Dog
+~Dog	cpp04/ex01/Dog.cpp	/^Dog::~Dog() {$/;"	f	class:Dog
+~Dog	cpp04/ex02/Dog.cpp	/^Dog::~Dog() {$/;"	f	class:Dog
+~Fixed	cpp02/ex00/Fixed.cpp	/^Fixed::~Fixed()$/;"	f	class:Fixed
+~Fixed	cpp02/ex01/Fixed.cpp	/^Fixed::~Fixed()$/;"	f	class:Fixed
+~Fixed	cpp02/ex02/Fixed.cpp	/^Fixed::~Fixed()$/;"	f	class:Fixed
+~Fixed	cpp02/ex03/Fixed.cpp	/^Fixed::~Fixed()$/;"	f	class:Fixed
+~Floor	cpp04/ex03/Floor.cpp	/^Floor::~Floor()$/;"	f	class:Floor
+~Form	cpp05/ex01/Form.cpp	/^Form::~Form()$/;"	f	class:Form
+~Form	cpp05/ex02/AForm.cpp	/^Form::~Form()$/;"	f	class:Form
+~Form	cpp05/ex03/AForm.cpp	/^Form::~Form()$/;"	f	class:Form
+~FragTrap	cpp03/ex02/FragTrap.cpp	/^FragTrap::~FragTrap()$/;"	f	class:FragTrap
+~FragTrap	cpp03/ex03/FragTrap.cpp	/^FragTrap::~FragTrap()$/;"	f	class:FragTrap
+~Harl	cpp01/ex05/Harl.cpp	/^Harl::~Harl( void ) {$/;"	f	class:Harl
+~Harl	cpp01/ex06/Harl.cpp	/^Harl::~Harl( void ) {$/;"	f	class:Harl
+~HumanA	cpp01/ex03/HumanA.cpp	/^HumanA::~HumanA()$/;"	f	class:HumanA
+~HumanB	cpp01/ex03/HumanB.cpp	/^HumanB::~HumanB() {}$/;"	f	class:HumanB
+~ICharacter	cpp04/ex03/ICharacter.hpp	/^		virtual ~ICharacter() {}$/;"	f	class:ICharacter
+~IMateriaSource	cpp04/ex03/IMateriaSource.hpp	/^		virtual ~IMateriaSource() {}$/;"	f	class:IMateriaSource
+~Ice	cpp04/ex03/Ice.cpp	/^Ice::~Ice() {$/;"	f	class:Ice
+~Intern	cpp05/ex03/Intern.cpp	/^Intern::~Intern()$/;"	f	class:Intern
+~MateriaSource	cpp04/ex03/MateriaSource.cpp	/^MateriaSource::~MateriaSource() {$/;"	f	class:MateriaSource
+~PhoneBook	cpp00/ex01/PhoneBook.cpp	/^PhoneBook::~PhoneBook()$/;"	f	class:PhoneBook
+~Point	cpp02/ex03/Point.cpp	/^Point::~Point() {$/;"	f	class:Point
+~PresidentialPardonForm	cpp05/ex02/PresidentialPardonForm.cpp	/^PresidentialPardonForm::~PresidentialPardonForm()$/;"	f	class:PresidentialPardonForm
+~PresidentialPardonForm	cpp05/ex03/PresidentialPardonForm.cpp	/^PresidentialPardonForm::~PresidentialPardonForm()$/;"	f	class:PresidentialPardonForm
+~RobotomyRequestForm	cpp05/ex02/RobotomyRequestForm.cpp	/^RobotomyRequestForm::~RobotomyRequestForm()$/;"	f	class:RobotomyRequestForm
+~RobotomyRequestForm	cpp05/ex03/RobotomyRequestForm.cpp	/^RobotomyRequestForm::~RobotomyRequestForm()$/;"	f	class:RobotomyRequestForm
+~ScalarConverter	cpp06/ex00/ScalarConverter.cpp	/^ScalarConverter::~ScalarConverter()$/;"	f	class:ScalarConverter
+~ScavTrap	cpp03/ex01/ScavTrap.cpp	/^ScavTrap::~ScavTrap()$/;"	f	class:ScavTrap
+~ScavTrap	cpp03/ex02/ScavTrap.cpp	/^ScavTrap::~ScavTrap()$/;"	f	class:ScavTrap
+~ScavTrap	cpp03/ex03/ScavTrap.cpp	/^ScavTrap::~ScavTrap()$/;"	f	class:ScavTrap
+~Serializer	cpp06/ex01/Serializer.hpp	/^		~Serializer() {};$/;"	f	class:Serializer
+~ShrubberyCreationForm	cpp05/ex02/ShrubberyCreationForm.cpp	/^ShrubberyCreationForm::~ShrubberyCreationForm()$/;"	f	class:ShrubberyCreationForm
+~ShrubberyCreationForm	cpp05/ex03/ShrubberyCreationForm.cpp	/^ShrubberyCreationForm::~ShrubberyCreationForm()$/;"	f	class:ShrubberyCreationForm
+~Weapon	cpp01/ex03/Weapon.cpp	/^Weapon::~Weapon()$/;"	f	class:Weapon
+~WrongAnimal	cpp04/ex00/WrongAnimal.cpp	/^WrongAnimal::~WrongAnimal() {$/;"	f	class:WrongAnimal
+~WrongAnimal	cpp04/ex01/WrongAnimal.cpp	/^WrongAnimal::~WrongAnimal() {$/;"	f	class:WrongAnimal
+~WrongAnimal	cpp04/ex02/WrongAnimal.cpp	/^WrongAnimal::~WrongAnimal() {$/;"	f	class:WrongAnimal
+~WrongCat	cpp04/ex00/WrongCat.cpp	/^WrongCat::~WrongCat() {$/;"	f	class:WrongCat
+~WrongCat	cpp04/ex01/WrongCat.cpp	/^WrongCat::~WrongCat() {$/;"	f	class:WrongCat
+~WrongCat	cpp04/ex02/WrongCat.cpp	/^WrongCat::~WrongCat() {$/;"	f	class:WrongCat
+~Zombie	cpp01/ex00/Zombie.cpp	/^Zombie::~Zombie()$/;"	f	class:Zombie
+~Zombie	cpp01/ex01/Zombie.cpp	/^Zombie::~Zombie()$/;"	f	class:Zombie
