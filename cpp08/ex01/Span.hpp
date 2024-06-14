@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 16:04:57 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/14 17:02:17 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/14 17:52:47 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,19 @@ class Span
 		{
 			virtual const char* what() const throw();
 		};
+		template <typename InputIterator>
+		void addRange(InputIterator first, InputIterator last);
 };
+
+template <typename InputIterator>
+void Span::addRange(InputIterator first, InputIterator last)
+{
+	while (first != last)
+	{
+		addNumber(*first);
+		++first;
+	}
+}
 
 #define RED "\033[0;31m"
 #define GREEN "\033[0;32m"

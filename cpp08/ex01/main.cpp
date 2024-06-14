@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 16:04:43 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/14 17:38:29 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/14 17:52:59 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,10 +50,13 @@ int main()
 
 	std::cout << BLUE "Test with intmax numbers" RESET << std::endl;
 
-	Span sp4 = Span(214748364);
+	Span sp4 = Span(1000000);
+	std::vector<int> v;
 
-	for (u_int64_t i = 0; i < INT_MAX; i++)
-		sp4.addNumber(rand() % INT_MAX);
+	for (int i = 0; i < 1000000; i++)
+		v.push_back(rand() % INT_MAX);
+
+	sp4.addRange(v.begin(), v.end());
 
 	std::cout << sp4.shortestSpan() << std::endl;
 	std::cout << sp4.longestSpan() << std::endl;

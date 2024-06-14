@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 16:05:09 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/14 17:09:06 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/14 17:55:06 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ unsigned int Span::shortestSpan()
 {
 	if (v.size() < 2)
 		throw Span::NotEnoughNumbers();
-	// std::sort(v.begin(), v.end());
 	unsigned int i = 0, j = 1;
 	unsigned int size = v.size();
 	unsigned int currentSpan = v[j] - v[i];
@@ -58,9 +57,9 @@ unsigned int Span::longestSpan()
 {
 	if (v.size() < 2)
 		throw Span::NotEnoughNumbers();
-	// std::sort(v.begin(), v.end());
 	return v[v.size() - 1] - v[0];
 }
+
 
 const char* Span::AlreadyFull::what() const throw()
 {
