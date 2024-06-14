@@ -50,6 +50,8 @@
 		"ctime": "cpp",
 		"iomanip": "cpp",
 		"map": "cpp",
-		"*.tpp": "cpp"
+		"*.tpp": "cpp",
+		"list": "cpp",
+		"stack": "cpp"
 	}
 }
