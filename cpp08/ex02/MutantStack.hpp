@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 17:58:51 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/15 11:51:26 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/15 12:16:16 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,23 @@ class MutantStack : public std::stack<T>
 		typedef typename container_type::const_reverse_iterator const_reverse_iterator;
 		const_reverse_iterator rbegin() const;
 		const_reverse_iterator rend() const;
+
+		using std::stack<T>::push;
+		using std::stack<T>::pop;
 };
 
 #include "MutantStack.tpp"
+
+
+#define RED "\033[0;31m"
+#define GREEN "\033[0;32m"
+#define YELLOW "\033[0;33m"
+#define BLUE "\033[0;34m"
+#define MAGENTA "\033[0;35m"
+#define CYAN "\033[0;36m"
+#define WHITE "\033[0;37m"
+#define RESET "\033[0m"
+
 
 #endif
 	// public:

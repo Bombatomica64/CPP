@@ -6,65 +6,76 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 17:58:42 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/15 11:58:19 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/15 12:22:27 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "MutantStack.hpp"
+#include <list>
+#include <deque>
+#include <vector>
 
-int main()
-{
-	MutantStack<int> mstack;
-	mstack.push(5);
-	mstack.push(17);
-	std::cout << mstack.top() << std::endl;
-	mstack.pop();
-	std::cout << mstack.size() << std::endl;
-	mstack.push(3);
-	mstack.push(5);
-	mstack.push(737);
-	//[...]
-	mstack.push(0);
-	MutantStack<int>::iterator it = mstack.begin();
-	MutantStack<int>::iterator ite = mstack.end();
-	++it;
-	--it;
-	while (it != ite)
-	{
-		std::cout << *it << std::endl;
-		++it;
+template <typename T, typename C>
+void testContainer(T &container, C input[5]) {
+	// Add elements to the container
+	container.push_back(input[0]);
+	container.push_back(input[1]);
+	container.push_back(input[2]);
+	container.push_back(input[3]);
+	container.push_back(input[4]);
+
+	// Print the elements in reverse using reverse iterators
+	std::cout << "Elements in reverse: ";
+	for (typename T::reverse_iterator rit = container.rbegin(); rit != container.rend(); ++rit) {
+		std::cout << *rit << " ";
 	}
-	std::stack<int> s(mstack);
+	std::cout << std::endl;
+	std::cout << "Elements in const: ";
+	for (typename T::const_iterator it = container.begin(); it != container.end(); ++it) {
+		std::cout << *it << " ";
+	}
+	std::cout << std::endl;
+}
 
-	MutantStack<int> stack;
+template <typename T>
+void testContainerPush(T &container) {
+	
+	container.push(10);
+	container.push(20);
+	container.push(30);
+	container.push(40);
+	container.push(50);
 
-    // Push some elements onto the stack
-    stack.push(10);
-    stack.push(20);
-    stack.push(30);
-    stack.push(40);
-    stack.push(50);
 
-    // Print the elements using iterators
-    std::cout << "Elements in the stack: ";
-    for (MutantStack<int>::iterator it = stack.begin(); it != stack.end(); ++it) {
-        std::cout << *it << " ";
-    }
-    std::cout << std::endl;
+	std::cout << "Elements in reverse: ";
+	for (typename T::reverse_iterator rit = container.rbegin(); rit != container.rend(); ++rit) {
+		std::cout << *rit << " ";
+	}
+	std::cout << std::endl;
+	std::cout << "Elements in const: ";
+	for (typename T::const_iterator it = container.begin(); it != container.end(); ++it) {
+		std::cout << *it << " ";
+	}
+	std::cout << std::endl;
+}
 
-    // Print the elements in reverse using reverse iterators
-    std::cout << "Elements in reverse: ";
-    for (MutantStack<int>::reverse_iterator rit = stack.rbegin(); rit != stack.rend(); ++rit) {
-        std::cout << *rit << " ";
-    }
-    std::cout << std::endl;
+int main() {
+	MutantStack<int> mstack;
+	std::list<int> list;
+	std::deque<char> deque;
+	std::vector<__int32_t> vec;
 
-    // Pop an element from the stack
-    stack.pop();
+	std::cout << RED "testContainerPush with MutantStack" RESET << std::endl;
+	testContainerPush(mstack);
 
-    // Print the top element
-    std::cout << "Top element: " << stack.top() << std::endl;
+	std::cout << GREEN "testContainerPush with list" RESET << std::endl;
+	testContainer(list, (int[5]){1, 2, 3, 4, 5});
 
+	std::cout << BLUE "testContainerPush with deque" RESET << std::endl;
+	testContainer(deque, (char[5]){'a', 'b', 'c', 'd', 'e'});
+
+	std::cout << YELLOW "testContainerPush with vector" RESET << std::endl;
+	testContainer(vec, (__int32_t[5]){10000, 20000, 30000, 40000, 50000});
 
 	return 0;
 }
