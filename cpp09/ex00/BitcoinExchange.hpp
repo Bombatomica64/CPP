@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 12:26:02 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/15 16:55:17 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/15 18:26:44 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,14 @@
 #include <iostream>
 #include <fstream>
 #include <map>
+#include <cstdlib>
+#include <string>
+#include <sstream>
 
 class BitcoinExchange
 {
 	private:
 		std::string m_fileName;
-		std::string **m_data;
 		std::map<std::string, double> m_bitcoinValues;
 
 	public:
@@ -32,8 +34,11 @@ class BitcoinExchange
 
 		BitcoinExchange &operator=(const BitcoinExchange &copy);
 
-		void readFromFile(std::string fileName);
-		void display();
+		void		readFromFile(std::string fileName);
+		void		getData();
+		bool		IsDateValid(std::string date);
+		bool		IsValueValid(std::string value);
+		std::string	getPrevDate(std::string date);
 };
 
 #endif

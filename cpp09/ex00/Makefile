@@ -6,11 +6,13 @@
 #    By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/15 12:24:30 by lmicheli          #+#    #+#              #
-#    Updated: 2024/06/15 12:25:50 by lmicheli         ###   ########.fr        #
+#    Updated: 2024/06/15 17:39:56 by lmicheli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = IfOnlyIInvestedInBitcoin
+#NAME = IfOnlyIInvestedInBitcoin
+
+NAME = btc
 
 SRCS = main.cpp	BitcoinExchange.cpp
 
