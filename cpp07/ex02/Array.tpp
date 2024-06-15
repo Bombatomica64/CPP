@@ -6,9 +6,12 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 12:41:45 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/14 13:08:37 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/15 10:06:14 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#ifndef ARRAY_TPP
+#define ARRAY_TPP
 
 #include "Array.hpp"
 
@@ -58,3 +61,5 @@ template <typename T>
 const char* Array<T>::OutOfBounds::what() const throw() {
 	return "Error: out of bounds";
 }
+
+#endif

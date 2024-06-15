@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 16:05:09 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/14 17:55:06 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/15 11:11:55 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ unsigned int Span::shortestSpan()
 			currentSpan = v[j] - v[i];
 		i++;
 		j++;
-	}
+	}//todo
 	return currentSpan;
 }
 
