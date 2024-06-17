@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/17 15:58:07 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/17 16:58:16 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/17 18:02:55 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,16 +19,16 @@ SortDeez::SortDeez(char **av)
 	// print();
 }
 
-SortDeez::SortDeez( SortDeez const& copy )
+SortDeez::SortDeez(SortDeez const &copy)
 {
 	*this = copy;
 }
 
-SortDeez::~SortDeez( void )
+SortDeez::~SortDeez(void)
 {
 }
 
-SortDeez& SortDeez::operator=( SortDeez const& copy )
+SortDeez &SortDeez::operator=(SortDeez const &copy)
 {
 	if (this != &copy)
 	{
@@ -38,7 +38,7 @@ SortDeez& SortDeez::operator=( SortDeez const& copy )
 	return *this;
 }
 
-bool SortDeez::isInt( std::string str )
+bool SortDeez::isInt(std::string str)
 {
 	std::istringstream iss(str);
 	int f;
@@ -52,7 +52,7 @@ bool SortDeez::isInt( std::string str )
 	return true;
 }
 
-void SortDeez::parse( char **av )
+void SortDeez::parse(char **av)
 {
 	for (int i = 0; av[i]; i++)
 	{
@@ -65,12 +65,12 @@ void SortDeez::parse( char **av )
 		{
 			std::cout << "Error: " << av[i] << " is not a valid number" << std::endl;
 			exit(1);
-		} 
+		}
 	}
 }
 
 template <typename T>
-void mergeVector(std::vector<T>& result, unsigned int startLeft, unsigned int middle, unsigned int endRight)
+void mergeVector(std::vector<T> &result, unsigned int startLeft, unsigned int middle, unsigned int endRight)
 {
 	std::vector<T> vecLeft(result.begin() + startLeft, result.begin() + middle + 1);
 	std::vector<T> vecRight(result.begin() + middle + 1, result.begin() + endRight + 1);
@@ -88,13 +88,13 @@ void mergeVector(std::vector<T>& result, unsigned int startLeft, unsigned int mi
 
 	while (iLeft < vecLeft.size())
 		result[index++] = vecLeft[iLeft++];
-	
+
 	while (iRight < vecRight.size())
 		result[index++] = vecRight[iRight++];
 }
 
 template <typename T>
-void mergeSort(std::vector<T>& vec, unsigned int left, unsigned int right)
+void mergeSort(std::vector<T> &vec, unsigned int left, unsigned int right)
 {
 	if (left < right)
 	{
@@ -106,30 +106,55 @@ void mergeSort(std::vector<T>& vec, unsigned int left, unsigned int right)
 }
 
 template <typename T>
-void mergeList(std::list<T>& result, typename std::list<T>::iterator startLeft, typename std::list<T>::iterator middle, typename std::list<T>::iterator endRight)
+std::list<T> mergeList(typename std::list<T>::iterator startLeft, typename std::list<T>::iterator middle, typename std::list<T>::iterator endRight)
 {
-	std::list<T> listLeft(startLeft, middle);
-	std::list<T> listRight(middle, endRight);
+    std::list<T> result;
+    typename std::list<T>::iterator left = startLeft;
+    typename std::list<T>::iterator right = middle;
 
-	typename std::list<T>::iterator iLeft = listLeft.begin();
-	typename std::list<T>::iterator iRight = listRight.begin();
-	typename std::list<T>::iterator index = startLeft;
-	while (iLeft != listLeft.end() && iRight != listRight.end())
-	{
-		if (*iLeft <= *iRight)
-			*index++ = *iLeft++;
-		else
-			*index++ = *iRight++;
-	}
+    while (left != middle && right != endRight)
+    {
+        if (*left < *right)
+        {
+            result.push_back(*left);
+            ++left;
+        }
+        else
+        {
+            result.push_back(*right);
+            ++right;
+        }
+    }
 
-	while (iLeft != listLeft.end())
-		*index++ = *iLeft++;
-	
-	while (iRight != listRight.end())
-		*index++ = *iRight++;
+    while (left != middle)
+    {
+        result.push_back(*left);
+        ++left;
+    }
+
+    while (right != endRight)
+    {
+        result.push_back(*right);
+        ++right;
+    }
+
+    return result;
 }
 
-void SortDeez::sort( void )
+template <typename T>
+void mergesort(std::list<T> &list, typename std::list<T>::iterator start, typename std::list<T>::iterator end)
+{
+	if (std::distance(start, end) > 1)
+	{
+		typename std::list<T>::iterator middle = start;
+		std::advance(middle, std::distance(start, end) / 2);
+		mergesort(list, start, middle);
+		mergesort(list, middle, end);
+		std::list<T> result = mergeList<T>(start, middle, end);
+		std::copy(result.begin(), result.end(), start);
+	}
+}
+void SortDeez::sort(void)
 {
 	std::cout << " Numbers: ";
 	for (size_t i = 0; i < m_vector.size(); i++)
@@ -139,10 +164,6 @@ void SortDeez::sort( void )
 	std::cout << std::endl;
 
 	clock_t start = clock();
-	time_t start_t = time(0);
-	std::cout << start_t << std::endl;
-	std::cout << start << std::endl;
-
 	int OddOne;
 	if (m_vector.size() % 2 == 0)
 		OddOne = -1;
@@ -152,13 +173,23 @@ void SortDeez::sort( void )
 		m_list.pop_back();
 		m_vector.pop_back();
 	}
-	mergeSort(m_vector, 0, m_vector.size() - 1);
-	std::list<int>::iterator it = m_list.begin();
-	std::advance(it, m_vector.size() / 2);
-	mergeList(m_list, m_list.begin(), it, m_list.end());
+	mergesort(m_list, m_list.begin(), m_list.end());
 	if (OddOne != -1)
 	{
-		m_list.push_back(OddOne);
-		m_vector.push_back(OddOne);
+		// For std::list
+		std::list<int>::iterator positionList = std::lower_bound(m_list.begin(), m_list.end(), OddOne);
+		m_list.insert(positionList, OddOne);
 	}
+	clock_t end_l = clock();
+	std::cout << "List Time: " << (double)(end_l - start) / CLOCKS_PER_SEC * 1000000 << "us" << std::endl;
+	clock_t start_v = clock();
+		
+	mergeSort(m_vector, 0, m_vector.size() - 1);
+	if (OddOne != -1)
+	{
+		std::vector<int>::iterator positionVector = std::lower_bound(m_vector.begin(), m_vector.end(), OddOne);
+		m_vector.insert(positionVector, OddOne);
+	}
+	clock_t end_v = clock();
+	std::cout << "Vector Time: " << (double)(end_v - start_v) / CLOCKS_PER_SEC * 1000000 << "us" << std::endl;
 }
