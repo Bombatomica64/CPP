@@ -6,22 +6,40 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 16:22:29 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/15 18:33:49 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/17 12:12:53 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "BitcoinExchange.hpp"
 
+void BitcoinExchange::initMonthDays()
+{
+	monthDays.insert(std::pair<int, int>(1, 31));
+	monthDays.insert(std::pair<int, int>(2, 28));
+	monthDays.insert(std::pair<int, int>(3, 31));
+	monthDays.insert(std::pair<int, int>(4, 30));
+	monthDays.insert(std::pair<int, int>(5, 31));
+	monthDays.insert(std::pair<int, int>(6, 30));
+	monthDays.insert(std::pair<int, int>(7, 31));
+	monthDays.insert(std::pair<int, int>(8, 31));
+	monthDays.insert(std::pair<int, int>(9, 30));
+	monthDays.insert(std::pair<int, int>(10, 31));
+	monthDays.insert(std::pair<int, int>(11, 30));
+	monthDays.insert(std::pair<int, int>(12, 31));
+}
+
 BitcoinExchange::BitcoinExchange()
 : m_fileName(""), m_bitcoinValues()
 {
+	initMonthDays();
 	getData();
-	std::cout << "Default constructor called" << std::endl;
+	// std::cout << "Default constructor called" << std::endl;
 }
 
 BitcoinExchange::BitcoinExchange(std::string fileName) 
 : m_fileName(fileName), m_bitcoinValues()
 {
+	initMonthDays();
 	getData();
 }
 
@@ -64,9 +82,10 @@ void BitcoinExchange::getData()
 
 	while (std::getline(file, line))
 	{
+		// std::cout << RED << line << RESET << std::endl;
 		date = line.substr(0, line.find(","));
 		value = line.substr(line.find(",") + 1);
-		if (!(IsDateValid(date) || !IsValueValid(value)))
+		if (!(IsDateValid(date)))
 		{
 			std::cerr << "Invalid data" << std::endl;
 			exit(1);
@@ -97,25 +116,27 @@ void BitcoinExchange::readFromFile(std::string fileName)
 		std::cerr << "Invalid input file" << std::endl;
 		exit(1);
 	}
-	
 	while(std::getline(file, line))
 	{
 		date = line.substr(0, line.find("|"));
 		value = line.substr(line.find("|") + 1);
-		if (!IsValueValid(value) || !IsDateValid(date))
-			continue;
+		if (IsDateValid(date) == false || IsValueValid(value) == false)
+			continue ;
 		if (m_bitcoinValues.find(date) == m_bitcoinValues.end())
 			date = getPrevDate(date);
-		btcValue = m_bitcoinValues[date] * std::strtod(value.c_str(), NULL);
-		std::cout << date << "=>" << value << "=" << btcValue <<std::endl;
+		btcValue = static_cast<double>(m_bitcoinValues[date]) * std::strtod(value.c_str(), NULL);
+		std::cout << date << " =>" << value << " = " << btcValue <<std::endl;
 	}
 
 }
 
 bool BitcoinExchange::IsDateValid(std::string date)
 {
-	if (date.size() != 10)
+	if (date.size() > 11 || date.size() < 10)
+	{
+		std::cerr << "Error: Invalid date format" << std::endl;
 		return false;
+	}
 	for (int i = 0; i < 10; i++)
 	{
 		if (i == 4 || i == 7)
@@ -136,31 +157,19 @@ bool BitcoinExchange::IsDateValid(std::string date)
 		return false;
 	}
 		
-	std::map<int, int> monthDays;
-	monthDays[1] = 31;
-	monthDays[2] = 28;
-	monthDays[3] = 31;
-	monthDays[4] = 30;
-	monthDays[5] = 31;
-	monthDays[6] = 30;
-	monthDays[7] = 31;
-	monthDays[8] = 31;
-	monthDays[9] = 30;
-	monthDays[10] = 31;
-	monthDays[11] = 30;
-	monthDays[12] = 31;
+	int flag = 0;
 
 	if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0))
-		monthDays[2] = 29;
+		flag = 1;
 
 	if (month < 1 || month > 12)
 	{
 		std::cerr << "Error: Invalid month" << std::endl;
 		return false;
 	}
-
-	if (day < 1 || day > monthDays[month])
+	if (day < 1 || day > monthDays[month] + 1)
 	{
+		std::cout << month << std::endl << monthDays[month] << std::endl;
 		std::cerr << "Error: Invalid day" << std::endl;
 		return false;
 	}
@@ -176,7 +185,12 @@ bool BitcoinExchange::IsValueValid(std::string value)
 		std::cerr << "Error: Empty value" << std::endl;
 		return false;
 	}
-	if (value[0] == '-')
+	unsigned int i = 0;
+	for (; value[i] == ' '; i++)
+	{
+		// std::cout << "space" << std::endl;
+	}
+	if (value[i] == '-')
 	{
 		std::cerr << "Error: Negative value" << std::endl;
 		return false;
@@ -220,8 +234,6 @@ std::string BitcoinExchange::getPrevDate(std::string date)
 	std::string prevDate = date;
 	while(true)
 	{
-		if (m_bitcoinValues.find(date) != m_bitcoinValues.end())
-			break;
 		if (day > 1)
 			day--;
 		else
@@ -229,18 +241,26 @@ std::string BitcoinExchange::getPrevDate(std::string date)
 			if (month > 1)
 			{
 				month--;
-				day = 31;
+				day = monthDays[month];
 			}
 			else
 			{
 				year--;
 				month = 12;
-				day = 31;
+				day = monthDays[month];
 			}
 		}
 		std::stringstream ss;
-		ss << year << "-" << month << "-" << day;
+		ss << year << "-";
+		if (month < 10)
+			ss << "0";
+		ss << month << "-" ;
+		if (day < 10)
+			ss << "0";
+		ss << day;
 		prevDate = ss.str();
+		if (m_bitcoinValues.find(prevDate) != m_bitcoinValues.end())
+			break;
 		if (year < 2009)
 		{
 			prevDate = m_bitcoinValues.begin()->first;

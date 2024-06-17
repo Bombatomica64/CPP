@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 12:43:47 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/15 18:21:16 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/17 10:56:04 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int main (int ac, char **av)
 	{
 		std::cerr << "Invalid file" << std::endl;
 		return 1;
-	}
+	}	
 
 	std::string fileNm = av[1];
 
