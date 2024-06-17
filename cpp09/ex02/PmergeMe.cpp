@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/17 15:58:07 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/17 18:02:55 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/17 18:28:10 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -181,7 +181,6 @@ void SortDeez::sort(void)
 		m_list.insert(positionList, OddOne);
 	}
 	clock_t end_l = clock();
-	std::cout << "List Time: " << (double)(end_l - start) / CLOCKS_PER_SEC * 1000000 << "us" << std::endl;
 	clock_t start_v = clock();
 		
 	mergeSort(m_vector, 0, m_vector.size() - 1);
@@ -191,5 +190,11 @@ void SortDeez::sort(void)
 		m_vector.insert(positionVector, OddOne);
 	}
 	clock_t end_v = clock();
+	std::cout << "Sorted: ";
+	for (size_t i = 0; i < m_vector.size(); i++)
+	{
+		std::cout << m_vector[i] << " ";
+	}
+	std::cout << "List Time: " << (double)(end_l - start) / CLOCKS_PER_SEC * 1000000 << "us" << std::endl;
 	std::cout << "Vector Time: " << (double)(end_v - start_v) / CLOCKS_PER_SEC * 1000000 << "us" << std::endl;
 }
