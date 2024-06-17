@@ -1,37 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   RPN.hpp                                            :+:      :+:    :+:   */
+/*   PmergeMe.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/17 12:58:11 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/17 15:28:24 by lmicheli         ###   ########.fr       */
+/*   Created: 2024/06/17 15:36:27 by lmicheli          #+#    #+#             */
+/*   Updated: 2024/06/17 16:18:19 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef RPN_HPP
-#define RPN_HPP
+#ifndef PMERGE_HPP
+#define PMERGE_HPP
 
 #include <iostream>
-#include <stack>
+#include <vector>
+#include <list>
 #include <cstdlib>
-class Calculator
+#include <sstream>
+
+class SortDeez
 {
 	private:
-	std::stack<int> 	m_numbers;
-	std::stack<char>	m_operators;
-	int 				m_result;
-	Calculator();
+		std::list<int> m_list;
+		std::vector<int> m_vector;
+		SortDeez() {}
 
 	public:
-		Calculator(std::string str);
-		Calculator(Calculator const& copy);
-		~Calculator();
+		SortDeez(char **av);
+		SortDeez(SortDeez const& copy);
+		~SortDeez();
 
-		Calculator& operator=(Calculator const& copy);
-		void		calculate();
-		void		parse(std::string str);
+		SortDeez& operator=(SortDeez const& copy);
+
+		void	parse(char **av);
+		void	sort();
+		// void	print();
+
+		bool	isInt(std::string str);
 };
 
 #endif

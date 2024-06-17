@@ -5,14 +5,14 @@
 #                                                     +:+ +:+         +:+      #
 #    By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/06/17 12:57:28 by lmicheli          #+#    #+#              #
-#    Updated: 2024/06/17 15:28:42 by lmicheli         ###   ########.fr        #
+#    Created: 2024/06/17 15:35:52 by lmicheli          #+#    #+#              #
+#    Updated: 2024/06/17 15:36:57 by lmicheli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = RPN
+NAME = PmergeMe
 
-SRCS = main.cpp	RPN.cpp
+SRCS = main.cpp	PmergeMe.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
