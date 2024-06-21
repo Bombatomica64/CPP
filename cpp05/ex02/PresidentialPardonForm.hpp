@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 10:29:11 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/06 12:33:21 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/21 10:15:57 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include "AForm.hpp"
 
-class PresidentialPardonForm : public Form
+class PresidentialPardonForm : public AForm
 {
 	private:
 		std::string const m_target;

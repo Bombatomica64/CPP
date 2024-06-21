@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 10:58:30 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/06 15:27:42 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/21 10:15:57 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include "AForm.hpp"
 #include <fstream>
 
-class ShrubberyCreationForm : public Form
+class ShrubberyCreationForm : public AForm
 {
 	private:
 		std::string const m_target;
@@ -32,6 +32,6 @@ class ShrubberyCreationForm : public Form
 		void execute(Bureaucrat const &executor) const;
 };
 
-std::ostream &operator<<(std::ostream &out, ShrubberyCreationForm const &form);
+std::ostream &operator<<(std::ostream &out, ShrubberyCreationForm const &AForm);
 
 #endif

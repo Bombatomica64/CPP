@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 11:38:20 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/07 17:05:37 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/21 12:44:08 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void ScalarConverter::convert(std::string const &str)
 {
 	int type = get_type(str);
 
-	std::cout << "type: " << type << std::endl;
+	// std::cout << "type: " << type << std::endl;
 	switch (type)
 	{
 		case -1:

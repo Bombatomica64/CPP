@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 12:32:44 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/07 18:08:05 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/21 12:43:46 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,21 @@ int     getPrecision(const std::string& literal)
 int	get_type(std::string const &str)
 {
 	int i = 0;
-	int type = 0;
+	int type = 3;
 	std::string strs = str;
 	bool allSpaces = true;
+	std::set<std::string> pseudo; 
+	// = {"-inff", "+inff", "nanf", "inff", "-inf", "+inf", "nan", "inf"};
+	pseudo.insert("-inff");
+	pseudo.insert("+inff");
+	pseudo.insert("nanf");
+	pseudo.insert("inff");
+	pseudo.insert("-inf");
+	pseudo.insert("+inf");
+	pseudo.insert("nan");
 
+	if (pseudo.find(str) != pseudo.end())
+		return (-1);
 	for (std::string::const_iterator it = str.begin(); it != str.end(); ++it)
 	{
 		if (*it != ' ')
@@ -62,10 +73,6 @@ int	get_type(std::string const &str)
 		}
 	}
 	
-	if (!(str.find("-inff") || str.find("+inff") || str.find("nanf")
-		|| str.find("inff") || str.find("-inf") || str.find("+inf")
-		|| str.find("nan") || str.find("inf")))
-		return (-1);
 	if (str.find_first_not_of("0123456789.-+f") != std::string::npos)
 		return (1);
 	if (str[i] == '-' || str[i] == '+')
@@ -81,7 +88,7 @@ int	get_type(std::string const &str)
 	}
 	if (str[i] == 'f')
 		type = 2;
-	else if (str[i] == '\0' && type != 3)
+	else if (str[i] == '\0' && type != 3 && str.size() < 13)
 		type = 4;
 	return (type);
 }
@@ -91,12 +98,17 @@ void	PseudoLiteral(std::string const &str)
 	std::cout << "char: impossible" << std::endl;
 	std::cout << "int: impossible" << std::endl;
 	if (str == "-inff" || str == "+inff" || str == "nanf"
-		|| str == "inff" || str == "-inf" || str == "+inf")
+		|| str == "inff")
 		std::cout << "float: " << str << std::endl;
+	else if (str == "-inf" || str == "+inf" || str == "nan")
+		std::cout << "float: " << str << "f" << std::endl;	
 	else
 		std::cout << "float: impossible" << std::endl;
 	if (str == "-inf" || str == "+inf" || str == "nan")
 		std::cout << "double: " << str << std::endl;
+	else if (str == "-inff" || str == "+inff" || str == "nanf"
+		|| str == "inff")
+		std::cout << "double: " << str.substr(0, str.length() - 1) << std::endl;
 	else
 		std::cout << "double: impossible" << std::endl;
 }
@@ -119,7 +131,7 @@ void	floatLiteral(std::string const &str)
 		std::cout << "'" << static_cast<char>(f) << "'" << std::endl;
 	else
 		std::cout << "Non displayable" << std::endl;
-	if (f <= INT_MAX && f >= INT_MIN)
+	if (f <= static_cast<float>(INT_MAX) && f >= static_cast<float>(INT_MIN))
 		std::cout << "int: " << static_cast<int>(f) << std::endl;
 	else
 		std::cout << "int: impossible" << std::endl;

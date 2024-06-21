@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 10:25:27 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/06 15:36:56 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/21 10:15:57 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,14 +94,14 @@ std::ostream &operator<<(std::ostream &out, Bureaucrat const &bureaucrat)
 	return out;
 }
 
-void Bureaucrat::signForm(Form &form)
+void Bureaucrat::signForm(AForm &AForm)
 {
-	form.beSigned(*this);
-	std::cout << *this << " signs " << form << std::endl;
+	AForm.beSigned(*this);
+	std::cout << *this << " signs " << AForm << std::endl;
 }
 
-void Bureaucrat::executeForm(Form const &form)
+void Bureaucrat::executeForm(AForm const &AForm)
 {
-	form.execute(*this);
-	std::cout << *this << " executes " << form << std::endl;
+	AForm.execute(*this);
+	std::cout << *this << " executes " << AForm << std::endl;
 }

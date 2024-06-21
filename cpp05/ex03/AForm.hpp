@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 10:56:29 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/06 15:22:23 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/21 10:15:57 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 class Bureaucrat;
 
-class Form
+class AForm
 {
 	private:
 		std::string const m_name;
@@ -27,12 +27,12 @@ class Form
 		int const m_gradeToExecute;
 
 	public:
-		Form();
-		Form(std::string const &name, int gradeToSign, int gradeToExecute);
-		Form(Form const &other);
-		~Form();
+		AForm();
+		AForm(std::string const &name, int gradeToSign, int gradeToExecute);
+		AForm(AForm const &other);
+		~AForm();
 
-		Form &operator=(Form const &other);
+		AForm &operator=(AForm const &other);
 
 		int 				getGradeToSign() const;
 		int 				getGradeToExecute() const;
@@ -61,6 +61,6 @@ class Form
 		};
 };
 
-std::ostream &operator<<(std::ostream &out, Form const &form);
+std::ostream &operator<<(std::ostream &out, AForm const &AForm);
 
 #endif

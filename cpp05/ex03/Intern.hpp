@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 16:05:30 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/07 11:08:37 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/21 10:15:57 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include "PresidentialPardonForm.hpp"
 #include "RobotomyRequestForm.hpp"
 #include "ShrubberyCreationForm.hpp"
+#include <map>
 
 class Intern
 {
@@ -26,10 +27,10 @@ class Intern
 
 		Intern &operator=(Intern const &other);
 
-		Form	*makeForm(std::string const &name, std::string const &target);
-		Form	*createShrubberyCreationForm(std::string const &target);
-		Form	*createRobotomyRequestForm(std::string const &target);
-		Form	*createPresidentialPardonForm(std::string const &target);
+		AForm	*makeForm(std::string const &name, std::string const &target);
+		AForm	*createShrubberyCreationForm(std::string const &target);
+		AForm	*createRobotomyRequestForm(std::string const &target);
+		AForm	*createPresidentialPardonForm(std::string const &target);
 
 	public:
 		class FormNotFoundException : public std::exception

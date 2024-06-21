@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 10:20:01 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/06 10:44:23 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/21 10:15:57 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 #define WHITE "\033[0;37m"
 #define RESET "\033[0m"
 
-class Form;
+class AForm;
 
 class Bureaucrat
 {
@@ -47,8 +47,8 @@ class Bureaucrat
 		int 				getGrade() const;
 
 		int gradeCheck(int grade) const;
-		void signForm(Form &form);
-		void executeForm(Form const &form);
+		void signForm(AForm &AForm);
+		void executeForm(AForm const &AForm);
 
 	public:
 		class GradeTooHighException : public std::exception
