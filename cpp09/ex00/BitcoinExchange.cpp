@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 16:22:29 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/17 12:12:53 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/24 16:53:36 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ void BitcoinExchange::getData()
 	if (!file.is_open())
 	{
 		std::cerr << "Invalid data file" << std::endl;
-		exit(1);
+		return ;
 	}
 	
 	std::string line;
@@ -77,7 +77,7 @@ void BitcoinExchange::getData()
 	if (line != "date,exchange_rate")
 	{
 		std::cerr << "Invalid data" << std::endl;
-		exit(1);
+		return ;
 	}
 
 	while (std::getline(file, line))
@@ -88,7 +88,7 @@ void BitcoinExchange::getData()
 		if (!(IsDateValid(date)))
 		{
 			std::cerr << "Invalid data" << std::endl;
-			exit(1);
+			return ;
 		}
 		m_bitcoinValues[date] = std::strtod(value.c_str(), NULL);
 	}
@@ -106,7 +106,7 @@ void BitcoinExchange::readFromFile(std::string fileName)
 	if (!file.is_open())
 	{
 		std::cerr << "Invalid input file" << std::endl;
-		exit(1);
+		return ;
 	}
 
 	std::getline(file, line);
@@ -114,7 +114,7 @@ void BitcoinExchange::readFromFile(std::string fileName)
 	if (line != "date | value" || line.empty())
 	{
 		std::cerr << "Invalid input file" << std::endl;
-		exit(1);
+		return ;
 	}
 	while(std::getline(file, line))
 	{
