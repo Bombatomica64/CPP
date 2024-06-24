@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 12:41:45 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/15 10:06:14 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/24 15:42:33 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,10 @@ template <typename T>
 Array<T>::Array() : m_array(NULL), m_size(0) {}
 
 template <typename T>
-Array<T>::Array(unsigned int n) : m_array(new T[n]), m_size(n) {}
+Array<T>::Array(unsigned int n) : m_array(new T[n]), m_size(n) {
+	for (unsigned int i = 0; i < m_size; i++)
+		m_array[i] = T();
+}
 
 template <typename T>
 Array<T>::Array(Array const& src) : m_array(new T[src.m_size]), m_size(src.m_size) {

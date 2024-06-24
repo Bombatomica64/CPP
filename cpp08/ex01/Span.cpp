@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 16:05:09 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/15 11:11:55 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/21 18:12:14 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,14 +42,14 @@ unsigned int Span::shortestSpan()
 		throw Span::NotEnoughNumbers();
 	unsigned int i = 0, j = 1;
 	unsigned int size = v.size();
-	unsigned int currentSpan = v[j] - v[i];
+	unsigned int currentSpan = std::abs(v[j] - v[i]);
 	while (j < size)
 	{
 		if (static_cast<unsigned int>(std::abs(v[j] - v[i])) < currentSpan)
 			currentSpan = v[j] - v[i];
 		i++;
 		j++;
-	}//todo
+	}
 	return currentSpan;
 }
 

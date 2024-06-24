@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/13 12:41:38 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/13 16:00:53 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/21 16:24:52 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ void tests(void);
 
 int main() {
 
-	int a = 1234;
-	int b = 8888;
+	int a = 2;
+	int b = 3;
 
 	::swap( a, b );
 	std::cout << "a = " << a << ", b = " << b << std::endl;

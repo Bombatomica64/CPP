@@ -6,7 +6,7 @@
 /*   By: lmicheli <lmicheli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/13 15:56:07 by lmicheli          #+#    #+#             */
-/*   Updated: 2024/06/14 13:10:35 by lmicheli         ###   ########.fr       */
+/*   Updated: 2024/06/24 15:38:37 by lmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #define MAX_VAL 750
 int main(int, char**)
 {
+    Array<int> a;
     Array<int> numbers(MAX_VAL);
     int* mirror = new int[MAX_VAL];
     srand(time(NULL));
@@ -25,7 +26,6 @@ int main(int, char**)
         numbers[i] = value;
         mirror[i] = value;
     }
-    //SCOPE
     {
         Array<int> tmp = numbers;
         Array<int> test(tmp);
@@ -60,6 +60,19 @@ int main(int, char**)
     {
         numbers[i] = rand();
     }
-    delete [] mirror;//
+    delete [] mirror;
+
+	Array<int> strings(5);
+
+	// strings[0] = "Hello";
+	// strings[1] = "World";
+	// strings[2] = "is";
+	// strings[3] = "a";
+	// strings[4] = "test";
+
+	Array<int> strings2(strings);
+
+	for (unsigned int i = 0; i < strings2.size(); i++)
+		std::cout << strings2[i] << std::endl;
     return 0;
 }
